@@ -1,0 +1,35 @@
+finish env:
+1. CartPole-v0
+2. Pendulum-v0
+
+
+doing env:
+ppo
+1. LunarLanderContinuous-v2  (ok)               270                        4e5
+2. Hopper-v2                 (ok)               3700
+3. HalfCheetah-v2            (ok)               4800                       3e6
+4. BipedalWalker-v2          (ok)               300
+5. Swimmer-v2                (ok)               360       (only 120)
+6. Walker2d-v2               (ok)               4000                       1e7
+7. Humanoid-v3               (ok)                                       1.25e7
+
+ppo+dad (fixed threshold is not great performance)                                   error bound
+1. LunarLanderContinuous-v2  (doing)        <16      (no del)    <4.0   (ok)    <=1 (no)
+2. HalfCheetah-v2            (doing)        <105.0   (no)    <75.0  (no)  <50(no)
+3. BipedalWalker-v2          (doing)        <30      (no)
+4. Hopper-v2                 (doing)        <20      (ok)
+
+tune-1:
+model_error_threshold
+tune-2
+random-uniform-sample
+tune-3
+evaluate-time augment
+tune-4
+if use reward which is real env getting, the policy dont update before use dad.
+
+
+next env:
+3. Ant-v2
+5. CartPoleSwingUpDiscrete
+and pappers env

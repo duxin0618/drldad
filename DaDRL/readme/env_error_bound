@@ -1,0 +1,6 @@
+
+# different env dad error bound:
+CarPole-v0 :  <1.0 or <0.75
+Pendulum-v0 : <4.0
+LunarLanderContinuous-v2 : <1.0
+

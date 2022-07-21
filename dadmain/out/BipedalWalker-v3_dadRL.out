@@ -1,0 +1,1939 @@
+nohup: ignoring input
+Intel(R) Extension for Scikit-learn* enabled (https://github.com/intel/scikit-learn-intelex)
+Intel(R) Extension for Scikit-learn* enabled (https://github.com/intel/scikit-learn-intelex)
+| Arguments Remove cwd: ./result/BipedalWalker-v3_PPO_2
+################################################################################
+ID     Step    maxR |    avgR   stdR   avgS  stdS |    expR   objC   etc.
+ Init error: 24.91
+use time:  35.12725067138672
+dad_error :  24.914836698499414
+2  6.57e+03  -92.65 |
+2  6.57e+03  -92.65 |  -92.65    0.1    103     2 |   -0.03   0.46   0.02   0.00
+ Init error: 18.12
+use time:  35.20426917076111
+dad_error :  16.648223594189805
+ Init error: 22.43
+use time:  35.57839369773865
+dad_error :  22.431123994941306
+ Init error: 23.09
+use time:  35.22230124473572
+dad_error :  23.094835278954278
+ Init error: 32.7
+use time:  36.2682249546051
+dad_error :  32.69612854364004
+ Init error: 37.35
+use time:  40.08459758758545
+dad_error :  37.3491831816392
+ Init error: 21.21
+use time:  35.464258670806885
+dad_error :  21.2131076077361
+2  4.56e+04  -92.65 |  -99.07    0.0    149     1 |   -0.02   0.44   0.02   0.00
+ Init error: 26.97
+use time:  35.5211546421051
+dad_error :  19.102044778530278
+ Init error: 18.72
+use time:  35.43091630935669
+dad_error :  17.779141009982272
+ Init error: 22.04
+use time:  39.724971532821655
+dad_error :  13.945535766771274
+ Init error: 21.64
+use time:  35.516584157943726
+dad_error :  18.702598596506164
+ Init error: 33.34
+use time:  35.62324833869934
+dad_error :  33.344314693924645
+ Init error: 35.62
+use time:  35.008734703063965
+dad_error :  35.62205083290117
+ Init error: 49.17
+use time:  34.814769983291626
+dad_error :  49.16966056085687
+2  9.19e+04  -30.88 |
+2  9.19e+04  -30.88 |  -30.88    1.1   1600     0 |   -0.01   0.04   0.14   0.00
+ Init error: 37.46
+use time:  35.15197157859802
+dad_error :  37.46250644942928
+ Init error: 32.23
+use time:  35.171926975250244
+dad_error :  32.23136224447306
+ Init error: 28.49
+use time:  34.73535418510437
+dad_error :  28.488332395770964
+ Init error: 36.79
+use time:  37.73512554168701
+dad_error :  36.792163137881424
+ Init error: 34.25
+use time:  35.1347017288208
+dad_error :  34.251054239376515
+ Init error: 29.64
+use time:  35.438177824020386
+dad_error :  29.64170853469293
+2  1.30e+05  -30.88 |  -37.77    0.0   1600     0 |   -0.01   0.01   0.17   0.00
+ Init error: 41.18
+use time:  34.938392639160156
+dad_error :  41.18142894483741
+ Init error: 45.32
+use time:  35.87430953979492
+dad_error :  45.32311458725228
+ Init error: 42.56
+use time:  35.02454161643982
+dad_error :  42.564931033429666
+ Init error: 51.82
+use time:  35.044227838516235
+dad_error :  51.8207674119909
+ Init error: 38.7
+use time:  35.307469844818115
+dad_error :  38.702448910522385
+ Init error: 38.49
+use time:  35.454734802246094
+dad_error :  36.720313852021555
+2  1.69e+05  -30.88 |  -88.56   27.4    497   554 |   -0.01   0.12   0.14   0.00
+ Init error: 62.61
+use time:  35.47926115989685
+dad_error :  56.7465296041509
+ Init error: 68.34
+use time:  35.17856693267822
+dad_error :  38.04090385086027
+ Init error: 62.1
+use time:  35.02016496658325
+dad_error :  62.10444106373045
+ Init error: 54.4
+use time:  35.133660078048706
+dad_error :  54.40107202906892
+ Init error: 80.4
+use time:  35.04041409492493
+dad_error :  80.39992503932268
+ Init error: 115.1
+use time:  40.010363817214966
+dad_error :  115.07530481523364
+2  2.08e+05   28.63 |
+2  2.08e+05   28.63 |   28.63   24.3   1600     0 |    0.01   0.02   0.05   0.00
+ Init error: 97.38
+use time:  35.330543518066406
+dad_error :  95.10985570682672
+ Init error: 96.11
+use time:  34.95940661430359
+dad_error :  91.44157229678493
+ Init error: 82.31
+use time:  34.9468092918396
+dad_error :  70.38984170930502
+ Init error: 84.1
+use time:  35.38404130935669
+dad_error :  84.10123631179493
+ Init error: 86.33
+use time:  36.204039096832275
+dad_error :  83.93900820733599
+2  2.40e+05   47.89 |
+2  2.40e+05   47.89 |   47.89   30.1   1600     0 |    0.01   0.02  -0.00   0.00
+ Init error: 88.38
+use time:  35.39611291885376
+dad_error :  88.37577510837974
+ Init error: 82.44
+use time:  35.537965536117554
+dad_error :  78.05184208441698
+ Init error: 58.36
+use time:  35.156254291534424
+dad_error :  58.356409834056926
+ Init error: 55.59
+use time:  39.16161489486694
+dad_error :  55.593358897475014
+ Init error: 53.06
+use time:  35.110371589660645
+dad_error :  53.05789100359013
+2  2.72e+05   72.58 |
+2  2.72e+05   72.58 |   72.58   30.0   1600     0 |    0.02   0.04   0.11   0.00
+ Init error: 50.48
+use time:  34.9669029712677
+dad_error :  50.48388313107003
+ Init error: 59.54
+use time:  35.29627704620361
+dad_error :  59.54081729009307
+ Init error: 81.6
+use time:  35.223031997680664
+dad_error :  81.5995420750892
+ Init error: 56.69
+use time:  34.59994173049927
+dad_error :  56.685942769892286
+ Init error: 48.88
+use time:  35.391329288482666
+dad_error :  48.88172905608011
+2  3.04e+05  119.18 |
+2  3.04e+05  119.18 |  119.18   11.1   1600     0 |    0.03   0.03   0.09   0.00
+ Init error: 59.36
+use time:  35.61645555496216
+dad_error :  59.36378947249878
+ Init error: 55.04
+use time:  35.2789306640625
+dad_error :  55.03961684041918
+ Init error: 61.74
+use time:  35.39815378189087
+dad_error :  61.740434284767666
+ Init error: 61.3
+use time:  35.96426486968994
+dad_error :  61.2991165706042
+ Init error: 59.51
+use time:  34.8483407497406
+dad_error :  59.505125348603286
+2  3.36e+05  150.93 |
+2  3.36e+05  150.93 |  150.93    8.3   1600     0 |    0.03   0.06   0.01   0.00
+ Init error: 67.34
+use time:  35.31731128692627
+dad_error :  64.51425031197194
+ Init error: 52.75
+use time:  35.018027544021606
+dad_error :  52.746162767125604
+ Init error: 75.82
+use time:  38.54610204696655
+dad_error :  73.9224116767215
+ Init error: 70.63
+use time:  35.32090210914612
+dad_error :  70.62669833164988
+ Init error: 47.79
+use time:  35.11625552177429
+dad_error :  47.78933016496886
+2  3.68e+05  185.60 |
+2  3.68e+05  185.60 |  185.60   13.9   1600     0 |    0.03   0.21   0.01   0.00
+ Init error: 59.44
+use time:  35.2967848777771
+dad_error :  59.440829112335095
+ Init error: 62.95
+use time:  35.28527283668518
+dad_error :  54.522291455535566
+ Init error: 56.59
+use time:  35.212376832962036
+dad_error :  52.93174163024832
+ Init error: 56.87
+use time:  35.68989181518555
+dad_error :  48.097772335652685
+ Init error: 39.91
+use time:  35.28861737251282
+dad_error :  39.90558239362958
+2  4.00e+05  228.18 |
+2  4.00e+05  228.18 |  228.18   12.1   1600     0 |    0.06   0.13   0.07   0.00
+ Init error: 50.92
+use time:  35.06239581108093
+dad_error :  50.91952367626041
+ Init error: 35.52
+use time:  35.715518951416016
+dad_error :  35.518442070091886
+ Init error: 33.12
+use time:  35.368664026260376
+dad_error :  33.122627351649015
+ Init error: 39.46
+use time:  35.12769937515259
+dad_error :  39.457197649119166
+ Init error: 41.4
+use time:  35.58748269081116
+dad_error :  35.34980652167319
+2  4.33e+05  242.39 |
+2  4.33e+05  242.39 |  242.39   22.2   1600     0 |    0.03   0.32   0.06   0.00
+ Init error: 42.29
+use time:  35.42295217514038
+dad_error :  42.290697745482234
+ Init error: 33.29
+use time:  38.20279788970947
+dad_error :  33.28747329898174
+ Init error: 38.55
+use time:  35.07338213920593
+dad_error :  38.54983977054589
+ Init error: 33.93
+use time:  35.15435528755188
+dad_error :  33.92788142330798
+ Init error: 33.67
+use time:  34.93582558631897
+dad_error :  33.27217040732752
+2  4.65e+05  270.63 |
+2  4.65e+05  270.63 |  270.63    7.5   1600     0 |    0.06   0.20  -0.01   0.00
+ Init error: 36.84
+use time:  35.207051515579224
+dad_error :  36.839152407847436
+ Init error: 46.68
+use time:  36.02123737335205
+dad_error :  46.67705989112956
+ Init error: 36.89
+use time:  37.50003147125244
+dad_error :  36.891975137607076
+ Init error: 38.69
+use time:  35.35257887840271
+dad_error :  38.69200786610501
+ Init error: 36.94
+use time:  35.20340371131897
+dad_error :  36.93504302361418
+2  4.97e+05  291.25 |
+2  4.97e+05  291.25 |  291.25    9.0   1597    11 |    0.07   0.21   0.03   0.00
+ Init error: 53.74
+use time:  38.17374110221863
+dad_error :  49.46518798433587
+ Init error: 60.99
+use time:  35.02893090248108
+dad_error :  60.94328680911223
+ Init error: 52.89
+use time:  35.22254776954651
+dad_error :  47.30005108090247
+ Init error: 71.74
+use time:  34.86112928390503
+dad_error :  71.73602394806645
+ Init error: 55.48
+use time:  35.33560538291931
+dad_error :  50.969322191889106
+2  5.29e+05  291.25 |  285.57    6.7   1600     0 |    0.08   0.17  -0.05   0.00
+ Init error: 47.04
+use time:  35.28822660446167
+dad_error :  47.03875394849594
+ Init error: 51.83
+use time:  36.536664962768555
+dad_error :  51.46963104780723
+ Init error: 51.59
+use time:  35.13870286941528
+dad_error :  47.24507673512561
+ Init error: 46.29
+use time:  35.568578004837036
+dad_error :  44.469146847923305
+ Init error: 64.98
+use time:  34.88405704498291
+dad_error :  64.9845495539355
+2  5.62e+05  300.85 |
+2  5.62e+05  300.85 |  300.85    1.5   1509    36 |    0.08   0.17   0.06   0.00
+ Init error: 62.96
+use time:  35.20814752578735
+dad_error :  62.95584092938824
+ Init error: 64.53
+use time:  34.62935495376587
+dad_error :  60.49615547824902
+ Init error: 74.78
+use time:  35.7678062915802
+dad_error :  60.94101184199765
+ Init error: 63.23
+use time:  35.64941596984863
+dad_error :  59.28079775219022
+ Init error: 57.12
+use time:  35.20253586769104
+dad_error :  48.733292432941084
+2  5.98e+05  301.58 |
+2  5.98e+05  301.58 |  301.58    4.2   1464    59 |    0.09   0.13   0.10   0.00
+ Init error: 75.14
+use time:  35.71094822883606
+dad_error :  57.14239862558589
+ Init error: 73.77
+use time:  35.68009614944458
+dad_error :  59.49935733184262
+ Init error: 86.37
+use time:  34.698721408843994
+dad_error :  66.86905839131622
+ Init error: 91.6
+use time:  35.270753145217896
+dad_error :  67.40193552247952
+2  6.29e+05  306.24 |
+2  6.29e+05  306.24 |  306.24    1.1   1363    22 |    0.10   0.23   0.06   0.00
+ Init error: 68.96
+use time:  34.98645043373108
+dad_error :  43.5976912602209
+ Init error: 96.32
+use time:  41.653356075286865
+dad_error :  39.04089395785342
+ Init error: 61.41
+use time:  35.668558835983276
+dad_error :  56.23391546290377
+ Init error: 81.2
+use time:  35.114375591278076
+dad_error :  57.06621923501177
+2  6.59e+05  306.24 |  304.78    1.8   1372    38 |    0.09   0.29  -0.02   0.00
+ Init error: 96.21
+use time:  36.742265462875366
+dad_error :  93.85994864471368
+ Init error: 100.2
+use time:  35.53235864639282
+dad_error :  70.02641775612126
+ Init error: 138.3
+use time:  35.101178884506226
+dad_error :  103.30873282958026
+ Init error: 142.7
+use time:  35.67677855491638
+dad_error :  77.09184551346976
+ Init error: 148.1
+use time:  35.308815002441406
+dad_error :  51.008769866488144
+2  6.95e+05  307.18 |
+2  6.95e+05  307.18 |  307.18    1.2   1292    23 |    0.10   0.16  -0.03   0.00
+ Init error: 141.8
+use time:  41.335949420928955
+dad_error :  48.67967768200651
+ Init error: 109.6
+use time:  35.1294469833374
+dad_error :  43.177071864192826
+ Init error: 136.1
+use time:  35.61898922920227
+dad_error :  77.30424435074694
+ Init error: 142.8
+use time:  34.80801343917847
+dad_error :  62.6131703664137
+ Init error: 116.4
+use time:  35.35673403739929
+dad_error :  48.652936234353376
+2  7.29e+05  307.57 |
+2  7.29e+05  307.57 |  307.57    1.6   1272    28 |    0.11   0.24  -0.08   0.00
+ Init error: 113.7
+use time:  34.96563148498535
+dad_error :  63.32028026611681
+ Init error: 115.8
+use time:  39.610706090927124
+dad_error :  84.10767742114483
+ Init error: 134.9
+use time:  35.35686922073364
+dad_error :  51.20580804911778
+ Init error: 149.9
+use time:  34.99243927001953
+dad_error :  41.632792306540644
+ Init error: 148.9
+use time:  40.20556139945984
+dad_error :  39.61866163440342
+2  7.64e+05  307.57 |  306.83    1.6   1271    35 |    0.11   0.22   0.04   0.00
+ Init error: 128.5
+use time:  35.555479764938354
+dad_error :  59.209832465906786
+ Init error: 139.3
+use time:  35.140427112579346
+dad_error :  47.37452157269574
+ Init error: 92.8
+use time:  38.79566788673401
+dad_error :  80.71495014528375
+ Init error: 105
+use time:  35.22286891937256
+dad_error :  45.37633004521339
+ Init error: 125.4
+use time:  35.14412808418274
+dad_error :  47.574884311718016
+2  7.97e+05  307.57 |  306.69    1.6   1246    25 |    0.11   0.25   0.06   0.00
+ Init error: 94.8
+use time:  42.03765821456909
+dad_error :  46.72973300474663
+ Init error: 106.8
+use time:  35.403749227523804
+dad_error :  48.789345136978625
+ Init error: 93.41
+use time:  35.76357126235962
+dad_error :  69.81898109106362
+ Init error: 100.6
+use time:  34.706445932388306
+dad_error :  71.54816242915406
+ Init error: 116.4
+use time:  35.37973403930664
+dad_error :  69.66823336753215
+2  8.31e+05  308.31 |
+2  8.31e+05  308.31 |  308.31    1.9   1222    47 |    0.10   0.23   0.05   0.00
+ Init error: 132.8
+use time:  34.948768615722656
+dad_error :  113.57085465096058
+ Init error: 152.6
+use time:  37.42733836174011
+dad_error :  107.23222496280854
+ Init error: 133.7
+use time:  35.34130787849426
+dad_error :  94.46040974020352
+ Init error: 126.1
+use time:  35.256345987319946
+dad_error :  57.71314667986936
+ Init error: 110.2
+use time:  35.38838028907776
+dad_error :  104.87812970781734
+2  8.64e+05  308.31 |  307.64    1.0   1186    25 |    0.12   0.19   0.05   0.00
+ Init error: 112.6
+use time:  36.164069414138794
+dad_error :  109.5491166709887
+ Init error: 114
+use time:  35.276206254959106
+dad_error :  47.35059137158375
+ Init error: 122.1
+use time:  41.052767753601074
+dad_error :  93.50725331180683
+ Init error: 131.6
+use time:  35.402668714523315
+dad_error :  84.83862618720985
+ Init error: 105.6
+use time:  34.9891574382782
+dad_error :  82.59561712584511
+2  9.02e+05  308.31 |  308.24    0.9   1175    11 |    0.12   0.29   0.01   0.00
+ Init error: 106.2
+use time:  42.13891959190369
+dad_error :  84.38530833451037
+ Init error: 103.4
+use time:  35.283918142318726
+dad_error :  71.25162549337658
+ Init error: 103.5
+use time:  34.99375057220459
+dad_error :  75.15629198376061
+ Init error: 105.2
+use time:  39.35939860343933
+dad_error :  58.85104198114893
+ Init error: 102.4
+use time:  35.85734534263611
+dad_error :  89.8372653024179
+2  9.38e+05  308.31 |  289.55   92.6   1047   226 |    0.11   0.51  -0.01   0.00
+ Init error: 95.96
+use time:  35.006452798843384
+dad_error :  85.6954133229653
+ Init error: 85.17
+use time:  35.299089193344116
+dad_error :  66.58193065553489
+ Init error: 78.76
+use time:  35.60580492019653
+dad_error :  53.957899507834185
+ Init error: 81.95
+use time:  35.22774267196655
+dad_error :  53.63928054562735
+ Init error: 89.62
+use time:  36.51517915725708
+dad_error :  49.32700679475723
+2  9.73e+05  308.31 |  193.21  153.2    839   302 |    0.12   0.39   0.07   0.00
+ Init error: 87.79
+use time:  35.47631859779358
+dad_error :  65.09285913054644
+ Init error: 90.02
+use time:  35.20624375343323
+dad_error :  86.28626000879657
+ Init error: 93.1
+use time:  34.93737721443176
+dad_error :  81.5970413726267
+ Init error: 86.06
+use time:  35.021708488464355
+dad_error :  71.12504648833861
+ Init error: 98.05
+use time:  35.18569564819336
+dad_error :  64.36610855982472
+ Init error: 97.61
+use time:  35.47193217277527
+dad_error :  73.19208643163502
+2  1.01e+06  308.31 |  194.17  154.4    821   297 |    0.11   0.40   0.00   0.00
+ Init error: 84.57
+use time:  35.684531688690186
+dad_error :  61.03698860792814
+ Init error: 74.62
+use time:  35.37164115905762
+dad_error :  62.38036501855772
+ Init error: 79.42
+use time:  34.95637392997742
+dad_error :  53.516402810917555
+ Init error: 78.37
+use time:  34.69531059265137
+dad_error :  67.72568328001829
+ Init error: 73.67
+use time:  35.24592900276184
+dad_error :  44.06752561923561
+ Init error: 71.22
+use time:  35.4119017124176
+dad_error :  59.51422582598189
+2  1.05e+06  308.31 |  173.09  178.5    714   306 |    0.08   1.14   0.10   0.00
+ Init error: 53.97
+use time:  34.67932200431824
+dad_error :  42.27091890868276
+ Init error: 60.77
+use time:  35.470988035202026
+dad_error :  46.93480605980096
+ Init error: 84.24
+use time:  35.365909814834595
+dad_error :  40.290378614727466
+ Init error: 56.51
+use time:  36.177234411239624
+dad_error :  43.821493900598085
+ Init error: 71.45
+use time:  35.6798677444458
+dad_error :  70.31557127751692
+2  1.09e+06  308.31 |  185.46  161.7    697   277 |    0.10   0.75   0.11   0.00
+ Init error: 81.2
+use time:  35.26159906387329
+dad_error :  50.350795980923465
+ Init error: 79.8
+use time:  35.62756705284119
+dad_error :  56.034406369328195
+ Init error: 72.13
+use time:  38.77382040023804
+dad_error :  48.47785887136201
+ Init error: 77.89
+use time:  35.20998239517212
+dad_error :  70.5400512268996
+ Init error: 69.44
+use time:  35.20167660713196
+dad_error :  61.90284057993287
+2  1.12e+06  308.31 |  179.98  167.5    655   307 |    0.12   0.72   0.11   0.00
+ Init error: 97.63
+use time:  37.02044463157654
+dad_error :  70.05257849215975
+ Init error: 76.26
+use time:  36.50527906417847
+dad_error :  48.79979301038173
+ Init error: 70.16
+use time:  36.22660851478577
+dad_error :  62.89659553848447
+ Init error: 67.95
+use time:  40.722601890563965
+dad_error :  37.95339852868744
+ Init error: 70.96
+use time:  35.10539412498474
+dad_error :  31.99064713389535
+ Init error: 67.69
+use time:  35.19653797149658
+dad_error :  67.69128936658156
+2  1.16e+06  308.31 |  255.73  123.6    806   195 |    0.08   1.48   0.16   0.00
+ Init error: 89.52
+use time:  34.78006291389465
+dad_error :  83.04847335877514
+ Init error: 66.15
+use time:  35.350586891174316
+dad_error :  65.52129247917068
+ Init error: 72.61
+use time:  35.1538770198822
+dad_error :  55.11603352021521
+ Init error: 71.27
+use time:  35.23674464225769
+dad_error :  62.447058134573986
+ Init error: 78.2
+use time:  36.56184935569763
+dad_error :  40.52202688378986
+2  1.20e+06  308.31 |  168.86  184.5    606   331 |    0.10   1.37   0.03   0.00
+ Init error: 105.6
+use time:  36.173054695129395
+dad_error :  91.46267795082392
+ Init error: 92.75
+use time:  34.9346821308136
+dad_error :  34.82967994089862
+ Init error: 85.7
+use time:  42.86500692367554
+dad_error :  69.54225773337524
+ Init error: 95.84
+use time:  36.162968158721924
+dad_error :  52.486118369938325
+ Init error: 71.56
+use time:  35.85658836364746
+dad_error :  38.85705562340391
+2  1.23e+06  308.31 |  258.16  122.4    781   188 |    0.09   1.34   0.00   0.00
+ Init error: 77.71
+use time:  38.42401885986328
+dad_error :  50.50465086374844
+ Init error: 93.39
+use time:  35.46919107437134
+dad_error :  45.81364966151519
+ Init error: 90.81
+use time:  35.322275161743164
+dad_error :  60.670041500430926
+ Init error: 69.36
+use time:  37.843085050582886
+dad_error :  45.103966510386606
+ Init error: 107.3
+use time:  35.56205773353577
+dad_error :  66.29677736860567
+2  1.26e+06  308.31 |  168.72  131.6    684   208 |    0.11   1.14   0.03   0.00
+ Init error: 75.7
+use time:  35.62468934059143
+dad_error :  59.06801498424596
+ Init error: 88.52
+use time:  38.31355428695679
+dad_error :  51.19163884518767
+ Init error: 90.98
+use time:  35.01062273979187
+dad_error :  43.81294331667037
+ Init error: 78.34
+use time:  35.397762298583984
+dad_error :  60.24730964229899
+ Init error: 87.48
+use time:  36.374547243118286
+dad_error :  50.48077610674984
+2  1.30e+06  308.31 |  181.94  165.7    641   282 |    0.10   1.45   0.16   0.00
+ Init error: 99.35
+use time:  35.23653054237366
+dad_error :  77.88198045071282
+ Init error: 92.92
+use time:  35.24021244049072
+dad_error :  79.52631296217834
+ Init error: 99.84
+use time:  34.91671013832092
+dad_error :  63.96724896041819
+ Init error: 78.63
+use time:  35.53482007980347
+dad_error :  57.632344891186555
+ Init error: 90.42
+use time:  35.260180950164795
+dad_error :  82.22875404265926
+ Init error: 94.01
+use time:  35.45332169532776
+dad_error :  64.19038647411395
+2  1.34e+06  308.31 |  163.74  143.3    620   232 |    0.11   1.14   0.03   0.00
+ Init error: 81.48
+use time:  35.7291522026062
+dad_error :  51.357712979042375
+ Init error: 71.26
+use time:  35.70852518081665
+dad_error :  43.65523437178556
+ Init error: 105.2
+use time:  34.82221603393555
+dad_error :  84.14653264399414
+ Init error: 82.78
+use time:  40.65752840042114
+dad_error :  73.96169621379809
+ Init error: 96.13
+use time:  35.99943804740906
+dad_error :  62.7967068373984
+2  1.37e+06  308.31 |   79.15  123.9    490   211 |    0.11   1.08   0.06   0.00
+ Init error: 100.9
+use time:  34.88494515419006
+dad_error :  42.9293061297216
+ Init error: 109.2
+use time:  36.2512104511261
+dad_error :  108.51108295305131
+ Init error: 101.3
+use time:  35.19913625717163
+dad_error :  51.03627192285831
+ Init error: 86.11
+use time:  35.16788387298584
+dad_error :  50.01062102151352
+ Init error: 86.83
+use time:  40.569133281707764
+dad_error :  42.53559027030312
+2  1.41e+06  308.31 |   98.44  118.2    615   207 |    0.13   0.96   0.04   0.00
+ Init error: 95.08
+use time:  35.27236080169678
+dad_error :  62.57118900283571
+ Init error: 75.7
+use time:  35.445600748062134
+dad_error :  57.99750665383394
+ Init error: 72.26
+use time:  41.47591304779053
+dad_error :  49.271040965070505
+ Init error: 81.1
+use time:  36.24169421195984
+dad_error :  81.10309869518896
+ Init error: 84.09
+use time:  35.73841571807861
+dad_error :  62.99194292705914
+2  1.44e+06  308.31 |  161.16   89.7    663   131 |    0.11   1.03   0.06   0.00
+ Init error: 71
+use time:  43.857781648635864
+dad_error :  43.95498733010864
+ Init error: 100.9
+use time:  35.954004526138306
+dad_error :  93.54169196291926
+ Init error: 96.25
+use time:  35.71680951118469
+dad_error :  79.31691802781104
+ Init error: 85.83
+use time:  36.082605838775635
+dad_error :  55.092658642291845
+ Init error: 79.69
+use time:  35.52722764015198
+dad_error :  42.62784095301249
+2  1.47e+06  308.31 |  187.53  167.7    603   265 |    0.13   1.01   0.02   0.00
+ Init error: 108.4
+use time:  35.57244825363159
+dad_error :  63.473129593923275
+ Init error: 88.39
+use time:  35.173381090164185
+dad_error :  45.00830168304921
+ Init error: 77.6
+use time:  35.27188777923584
+dad_error :  70.80868911791666
+ Init error: 93.87
+use time:  35.400789976119995
+dad_error :  51.30645504421885
+ Init error: 123.2
+use time:  36.03582787513733
+dad_error :  51.464623299213926
+2  1.51e+06  308.31 |  250.64  142.2    696   231 |    0.16   0.91   0.08   0.00
+ Init error: 112.4
+use time:  35.379204750061035
+dad_error :  78.65370827258903
+ Init error: 100.7
+use time:  34.67069435119629
+dad_error :  56.785790609963755
+ Init error: 93.36
+use time:  35.27607178688049
+dad_error :  43.387231496895645
+ Init error: 96.77
+use time:  35.54064130783081
+dad_error :  54.42194629969583
+ Init error: 103.7
+use time:  34.82486891746521
+dad_error :  72.80494909285521
+2  1.54e+06  308.31 |  160.16  134.6    600   176 |    0.15   0.74   0.07   0.00
+ Init error: 87.42
+use time:  35.783610105514526
+dad_error :  36.05970209094126
+ Init error: 114.2
+use time:  35.11861038208008
+dad_error :  74.34520977413516
+ Init error: 81.38
+use time:  34.88265943527222
+dad_error :  55.36908551447916
+ Init error: 103.1
+use time:  35.64173412322998
+dad_error :  76.22076797983962
+2  1.57e+06  308.31 |   49.11  138.6    375   208 |    0.12   1.12  -0.02   0.00
+ Init error: 91.82
+use time:  35.448524475097656
+dad_error :  57.95480886894508
+ Init error: 87.55
+use time:  41.1373016834259
+dad_error :  44.887792448796674
+ Init error: 89.97
+use time:  35.07460165023804
+dad_error :  87.69111191139746
+ Init error: 99.37
+use time:  35.066303968429565
+dad_error :  68.07520443638845
+2  1.60e+06  308.31 |  247.31  149.3    669   217 |    0.15   0.84  -0.05   0.00
+ Init error: 98.91
+use time:  35.2817223072052
+dad_error :  82.24547102840152
+ Init error: 97.7
+use time:  35.509154319763184
+dad_error :  51.415471790616294
+ Init error: 86.36
+use time:  34.722023010253906
+dad_error :  50.07515272141136
+ Init error: 98.49
+use time:  36.61727499961853
+dad_error :  53.687320379395466
+ Init error: 78.85
+use time:  35.76065444946289
+dad_error :  42.682036667631905
+2  1.63e+06  308.31 |  255.29  133.5    679   185 |    0.14   0.98   0.08   0.00
+ Init error: 92.64
+use time:  35.651313066482544
+dad_error :  44.807827309749484
+ Init error: 82.35
+use time:  35.426570892333984
+dad_error :  81.9674366304516
+ Init error: 97.02
+use time:  36.26382780075073
+dad_error :  51.322812378609086
+ Init error: 78.31
+use time:  35.89071488380432
+dad_error :  38.570474283891194
+2  1.66e+06  308.31 |  281.78   80.5    726    84 |    0.17   0.53  -0.00   0.00
+ Init error: 86.68
+use time:  35.5947585105896
+dad_error :  64.87996357551843
+ Init error: 85.14
+use time:  38.43457341194153
+dad_error :  60.76118279226597
+ Init error: 104.4
+use time:  35.24064111709595
+dad_error :  51.03864898791254
+ Init error: 90.86
+use time:  35.210490703582764
+dad_error :  59.123996338128315
+2  1.68e+06  308.31 |  223.05  123.1    638   138 |    0.13   1.06   0.05   0.00
+ Init error: 86.92
+use time:  35.39462614059448
+dad_error :  81.18642268919254
+ Init error: 86.92
+use time:  35.23281908035278
+dad_error :  46.102804286421176
+ Init error: 91.41
+use time:  34.97106075286865
+dad_error :  64.06136615519762
+ Init error: 101.1
+use time:  35.31215715408325
+dad_error :  81.07098859481192
+ Init error: 87.49
+use time:  35.85912013053894
+dad_error :  53.613694176143966
+2  1.72e+06  308.31 |  291.30   64.4    704    43 |    0.12   1.49  -0.02   0.00
+ Init error: 104.9
+use time:  38.788079261779785
+dad_error :  57.944023155541956
+ Init error: 69.18
+use time:  35.35539269447327
+dad_error :  63.634730846440775
+ Init error: 107.5
+use time:  34.9124870300293
+dad_error :  33.21582677820038
+ Init error: 108.7
+use time:  35.5892972946167
+dad_error :  59.8191214995872
+ Init error: 90.02
+use time:  35.35791373252869
+dad_error :  50.31892687501977
+2  1.75e+06  308.31 |  288.81   90.8    686   107 |    0.16   1.01  -0.02   0.00
+ Init error: 101.4
+use time:  34.871983766555786
+dad_error :  51.52917823703362
+ Init error: 101
+use time:  35.38490700721741
+dad_error :  59.65354792998694
+ Init error: 114.9
+use time:  35.13643193244934
+dad_error :  101.59340803991341
+ Init error: 112.9
+use time:  42.00141382217407
+dad_error :  89.14708797823752
+2  1.78e+06  308.31 |  221.28  126.0    614   140 |    0.17   0.86  -0.01   0.00
+ Init error: 81.98
+use time:  36.22795867919922
+dad_error :  43.791515924435814
+ Init error: 98.35
+use time:  35.29625582695007
+dad_error :  89.44513510205314
+ Init error: 98.68
+use time:  35.61250615119934
+dad_error :  49.98326325765751
+ Init error: 90.69
+use time:  35.66220140457153
+dad_error :  76.75624685455301
+2  1.81e+06  308.31 |  275.01   94.4    687   109 |    0.15   1.14  -0.01   0.00
+ Init error: 82.49
+use time:  37.38973307609558
+dad_error :  55.35462715969412
+ Init error: 91.52
+use time:  35.67537307739258
+dad_error :  55.231361300396884
+ Init error: 109.4
+use time:  35.8625385761261
+dad_error :  58.22377300307813
+ Init error: 100.1
+use time:  38.464587688446045
+dad_error :  37.946372349618905
+ Init error: 107.3
+use time:  35.21334719657898
+dad_error :  36.05594873270464
+2  1.84e+06  313.65 |
+2  1.84e+06  313.65 |  313.65   29.6    722    11 |    0.14   0.83   0.00   0.00
+ Init error: 95.53
+use time:  35.230854511260986
+dad_error :  33.9389322821591
+ Init error: 86.27
+use time:  35.395899534225464
+dad_error :  36.99155213222157
+ Init error: 100.8
+use time:  35.430869817733765
+dad_error :  52.740497738114065
+ Init error: 114.3
+use time:  35.09211325645447
+dad_error :  38.86992549331313
+2  1.87e+06  313.65 |  295.07   45.4    793    46 |    0.20   0.67   0.02   0.00
+ Init error: 131.7
+use time:  35.5651957988739
+dad_error :  50.5760470774345
+ Init error: 114.2
+use time:  35.404786586761475
+dad_error :  69.55133111420339
+ Init error: 108.8
+use time:  35.77582335472107
+dad_error :  70.99182592984627
+ Init error: 97.59
+use time:  36.18093276023865
+dad_error :  39.12641076338612
+2  1.89e+06  313.65 |  256.66  127.2    651   174 |    0.13   1.01  -0.05   0.00
+ Init error: 88.03
+use time:  35.36324405670166
+dad_error :  38.62485711678524
+ Init error: 112.5
+use time:  35.639086961746216
+dad_error :  42.50147608954917
+ Init error: 118.3
+use time:  35.703054904937744
+dad_error :  33.60645345065056
+ Init error: 124.5
+use time:  41.23560810089111
+dad_error :  37.846594123374
+ Init error: 97.58
+use time:  35.77496290206909
+dad_error :  59.552542720678325
+2  1.93e+06  320.46 |
+2  1.93e+06  320.46 |  320.46    0.6    699    13 |    0.19   0.82   0.10   0.00
+ Init error: 122.2
+use time:  35.206435441970825
+dad_error :  55.007683684856616
+ Init error: 104.2
+use time:  36.24887657165527
+dad_error :  31.546071991369384
+ Init error: 128.4
+use time:  35.48676419258118
+dad_error :  48.76811653690498
+ Init error: 108.8
+use time:  34.98202037811279
+dad_error :  43.68978824126021
+2  1.95e+06  320.53 |
+2  1.95e+06  320.53 |  320.53    0.7    696     9 |    0.17   1.33   0.03   0.00
+ Init error: 143.6
+use time:  35.58449959754944
+dad_error :  68.08536519066249
+ Init error: 81.99
+use time:  35.336289405822754
+dad_error :  36.348941495643544
+ Init error: 90.59
+use time:  36.123087644577026
+dad_error :  81.73538872591999
+ Init error: 114.6
+use time:  36.10462760925293
+dad_error :  68.65971567438623
+2  1.98e+06  320.53 |  275.46  104.4    657   135 |    0.16   0.95   0.01   0.00
+ Init error: 115.6
+use time:  35.23231601715088
+dad_error :  39.91221007687381
+ Init error: 105.9
+use time:  35.838640213012695
+dad_error :  66.95772284413565
+ Init error: 108.7
+use time:  35.69804000854492
+dad_error :  49.084791619350554
+ Init error: 115.7
+use time:  34.797940254211426
+dad_error :  61.71175837180355
+ Init error: 108.1
+use time:  36.36008810997009
+dad_error :  36.28784399015787
+2  2.01e+06  320.53 |  318.84    2.4    736    39 |    0.17   0.78   0.07   0.00
+ Init error: 119.1
+use time:  35.542360067367554
+dad_error :  54.79037803401366
+ Init error: 103.9
+use time:  35.16662406921387
+dad_error :  45.33394221326901
+ Init error: 117.7
+use time:  38.220786571502686
+dad_error :  39.207439357012106
+ Init error: 125.5
+use time:  35.364827394485474
+dad_error :  88.34568871919166
+ Init error: 136.6
+use time:  35.274911880493164
+dad_error :  65.95921579682016
+2  2.05e+06  320.53 |  320.27    0.5    687     9 |    0.17   0.67   0.02   0.00
+ Init error: 148.1
+use time:  40.433223724365234
+dad_error :  65.17357282526949
+ Init error: 130.8
+use time:  35.40759515762329
+dad_error :  39.48415179674797
+ Init error: 132.7
+use time:  35.47560954093933
+dad_error :  60.4659789528165
+ Init error: 130.6
+use time:  38.644508838653564
+dad_error :  47.40802141507815
+ Init error: 116.3
+use time:  35.98059153556824
+dad_error :  43.840563770478454
+2  2.08e+06  320.53 |  305.56   58.4    679    61 |    0.20   0.91   0.00   0.00
+ Init error: 137.7
+use time:  35.57169198989868
+dad_error :  41.75232026404714
+ Init error: 103.9
+use time:  38.81963896751404
+dad_error :  49.88746770869565
+ Init error: 126.2
+use time:  35.73456621170044
+dad_error :  33.29639804054181
+ Init error: 125.5
+use time:  35.91477727890015
+dad_error :  48.60734454800023
+ Init error: 128.3
+use time:  35.358354330062866
+dad_error :  55.804288380286444
+2  2.12e+06  320.53 |  271.52   99.8    636    91 |    0.20   0.86   0.03   0.00
+ Init error: 128.2
+use time:  35.384811878204346
+dad_error :  58.39861437124236
+ Init error: 122.6
+use time:  35.36423087120056
+dad_error :  32.35892766078639
+ Init error: 83.56
+use time:  35.05151081085205
+dad_error :  49.42974983744132
+ Init error: 103.1
+use time:  35.627084732055664
+dad_error :  26.92461677099018
+ Init error: 111.2
+use time:  35.78632950782776
+dad_error :  19.396020258847933
+ Init error: 110.4
+use time:  35.41322946548462
+dad_error :  28.717395446021026
+2  2.15e+06  320.53 |  304.99   64.1    666    70 |    0.19   1.07   0.06   0.00
+ Init error: 97.08
+use time:  35.64584732055664
+dad_error :  31.567132309754165
+ Init error: 107.4
+use time:  35.548444747924805
+dad_error :  37.37958422800105
+ Init error: 124.1
+use time:  34.862351417541504
+dad_error :  51.20007661388503
+ Init error: 105.9
+use time:  41.53741908073425
+dad_error :  38.53979211678113
+ Init error: 100.1
+use time:  36.02757406234741
+dad_error :  31.425941141581475
+2  2.19e+06  320.53 |  296.48   51.1    673    14 |    0.22   0.76   0.09   0.00
+ Init error: 126.4
+use time:  35.21683859825134
+dad_error :  33.65704692968484
+ Init error: 89.96
+use time:  36.476335763931274
+dad_error :  32.77824356142331
+ Init error: 112.5
+use time:  35.85687255859375
+dad_error :  34.62502183733227
+ Init error: 134.4
+use time:  35.72329640388489
+dad_error :  47.345332242676214
+ Init error: 99.49
+use time:  34.98089933395386
+dad_error :  50.08880103614425
+2  2.22e+06  320.53 |  298.99   85.7    663   115 |    0.20   0.82   0.03   0.00
+ Init error: 107.8
+use time:  35.28716516494751
+dad_error :  37.35070075190601
+ Init error: 98.37
+use time:  35.43202090263367
+dad_error :  48.614535829232295
+ Init error: 107.5
+use time:  34.91169190406799
+dad_error :  59.21736737908489
+ Init error: 83.69
+use time:  35.74534249305725
+dad_error :  27.18688733428597
+ Init error: 107.8
+use time:  35.47583770751953
+dad_error :  23.87623954382567
+2  2.26e+06  320.53 |  253.08  138.3    583   175 |    0.20   1.10  -0.00   0.00
+ Init error: 96.29
+use time:  34.94845938682556
+dad_error :  38.70484415403488
+ Init error: 93.69
+use time:  35.56024241447449
+dad_error :  37.30171474283757
+ Init error: 97.07
+use time:  35.40959286689758
+dad_error :  78.62593648692877
+ Init error: 94.46
+use time:  34.89889335632324
+dad_error :  41.47426154263916
+ Init error: 105.6
+use time:  35.57309174537659
+dad_error :  25.267161577300058
+2  2.29e+06  320.53 |  283.95   81.7    639    80 |    0.20   1.31  -0.08   0.00
+ Init error: 89.19
+use time:  35.376941204071045
+dad_error :  30.42080559351098
+ Init error: 82.85
+use time:  34.97885751724243
+dad_error :  28.118965862120067
+ Init error: 85.94
+use time:  35.464170932769775
+dad_error :  34.83593194858777
+ Init error: 80.2
+use time:  35.535521030426025
+dad_error :  41.00363949936128
+ Init error: 70.63
+use time:  34.94865345954895
+dad_error :  28.1179392836992
+2  2.32e+06  320.53 |  255.79  133.4    579   160 |    0.20   0.99   0.08   0.00
+ Init error: 69.44
+use time:  35.379392862319946
+dad_error :  35.65800717227664
+ Init error: 87.06
+use time:  35.39007234573364
+dad_error :  33.750339950705865
+ Init error: 66.74
+use time:  35.148658990859985
+dad_error :  31.569951596351814
+ Init error: 93.22
+use time:  38.24100685119629
+dad_error :  35.820634966947694
+ Init error: 65.36
+use time:  35.66874980926514
+dad_error :  22.737863001506575
+2  2.36e+06  320.53 |  270.26  103.2    604   105 |    0.17   1.62  -0.01   0.00
+ Init error: 68.69
+use time:  35.351621866226196
+dad_error :  28.313858255834724
+ Init error: 110
+use time:  36.91539001464844
+dad_error :  50.61357977498713
+ Init error: 92.19
+use time:  35.51679015159607
+dad_error :  40.57135120698389
+ Init error: 97.96
+use time:  35.321040391922
+dad_error :  26.798197686606063
+ Init error: 89.55
+use time:  35.06901526451111
+dad_error :  29.510273329718036
+ Init error: 80.73
+use time:  35.53560972213745
+dad_error :  24.96649358953715
+2  2.40e+06  320.53 |  310.54   45.5    643    30 |    0.21   1.02   0.09   0.00
+ Init error: 103.9
+use time:  35.20821237564087
+dad_error :  30.173568976513504
+ Init error: 78.65
+use time:  35.58895659446716
+dad_error :  19.970337915083107
+ Init error: 111.9
+use time:  35.718690633773804
+dad_error :  31.263252359885335
+ Init error: 93.29
+use time:  35.30087900161743
+dad_error :  35.05944163412906
+ Init error: 88.13
+use time:  35.235342264175415
+dad_error :  23.408552587409034
+2  2.43e+06  320.53 |  300.36   59.9    633    41 |    0.24   0.61   0.03   0.00
+ Init error: 106.5
+use time:  38.79860019683838
+dad_error :  30.42486736825399
+ Init error: 95.5
+use time:  35.55726170539856
+dad_error :  85.1737626935298
+ Init error: 108.7
+use time:  35.635374307632446
+dad_error :  24.490699660945676
+ Init error: 111.8
+use time:  38.27844309806824
+dad_error :  54.93530596645725
+ Init error: 103.8
+use time:  35.61425733566284
+dad_error :  43.243834575058216
+2  2.46e+06  320.53 |  264.05  119.2    584   124 |    0.21   1.19   0.10   0.00
+ Init error: 114.7
+use time:  35.66330599784851
+dad_error :  51.011601318428205
+ Init error: 118
+use time:  34.79662084579468
+dad_error :  44.70297950550006
+ Init error: 119
+use time:  35.49168658256531
+dad_error :  41.42398749625001
+ Init error: 140.1
+use time:  35.25243854522705
+dad_error :  46.49342203777386
+ Init error: 118.9
+use time:  35.277865171432495
+dad_error :  60.03828418600857
+ Init error: 140.8
+use time:  35.71636486053467
+dad_error :  46.91102053483616
+2  2.50e+06  322.76 |
+2  2.50e+06  322.76 |  322.76    0.4    648     5 |    0.21   1.04   0.01   0.00
+ Init error: 142
+use time:  35.76753544807434
+dad_error :  41.7678634106348
+ Init error: 127.1
+use time:  35.15090990066528
+dad_error :  23.682679265816517
+ Init error: 140.3
+use time:  35.66859245300293
+dad_error :  26.528889468866247
+ Init error: 137.8
+use time:  35.368385314941406
+dad_error :  27.06810165093911
+ Init error: 135.7
+use time:  35.08525252342224
+dad_error :  29.978385764325754
+2  2.54e+06  322.76 |  321.50    2.2    644    10 |    0.21   1.06  -0.01   0.00
+ Init error: 122.9
+use time:  40.279794692993164
+dad_error :  54.833478026578376
+ Init error: 118.1
+use time:  35.435500383377075
+dad_error :  34.96095395861456
+ Init error: 112.8
+use time:  35.05220174789429
+dad_error :  65.94147805864056
+ Init error: 133.3
+use time:  40.593929052352905
+dad_error :  40.55177833089343
+ Init error: 113.3
+use time:  35.42699670791626
+dad_error :  22.342279104265234
+2  2.57e+06  322.76 |  286.43   74.8    610    47 |    0.20   0.91   0.04   0.00
+ Init error: 132.4
+use time:  35.32016086578369
+dad_error :  64.64207019433239
+ Init error: 126.9
+use time:  38.81294631958008
+dad_error :  85.33813765232605
+ Init error: 136.2
+use time:  35.28870677947998
+dad_error :  59.191501888144
+ Init error: 128.8
+use time:  35.35733771324158
+dad_error :  48.0303325387278
+ Init error: 117.1
+use time:  34.92849516868591
+dad_error :  38.11825914460253
+2  2.61e+06  322.76 |  272.04  100.1    593    93 |    0.22   1.04   0.01   0.00
+ Init error: 111.9
+use time:  35.41024589538574
+dad_error :  25.84363529475913
+ Init error: 153.7
+use time:  35.22085189819336
+dad_error :  64.06945023986823
+ Init error: 144.9
+use time:  34.90544581413269
+dad_error :  65.77460151404023
+ Init error: 130.5
+use time:  35.66776156425476
+dad_error :  50.03601408248714
+ Init error: 124.9
+use time:  35.3758111000061
+dad_error :  38.49892752755047
+ Init error: 111
+use time:  34.78913497924805
+dad_error :  50.893130792224206
+2  2.65e+06  322.76 |  322.55    0.7    644    10 |    0.21   1.15   0.03   0.00
+ Init error: 93.12
+use time:  35.710630893707275
+dad_error :  22.040568272880265
+ Init error: 110.5
+use time:  35.52566337585449
+dad_error :  26.188526487113066
+ Init error: 124.7
+use time:  35.01867985725403
+dad_error :  34.40649075065703
+ Init error: 92.68
+use time:  39.65894103050232
+dad_error :  19.562187854108803
+ Init error: 105.8
+use time:  35.47791337966919
+dad_error :  55.774893598299315
+2  2.68e+06  322.76 |  296.22   54.8    629    13 |    0.22   1.19   0.02   0.00
+ Init error: 99.49
+use time:  35.183141469955444
+dad_error :  29.69952049349522
+ Init error: 95.51
+use time:  39.87994933128357
+dad_error :  25.755109596230508
+ Init error: 92.47
+use time:  35.692688941955566
+dad_error :  35.496629202442875
+ Init error: 94.97
+use time:  35.60582399368286
+dad_error :  28.653405592367797
+ Init error: 92.37
+use time:  35.27676010131836
+dad_error :  43.77240357487085
+2  2.71e+06  323.38 |
+2  2.71e+06  323.38 |  323.38    0.6    630     5 |    0.21   1.12   0.12   0.00
+ Init error: 95.89
+use time:  35.80671286582947
+dad_error :  31.151235810891666
+ Init error: 107.7
+use time:  35.26724457740784
+dad_error :  33.56397871244839
+ Init error: 86.89
+use time:  37.03489279747009
+dad_error :  34.9243251560815
+ Init error: 94
+use time:  35.25399470329285
+dad_error :  67.36708295351005
+ Init error: 99.46
+use time:  35.64554047584534
+dad_error :  26.73265599761783
+2  2.75e+06  323.38 |  308.17   60.4    613    55 |    0.24   0.83  -0.01   0.00
+ Init error: 92.12
+use time:  38.443317890167236
+dad_error :  31.932159365181832
+ Init error: 85.58
+use time:  35.09770584106445
+dad_error :  44.03147368972641
+ Init error: 95.79
+use time:  35.08501195907593
+dad_error :  32.850187188611805
+ Init error: 95.5
+use time:  34.768972396850586
+dad_error :  58.72056543300286
+ Init error: 96.81
+use time:  35.38619017601013
+dad_error :  48.41955741387294
+2  2.78e+06  323.38 |  323.31    0.5    640     8 |    0.21   1.31   0.04   0.00
+ Init error: 114.4
+use time:  35.63523554801941
+dad_error :  30.44859505726269
+ Init error: 101
+use time:  35.006887435913086
+dad_error :  41.791131260800164
+ Init error: 114
+use time:  35.639195680618286
+dad_error :  66.18908701198237
+ Init error: 99.31
+use time:  35.13152027130127
+dad_error :  33.374529850116375
+ Init error: 101.6
+use time:  35.06603217124939
+dad_error :  37.93834201439471
+2  2.81e+06  323.38 |  270.08  109.1    570   114 |    0.21   1.36   0.07   0.00
+ Init error: 107
+use time:  35.516419410705566
+dad_error :  22.818357270345587
+ Init error: 106.7
+use time:  35.35942339897156
+dad_error :  28.403949687859864
+ Init error: 129.8
+use time:  35.06192111968994
+dad_error :  34.45114316329385
+ Init error: 114.9
+use time:  39.65113162994385
+dad_error :  33.440383433360914
+ Init error: 115.1
+use time:  35.54901576042175
+dad_error :  41.87886538232943
+2  2.85e+06  323.38 |  267.75  112.9    566   117 |    0.23   0.80   0.03   0.00
+ Init error: 106.4
+use time:  35.7428092956543
+dad_error :  68.01543785978284
+ Init error: 89.81
+use time:  35.07355523109436
+dad_error :  28.288230877229882
+ Init error: 97.11
+use time:  35.04897093772888
+dad_error :  97.05591662200102
+ Init error: 98.7
+use time:  35.51069235801697
+dad_error :  32.62696992834664
+ Init error: 98.07
+use time:  34.94407629966736
+dad_error :  49.05834014237154
+2  2.88e+06  323.38 |  273.08  101.8    577    96 |    0.21   0.96   0.12   0.00
+ Init error: 81.4
+use time:  35.73488783836365
+dad_error :  22.07229515088661
+ Init error: 97.1
+use time:  35.37875819206238
+dad_error :  38.551599715165175
+ Init error: 113.7
+use time:  35.25376343727112
+dad_error :  23.901037971149858
+ Init error: 119.1
+use time:  35.21150541305542
+dad_error :  45.151269865329404
+ Init error: 99.63
+use time:  35.73784589767456
+dad_error :  38.14549521457363
+2  2.91e+06  323.38 |  311.44   50.7    616    41 |    0.20   1.60   0.08   0.00
+ Init error: 117.3
+use time:  35.344154834747314
+dad_error :  55.38453419660529
+ Init error: 99.92
+use time:  35.394808292388916
+dad_error :  59.21838214584686
+ Init error: 102.7
+use time:  35.179401874542236
+dad_error :  29.348350951628284
+ Init error: 101.1
+use time:  34.88761305809021
+dad_error :  38.11786959688321
+ Init error: 110.3
+use time:  41.076425313949585
+dad_error :  38.44417576852007
+2  2.95e+06  323.38 |  274.67   96.6    584    94 |    0.24   1.00  -0.04   0.00
+ Init error: 98.02
+use time:  35.64362835884094
+dad_error :  72.60708230362346
+ Init error: 83.25
+use time:  35.6355254650116
+dad_error :  23.54443332226213
+ Init error: 102.7
+use time:  38.61623668670654
+dad_error :  36.19386870410294
+ Init error: 92.52
+use time:  35.4358024597168
+dad_error :  69.01389763362019
+ Init error: 91.65
+use time:  35.17024111747742
+dad_error :  42.6128012328855
+2  2.98e+06  323.38 |  323.38    0.6    635     6 |    0.23   0.73   0.01   0.00
+ Init error: 96.68
+use time:  34.9190309047699
+dad_error :  81.17592504885113
+ Init error: 87.83
+use time:  35.43580913543701
+dad_error :  52.170354711573296
+ Init error: 98.72
+use time:  35.46009969711304
+dad_error :  51.135250961573725
+ Init error: 72.39
+use time:  35.07544279098511
+dad_error :  47.24519853236968
+ Init error: 86.09
+use time:  35.481964349746704
+dad_error :  40.02538783763962
+2  3.01e+06  323.38 |  304.91   76.4    601    86 |    0.19   1.60   0.00   0.00
+ Init error: 99.37
+use time:  35.25890803337097
+dad_error :  39.78418575834608
+ Init error: 104.5
+use time:  35.26288914680481
+dad_error :  42.65914475223066
+ Init error: 82.33
+use time:  35.44239330291748
+dad_error :  43.2794105364238
+ Init error: 95.02
+use time:  35.208959341049194
+dad_error :  30.252034262200656
+ Init error: 78.3
+use time:  34.98834228515625
+dad_error :  20.594278826930843
+2  3.05e+06  323.38 |  198.53  155.6    490   172 |    0.14   2.66   0.07   0.00
+ Init error: 95.62
+use time:  35.83058166503906
+dad_error :  35.32893364356008
+ Init error: 57.07
+use time:  35.350308656692505
+dad_error :  18.467126814193307
+ Init error: 73.45
+use time:  35.26127552986145
+dad_error :  34.46470754239724
+ Init error: 70.49
+use time:  40.98470616340637
+dad_error :  38.79382402116857
+ Init error: 70.29
+use time:  35.521939754486084
+dad_error :  23.61527107117007
+2  3.08e+06  323.38 |  264.07  116.3    577   131 |    0.20   1.33   0.01   0.00
+ Init error: 80.83
+use time:  35.307345390319824
+dad_error :  30.47074323264435
+ Init error: 74.79
+use time:  39.25940728187561
+dad_error :  40.62046753078678
+ Init error: 89.1
+use time:  35.99348330497742
+dad_error :  41.78941075143707
+ Init error: 105.9
+use time:  35.91195273399353
+dad_error :  46.14420557395877
+ Init error: 102.7
+use time:  41.2217013835907
+dad_error :  33.30150334646732
+2  3.11e+06  323.38 |  279.29   97.7    580    92 |    0.20   1.58   0.08   0.00
+ Init error: 88.68
+use time:  35.18755650520325
+dad_error :  21.197797721922395
+ Init error: 78.97
+use time:  35.690598011016846
+dad_error :  27.56006063900398
+ Init error: 96.31
+use time:  37.6570188999176
+dad_error :  29.647703162384666
+ Init error: 108.8
+use time:  35.5468213558197
+dad_error :  67.65026743552725
+ Init error: 94.39
+use time:  35.62121343612671
+dad_error :  26.450203893834797
+2  3.15e+06  323.38 |  263.38  110.7    569   113 |    0.21   1.16   0.09   0.00
+ Init error: 121.2
+use time:  41.525328397750854
+dad_error :  22.141562787967498
+ Init error: 117.9
+use time:  35.30931901931763
+dad_error :  26.482029246028034
+ Init error: 110.7
+use time:  35.32472085952759
+dad_error :  23.077035425720297
+ Init error: 96.49
+use time:  34.973148584365845
+dad_error :  29.492242762566367
+ Init error: 93.82
+use time:  35.582549810409546
+dad_error :  55.09552734516936
+2  3.18e+06  323.38 |  244.62   97.3    563    75 |    0.20   1.27   0.03   0.00
+ Init error: 92.94
+use time:  35.643211126327515
+dad_error :  32.87128500238759
+ Init error: 84.55
+use time:  35.069671869277954
+dad_error :  38.5240350202717
+ Init error: 98.76
+use time:  35.37014126777649
+dad_error :  80.12167460185832
+ Init error: 83.81
+use time:  35.24338102340698
+dad_error :  33.978597119271996
+ Init error: 82.58
+use time:  35.267695903778076
+dad_error :  44.92274655137358
+2  3.21e+06  323.38 |  322.13    0.5    625     6 |    0.20   1.09   0.09   0.00
+ Init error: 83.95
+use time:  35.164769649505615
+dad_error :  25.933819949612857
+ Init error: 91.47
+use time:  35.347020864486694
+dad_error :  56.54417922275407
+ Init error: 86.56
+use time:  35.1567177772522
+dad_error :  31.891578974511607
+ Init error: 87.51
+use time:  35.71307373046875
+dad_error :  23.711007802957578
+ Init error: 85.44
+use time:  35.705278396606445
+dad_error :  39.50251396130828
+2  3.25e+06  323.38 |  257.68   82.4    586    61 |    0.20   1.32   0.13   0.00
+ Init error: 83.6
+use time:  35.361751556396484
+dad_error :  53.17732588528493
+ Init error: 91.27
+use time:  37.852609395980835
+dad_error :  39.80853165620003
+ Init error: 97.56
+use time:  35.65301275253296
+dad_error :  43.40524870446514
+ Init error: 100.3
+use time:  35.29208469390869
+dad_error :  48.34631335674243
+ Init error: 97.12
+use time:  39.36542630195618
+dad_error :  41.23540798332706
+2  3.28e+06  323.38 |  185.19  126.2    517   124 |    0.20   1.14   0.03   0.00
+ Init error: 104.8
+use time:  35.712154150009155
+dad_error :  27.13674511623242
+ Init error: 129.4
+use time:  35.52571678161621
+dad_error :  79.91871651417803
+ Init error: 112.8
+use time:  38.45170211791992
+dad_error :  27.558172292191678
+ Init error: 106.4
+use time:  35.16245436668396
+dad_error :  46.067317761040776
+ Init error: 89.54
+use time:  35.292585134506226
+dad_error :  30.413994645674933
+2  3.31e+06  323.38 |  290.23   64.9    611    38 |    0.22   1.15  -0.01   0.00
+ Init error: 97.83
+use time:  35.15833353996277
+dad_error :  28.82826267500306
+ Init error: 79.14
+use time:  35.23892068862915
+dad_error :  56.32814233004627
+ Init error: 81.63
+use time:  35.21696949005127
+dad_error :  40.69437091414766
+ Init error: 96.06
+use time:  34.82213234901428
+dad_error :  35.443675753578184
+ Init error: 88.75
+use time:  35.24316668510437
+dad_error :  44.14838936558952
+ Init error: 77.54
+use time:  35.52739357948303
+dad_error :  28.815253810797657
+2  3.35e+06  323.38 |  252.27   94.0    579    91 |    0.18   1.58   0.01   0.00
+ Init error: 86.65
+use time:  35.119630575180054
+dad_error :  26.75917033802785
+ Init error: 88.85
+use time:  38.16819930076599
+dad_error :  39.72209331044854
+ Init error: 77.82
+use time:  35.23228454589844
+dad_error :  55.243220690662596
+ Init error: 70.82
+use time:  36.012587547302246
+dad_error :  46.074440542025066
+ Init error: 70.87
+use time:  38.78972864151001
+dad_error :  24.278785294798926
+2  3.39e+06  323.38 |  323.16    0.6    618     2 |    0.18   1.77   0.02   0.00
+ Init error: 95.48
+use time:  35.28776288032532
+dad_error :  48.25962750295891
+ Init error: 72.05
+use time:  35.132537841796875
+dad_error :  49.6829726070406
+ Init error: 89.5
+use time:  39.2545051574707
+dad_error :  47.27105192131207
+ Init error: 50.67
+use time:  35.65955471992493
+dad_error :  23.882054832309397
+ Init error: 80.41
+use time:  35.245418548583984
+dad_error :  25.890629926417052
+2  3.42e+06  323.38 |  164.85   82.0    501    71 |    0.20   1.49   0.09   0.00
+ Init error: 77.39
+use time:  35.30817675590515
+dad_error :  28.62751383432012
+ Init error: 68.99
+use time:  35.12890625
+dad_error :  49.124347332442106
+ Init error: 79.77
+use time:  35.360628604888916
+dad_error :  38.37911870093644
+ Init error: 66.74
+use time:  34.891074895858765
+dad_error :  56.492112966713265
+ Init error: 83.35
+use time:  35.17102766036987
+dad_error :  75.04041539937263
+ Init error: 68.96
+use time:  35.36814641952515
+dad_error :  30.12124462124131
+2  3.46e+06  323.38 |  265.74  116.2    555   125 |    0.15   2.21   0.03   0.00
+ Init error: 81.48
+use time:  35.732141733169556
+dad_error :  30.014716671363317
+ Init error: 62.72
+use time:  35.7269332408905
+dad_error :  26.24685630841205
+ Init error: 87.19
+use time:  35.23893857002258
+dad_error :  41.92229793125086
+ Init error: 89.74
+use time:  35.18645095825195
+dad_error :  27.31510442496599
+ Init error: 61.57
+use time:  40.24653625488281
+dad_error :  61.4480758839151
+2  3.49e+06  323.38 |  321.70    0.3    642     4 |    0.16   2.56   0.07   0.00
+ Init error: 85.19
+use time:  35.262511014938354
+dad_error :  21.336374883597376
+ Init error: 84.81
+use time:  35.40857648849487
+dad_error :  29.31013218064817
+ Init error: 94.86
+use time:  38.30613160133362
+dad_error :  19.91003185380282
+ Init error: 89.19
+use time:  35.452964782714844
+dad_error :  27.104978480457376
+ Init error: 101
+use time:  35.39930868148804
+dad_error :  65.67894808037582
+2  3.53e+06  323.38 |  272.82  102.9    570   107 |    0.22   1.08  -0.02   0.00
+ Init error: 105.3
+use time:  35.1462299823761
+dad_error :  47.0542477277211
+ Init error: 98.07
+use time:  35.24579095840454
+dad_error :  52.836971031575544
+ Init error: 85.2
+use time:  35.323391914367676
+dad_error :  35.29466182622195
+ Init error: 75.7
+use time:  35.21166658401489
+dad_error :  27.05429294947941
+ Init error: 101.1
+use time:  35.1657178401947
+dad_error :  49.048768565341646
+2  3.56e+06  323.38 |  319.08    3.6    683    56 |    0.22   1.53   0.02   0.00
+ Init error: 103.8
+use time:  35.4216685295105
+dad_error :  36.84797862931266
+ Init error: 73.23
+use time:  35.35164141654968
+dad_error :  28.549457081515712
+ Init error: 100.8
+use time:  35.388925075531006
+dad_error :  32.62806719339275
+ Init error: 103.2
+use time:  35.170494556427
+dad_error :  28.33713959739849
+ Init error: 103.2
+use time:  35.13560461997986
+dad_error :  43.48895487952322
+2  3.60e+06  323.38 |  243.53  102.0    565    87 |    0.22   1.39   0.07   0.00
+ Init error: 104.1
+use time:  42.41414189338684
+dad_error :  33.63486019508056
+ Init error: 101.2
+use time:  35.09861087799072
+dad_error :  39.21510826745498
+ Init error: 113.6
+use time:  35.44134783744812
+dad_error :  32.84121612400087
+ Init error: 115.3
+use time:  40.87827444076538
+dad_error :  30.58883287159515
+ Init error: 92.49
+use time:  35.18805718421936
+dad_error :  25.00791282071263
+2  3.63e+06  323.74 |
+2  3.63e+06  323.74 |  323.74    0.6    628     6 |    0.23   1.15  -0.01   0.00
+ Init error: 83.59
+use time:  34.8634090423584
+dad_error :  27.881468285845102
+ Init error: 110.7
+use time:  35.8456552028656
+dad_error :  42.09064830285631
+ Init error: 92.32
+use time:  35.228161573410034
+dad_error :  35.571852606949875
+ Init error: 109.8
+use time:  35.348318576812744
+dad_error :  34.900111718852195
+ Init error: 110.6
+use time:  37.953070402145386
+dad_error :  64.42338904791407
+2  3.66e+06  323.74 |  300.28   93.0    587   109 |    0.22   1.84  -0.01   0.00
+ Init error: 95.54
+use time:  35.29346680641174
+dad_error :  25.055663512259557
+ Init error: 114.5
+use time:  34.967875480651855
+dad_error :  50.12756278333705
+ Init error: 120.1
+use time:  41.08772015571594
+dad_error :  37.0025512323844
+ Init error: 101.8
+use time:  35.46623158454895
+dad_error :  39.801050259385406
+ Init error: 120.4
+use time:  35.74786925315857
+dad_error :  21.873771562492685
+2  3.70e+06  325.00 |
+2  3.70e+06  325.00 |  325.00    0.4    621     7 |    0.23   0.63  -0.01   0.00
+ Init error: 123.2
+use time:  39.35042214393616
+dad_error :  45.104640981661625
+ Init error: 111.6
+use time:  35.34254574775696
+dad_error :  48.834890863244524
+ Init error: 117.1
+use time:  35.44370698928833
+dad_error :  46.60860321828851
+ Init error: 96.37
+use time:  35.04765057563782
+dad_error :  32.66467964404537
+ Init error: 120.9
+use time:  35.51053500175476
+dad_error :  29.225312499261307
+2  3.73e+06  325.00 |  324.24    0.4    626     5 |    0.24   0.77  -0.01   0.00
+ Init error: 110.7
+use time:  35.35578227043152
+dad_error :  44.696355328785565
+ Init error: 100.2
+use time:  35.04358959197998
+dad_error :  36.25133466268839
+ Init error: 109.8
+use time:  35.458401918411255
+dad_error :  34.78052721453944
+ Init error: 97.54
+use time:  35.67357850074768
+dad_error :  26.245866885791777
+ Init error: 98.72
+use time:  35.14820981025696
+dad_error :  29.760744787440537
+2  3.76e+06  325.00 |  278.40   93.3    580    71 |    0.22   1.03   0.08   0.00
+ Init error: 96.86
+use time:  35.44970512390137
+dad_error :  75.00478005432136
+ Init error: 87.21
+use time:  35.33773875236511
+dad_error :  29.36052265708709
+ Init error: 102
+use time:  34.76738715171814
+dad_error :  44.99845610713331
+ Init error: 83.19
+use time:  38.86970138549805
+dad_error :  35.12674674032125
+ Init error: 88.5
+use time:  35.33019304275513
+dad_error :  25.205828567068327
+ Init error: 93.96
+use time:  35.34684634208679
+dad_error :  22.43541597338465
+2  3.80e+06  325.00 |  324.64    0.5    623     4 |    0.24   0.76   0.04   0.00
+ Init error: 93.65
+use time:  41.9793906211853
+dad_error :  35.843514093901994
+ Init error: 115
+use time:  35.51654005050659
+dad_error :  53.55610030357526
+ Init error: 85.48
+use time:  35.439685344696045
+dad_error :  63.277984779709186
+ Init error: 81.58
+use time:  35.92825651168823
+dad_error :  21.300884180418024
+ Init error: 107.4
+use time:  35.28912091255188
+dad_error :  39.23626950627121
+2  3.84e+06  325.00 |  324.66    0.4    631     7 |    0.24   0.76   0.12   0.00
+ Init error: 95.74
+use time:  35.46380400657654
+dad_error :  34.2646467831651
+ Init error: 83.39
+use time:  35.325998306274414
+dad_error :  59.242323000698434
+ Init error: 101.7
+use time:  35.54536032676697
+dad_error :  63.4106247993205
+ Init error: 113.2
+use time:  35.54861640930176
+dad_error :  34.45011876693847
+ Init error: 113.9
+use time:  35.50295329093933
+dad_error :  32.00832106060688
+ Init error: 99.9
+use time:  42.46445965766907
+dad_error :  42.00975009060922
+2  3.88e+06  325.00 |  288.54   73.3    592    49 |    0.22   1.06   0.03   0.00
+ Init error: 120.4
+use time:  35.37438654899597
+dad_error :  45.81962974643589
+ Init error: 83.59
+use time:  35.65274667739868
+dad_error :  23.74433952024041
+ Init error: 107.3
+use time:  35.18568778038025
+dad_error :  38.38152667665754
+ Init error: 110.3
+use time:  35.50622844696045
+dad_error :  35.436311266926126
+ Init error: 87.85
+use time:  35.18494367599487
+dad_error :  40.03835690071687
+ Init error: 80.79
+use time:  34.88580846786499
+dad_error :  36.292682184876945
+2  3.92e+06  325.54 |
+2  3.92e+06  325.54 |  325.54    0.6    621     7 |    0.18   1.32   0.01   0.00
+ Init error: 85.91
+use time:  38.006232261657715
+dad_error :  53.566096573973844
+ Init error: 87.76
+use time:  35.643903970718384
+dad_error :  27.83992116882876
+ Init error: 77.67
+use time:  35.37169885635376
+dad_error :  46.727946606797474
+ Init error: 89.56
+use time:  35.65519714355469
+dad_error :  28.931528086114504
+ Init error: 52.83
+use time:  36.28960156440735
+dad_error :  38.2860111791794
+2  3.95e+06  325.54 |  325.19    0.5    620     4 |    0.16   1.39   0.15   0.00
+ Init error: 83.63
+use time:  36.13756847381592
+dad_error :  50.37457234190705
+ Init error: 83.37
+use time:  35.86552357673645
+dad_error :  24.179938153786917
+ Init error: 91.64
+use time:  35.5921688079834
+dad_error :  70.53718071144424
+ Init error: 90.07
+use time:  36.21382761001587
+dad_error :  39.8039181196809
+ Init error: 77.97
+use time:  36.20093846321106
+dad_error :  47.6460413404412
+ Init error: 83.34
+use time:  36.34039497375488
+dad_error :  35.0222766756662
+2  3.99e+06  325.54 |  325.00    0.5    634     6 |    0.19   1.51   0.00   0.00
+ Init error: 71.73
+use time:  35.63375473022461
+dad_error :  26.493775503145866
+ Init error: 68.22
+use time:  35.75002193450928
+dad_error :  23.666377706869618
+| UsedTime: 77249 | SavedDir: ./result/BipedalWalker-v3_PPO_2
