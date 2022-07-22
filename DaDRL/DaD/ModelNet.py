@@ -44,6 +44,7 @@ class DynamicsModelDeltaWrapper(object):
         state_t1 = pyh.ensure_2d(state_t1)
         action_t = pyh.ensure_2d(action_t)
         # 输入时间T时刻的state与action，预测state差异
+
         inputs = np.hstack((state_t, action_t))
         # consider reward
         if state_t1.shape != state_t.shape:

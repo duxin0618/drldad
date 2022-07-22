@@ -9,3 +9,5 @@ class StaticFns:
         done = np.array([False]).repeat(len(obs))
         done = done[:,None]
         return done
+
+

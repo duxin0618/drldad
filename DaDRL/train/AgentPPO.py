@@ -94,7 +94,7 @@ class AgentPPO(AgentBase):
 
         self.states[0] = state
         last_done[0] = step_i
-        return self.convert_trajectory(traj_list, last_done), rewards, raw_rewards, get_action  # traj_list
+        return self.convert_trajectory(traj_list, last_done), rewards, raw_rewards  # traj_list
 
     def explore_vec_env(self, env, target_step, random_exploration = None) -> list:
         """

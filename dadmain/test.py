@@ -424,10 +424,10 @@ import torch
 # """
 
 import gym
-env = gym.make("Walker2d-v2")
-env.seed(0)
-print("state: ", env.reset())
-print("qpos: ", env.sim.data.qpos[:])
+# env = gym.make("Walker2d-v2")
+# env.seed(0)
+# print("state: ", env.reset())
+# print("qpos: ", env.sim.data.qpos[:])
 
 # print(env.sim.data)
 """
@@ -442,7 +442,23 @@ qpos:  [-4.45639944e-03  1.25465391e+00  1.32690946e-03 -2.09982656e-03
 """
 
 
-
+env = gym.make("Pendulum-v0")
+# print(env.kinematics_integrator)
+h = env.observation_space.high
+l = env.observation_space.low
+action = env.action_space.sample()
+env.reset()
+print(env.step(action))
+print(env.state)
+print(h, l)
+"""
+[4.8000002e+00 3.4028235e+38 4.1887903e-01 3.4028235e+38]
+[-4.8000002e+00 -3.4028235e+38 -4.1887903e-01 -3.4028235e+38]
+"""
+# import numpy as np
+# a = np.array([ -0.64011951  , 4.33959753 , -2.16438958 , -13.78775058])
+#
+# print(np.clip(a, l, h))
 
 # print(env.observation_space)
 # state = [1,2,3,4]
@@ -458,3 +474,6 @@ qpos:  [-4.45639944e-03  1.25465391e+00  1.32690946e-03 -2.09982656e-03
 #
 # k = np.pad(b,pad_width=((0,0),(1,0)),mode='constant',constant_values=0)
 # print(b.shape == b.shape)
+# buf_state = [[1,2,3,4],[2,3,4,5]]
+# import numpy as np
+# print(np.random.sample(np.array(buf_state)))

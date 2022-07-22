@@ -25,7 +25,7 @@ def train_and_evaluate(args, threshold, fc):
 
     """ DaD"""
     dad = Dagger(args)
-    dad_train_buffer = init_dad_trainbuffer(int(args.target_step * 5))
+    dad_train_buffer = init_dad_trainbuffer(int(args.target_step)*5)
     useDaD = args.useDaD
     useDaDTrain = args.useDaDTrain
     if_save = None
@@ -52,7 +52,9 @@ def train_and_evaluate(args, threshold, fc):
     threshold = threshold
     if_train = True
     fc = fc
+    dad_step = 0
     dad_steps = 0
+    use_dad_trains = 0
 
     # control print dad info
     control_out_num = 1e6
@@ -61,7 +63,7 @@ def train_and_evaluate(args, threshold, fc):
     train_number = 0
     while if_train:
         train_number += 1
-        trajectory, explore_reward ,raw_rewards, act = agent.explore_env(env, target_step)
+        trajectory, explore_reward ,raw_rewards = agent.explore_env(env, target_step)
 
         cur_use_dad_step = False
         explore_rewards.extend(explore_reward) # explore rewards
@@ -84,16 +86,18 @@ def train_and_evaluate(args, threshold, fc):
             model_error_mean = np.mean(min_model_errors)
             threshold = model_error_mean / 2.0 + pow(0.9, n) * model_error_mean / 2.0
 
-            if train_number == 1 or min_model_error <= threshold and useDaDTrain:
-                dad_trajectory, dad_steps = dad.explore_env(env, target_step, dad_train_buffer, raw_rewards, act, fc)
-                trajectory = np.concatenate((trajectory, dad_trajectory))
+            if train_number <= 10 or min_model_error <= threshold and useDaDTrain:
+                dad_trajectory, dad_step = dad.explore_env(env, target_step, dad_train_buffer, raw_rewards, agent.act.get_action, fc)
+                trajectory = [torch.cat((trajectory[idx], dad_trajectory[idx])) for idx in range(5)]
                 cur_use_dad_step = True
+                use_dad_trains += 1
+                dad_steps += dad_step
                 # dad_step, dad_r_exp = buffer.update_buffer((dad_trajectory,))
                 # dad_steps += dad_step
                 # torch.set_grad_enabled(True)
                 # dad_logging_tuple = agent.update_net(buffer)
                 # torch.set_grad_enabled(False)
-                print("yes")
+                print("use dad train numbers is :", use_dad_trains, " cur_steps is ", dad_step)
 
         '''
         The End
@@ -104,7 +108,7 @@ def train_and_evaluate(args, threshold, fc):
         logging_tuple = agent.update_net(buffer)
         torch.set_grad_enabled(False)
         if cur_use_dad_step:
-            steps -= dad_steps
+            steps -= dad_step
 
         (if_reach_goal, if_save) = evaluator.evaluate_save_and_plot(
             agent.act, steps, r_exp, logging_tuple

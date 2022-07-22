@@ -90,7 +90,10 @@ class Dagger:
         predict = self.dad.min_train_error_model.predict
         buf_state, buf_reward, buf_mask, buf_action, buf_noise = [ten for ten in buffer]
         # sample random number init states
-        init_states_index = np.random.choice(np.array(buf_state).shape[0], 4)
+
+        n_k = 100
+
+        init_states_index = np.random.choice(np.array(buf_state).shape[0], n_k)
         init_states = buf_state[init_states_index]
         traj_list = list()
         last_done = [
@@ -98,32 +101,35 @@ class Dagger:
         ]
 
         step_i = 0
-
+        k_steps = 2
         done = False
-        for epoch in range(4):
+        for epoch in range(n_k):
             state = init_states[epoch]
-            idx = init_states_index[epoch]
-            while not done:
+            inner_steps = 0
+            while inner_steps < k_steps and not done:
                 if not torch.is_tensor(state):
                     ten_s = torch.as_tensor(state, dtype=torch.float32).unsqueeze(0)
                 else:
-                    ten_s = state
+                    ten_s = state.unsqueeze(0)
                 ten_a, ten_n = [
                     ten.cpu() for ten in act(ten_s.to(self.device))
                 ]  # different
                 action = ten_a.tanh()[0].numpy()
                 _ob_s = np.expand_dims(state, axis=0)
-                _ac_s = np.expand_dims(action, axis=0)
-
+                _ac_s = np.expand_dims(action, axis=0)  # if cartpole => [action]
                 _ob_next = predict(_ob_s, _ac_s)[0]
-
-                reward = buf_reward[idx]
-                reward = torch.as_tensor(reward, dtype=torch.float32).unsqueeze(0)
-                done = torch.as_tensor(fc.termination_fn(state, action, _ob_next))
+                _ob_next = fc.clip_state(env, _ob_next)
+                done, reward = fc.termination_res_fn(state, action)
 
                 traj_list.append((ten_s, reward, done, ten_a, ten_n))  # different
-                idx += 1
+
+                state = torch.tensor(_ob_next, dtype=torch.float32)
                 step_i += 1
+                inner_steps += 1
+
+                if done:
+                    cur_states_index = np.random.choice(np.array(buf_state).shape[0], 1)
+                    state = buf_state[cur_states_index][0]
 
         last_done[0] = step_i
         return self.convert_trajectory(traj_list, last_done), step_i  # traj_list

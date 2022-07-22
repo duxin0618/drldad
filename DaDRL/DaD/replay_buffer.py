@@ -190,7 +190,7 @@ class DaDTrainBufferList(list):  # for dad training
 
             length = len(cur_items)
             for idx in range(length):
-                self[idx] = torch.cat([cur_items[idx][0], self[idx]], dim=0)
+                self[idx] = torch.cat([self[idx], cur_items[idx][0]], dim=0)
             self.remove_buffer()
             steps = self[1].shape[0]
             r_exp = self[1].mean().item()
