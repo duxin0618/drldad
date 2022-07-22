@@ -9,7 +9,7 @@ from elegantrl.train.config import build_env
 from DaDRL.train.evaluator import Evaluator
 from DaDRL.DaD.replay_buffer import ReplayBuffer, ReplayBufferList, DaDTrainBufferList
 
-def train_and_evaluate(args, threshold, fc):
+def train_and_evaluate(args, threshold, fc, n_k, k_steps):
     torch.set_grad_enabled(False)
     args.init_before_training()
     gpu_id = args.learner_gpus
@@ -87,7 +87,7 @@ def train_and_evaluate(args, threshold, fc):
             threshold = model_error_mean / 2.0 + pow(0.9, n) * model_error_mean / 2.0
 
             if train_number <= 10 or min_model_error <= threshold and useDaDTrain:
-                dad_trajectory, dad_step = dad.explore_env(env, target_step, dad_train_buffer, raw_rewards, agent.act.get_action, fc)
+                dad_trajectory, dad_step = dad.explore_env(env, target_step, dad_train_buffer, raw_rewards, agent.act.get_action, fc, n_k, k_steps)
                 trajectory = [torch.cat((trajectory[idx], dad_trajectory[idx])) for idx in range(5)]
                 cur_use_dad_step = True
                 use_dad_trains += 1

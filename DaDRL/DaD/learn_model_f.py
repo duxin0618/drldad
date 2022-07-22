@@ -85,13 +85,13 @@ class Dagger:
         return self.dad.min_train_error, self.dad.initial_model_error
 
     # explore_env
-    def explore_env(self, env, target_step, buffer, raw_reward, act, fc):
+    def explore_env(self, env, target_step, buffer, raw_reward, act, fc, n_k, k_steps):
 
         predict = self.dad.min_train_error_model.predict
         buf_state, buf_reward, buf_mask, buf_action, buf_noise = [ten for ten in buffer]
         # sample random number init states
 
-        n_k = 100
+        n_k = n_k
 
         init_states_index = np.random.choice(np.array(buf_state).shape[0], n_k)
         init_states = buf_state[init_states_index]
@@ -101,7 +101,7 @@ class Dagger:
         ]
 
         step_i = 0
-        k_steps = 2
+        k_steps = k_steps
         done = False
         for epoch in range(n_k):
             state = init_states[epoch]
