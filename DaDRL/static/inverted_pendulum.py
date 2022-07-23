@@ -5,13 +5,18 @@ import pdb
 class StaticFns:
 
     @staticmethod
-    def termination_fn(obs, act, next_obs):
-        assert len(obs.shape) == len(next_obs.shape) == len(act.shape) == 2
+    def termination_fn(obs, act):
 
-        notdone = np.isfinite(next_obs).all(axis=-1) \
-        		  * (np.abs(next_obs[:,1]) <= .2)
+        notdone = np.isfinite(obs).all(axis=-1) and (np.abs(obs[1]) <= .2)
         done = ~notdone
+        reward = 1
+        return done, reward
 
-        done = done[:,None]
+    @staticmethod
+    def clip_state(env, state):
+        high = env.observation_space.high
+        low = env.observation_space.low
 
-        return done
+        b_state = np.clip(state, low, high)
+
+        return b_state

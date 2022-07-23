@@ -423,7 +423,7 @@ import torch
 # qpos:  [-0.08912799  0.09307819  0.02653819]
 # """
 
-import gym
+# import gym
 # env = gym.make("Walker2d-v2")
 # env.seed(0)
 # print("state: ", env.reset())
@@ -441,16 +441,16 @@ qpos:  [-4.45639944e-03  1.25465391e+00  1.32690946e-03 -2.09982656e-03
  -4.40161031e-03]
 """
 
-
-env = gym.make("Pendulum-v0")
-# print(env.kinematics_integrator)
-h = env.observation_space.high
-l = env.observation_space.low
-action = env.action_space.sample()
-env.reset()
-print(env.step(action))
-print(env.state)
-print(h, l)
+#
+# env = gym.make("Pendulum-v0")
+# # print(env.kinematics_integrator)
+# h = env.observation_space.high
+# l = env.observation_space.low
+# action = env.action_space.sample()
+# env.reset()
+# print(env.step(action))
+# print(env.state)
+# print(h, l)
 """
 [4.8000002e+00 3.4028235e+38 4.1887903e-01 3.4028235e+38]
 [-4.8000002e+00 -3.4028235e+38 -4.1887903e-01 -3.4028235e+38]
@@ -477,3 +477,63 @@ print(h, l)
 # buf_state = [[1,2,3,4],[2,3,4,5]]
 # import numpy as np
 # print(np.random.sample(np.array(buf_state)))
+
+
+# import gym
+# import numpy as np
+# env = gym.make("InvertedDoublePendulum-v2")
+# env.seed(0)
+# next_obs = env.reset()
+# print("state: ", next_obs)
+# print("site_xpos: ", env.sim.data.site_xpos[0])
+#
+# sin1, cos1 = next_obs[1], next_obs[3]
+# sin2, cos2 = next_obs[2], next_obs[4]
+# theta_1 = np.arctan2(sin1, cos1)
+# theta_2 = np.arctan2(sin2, cos2)
+# print(theta_1)
+# print(theta_2)
+import math
+# theta_1 = 0
+# theta_2 = 0
+""" inverse double pendulum"""
+# y = 0.6 * (cos1 + np.cos(theta_1 + theta_2))
+# x = 0.6 * (sin1 + np.sin(theta_1 + theta_2)) + next_obs[0]
+# print("y: ", y, " x : ", x)
+# print("qpos: ", env.sim.data.qpos[:])
+# print("qvel", env.sim.data.qvel[1:3])
+# print(env.kinematics_integrator)
+# h = env.observation_space.high
+# l = env.observation_space.low
+# action = env.action_space.sample()
+# print(env.step(action))
+# print(env.state)
+# print(h, l)
+
+import gym
+import numpy as np
+from  gym.envs.mujoco import HopperEnv
+
+""" wrapper hopper class """
+class HopperWapper(HopperEnv):
+    def __init__(self):
+        HopperEnv.__init__(self)
+
+    def _get_obs(self):
+        return np.concatenate([
+            self.sim.data.qpos.flat[:],
+            np.clip(self.sim.data.qvel.flat, -10, 10)
+        ])
+
+env = HopperWapper()
+print("state: ", env.reset())
+print("qpos: ", env.sim.data.qpos[:])
+act = env.action_space.sample()
+print("state_next: ", env.step(act))
+print("qpos_next: ", env.sim.data.qpos[:])
+print("state_vector(): ", env.state_vector())
+
+
+
+
+
