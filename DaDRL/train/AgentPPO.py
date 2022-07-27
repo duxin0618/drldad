@@ -35,6 +35,9 @@ class AgentPPO(AgentBase):
         self.act_class = getattr(self, "act_class", ActorPPO)
         self.cri_class = getattr(self, "cri_class", CriticPPO)
         self.if_cri_target = getattr(args, "if_cri_target", False)
+
+
+
         AgentBase.__init__(self, net_dim, state_dim, action_dim, gpu_id, args)
 
         self.ratio_clip = getattr(
@@ -63,6 +66,7 @@ class AgentPPO(AgentBase):
         :return: a list of trajectories [traj, ...] where `traj = [(state, other), ...]`.
         """
         traj_list = list()
+        dad_train_traj_list = list()
         last_done = [
             0,
         ]
@@ -76,13 +80,19 @@ class AgentPPO(AgentBase):
         get_action = self.act.get_action
         get_a_to_e = self.act.get_a_to_e
         while step_i < target_step or not done:
+            s_state = state
+            if self.if_state_expand:
+                state = state[1:]
+            ten_s_s = torch.as_tensor(s_state, dtype=torch.float32).unsqueeze(0)
             ten_s = torch.as_tensor(state, dtype=torch.float32).unsqueeze(0)
             ten_a, ten_n = [
                 ten.cpu() for ten in get_action(ten_s.to(self.device))
             ]  # different
             next_s, reward, done, _ = env.step(get_a_to_e(ten_a)[0].numpy())
 
+            dad_train_traj_list.append((ten_s_s, reward, done, ten_a, ten_n))
             traj_list.append((ten_s, reward, done, ten_a, ten_n))  # different
+
             acu_reward += reward
             raw_rewards.append(reward)
             step_i += 1
@@ -94,7 +104,7 @@ class AgentPPO(AgentBase):
 
         self.states[0] = state
         last_done[0] = step_i
-        return self.convert_trajectory(traj_list, last_done), rewards, raw_rewards  # traj_list
+        return self.convert_trajectory(traj_list, last_done), self.convert_trajectory(dad_train_traj_list, last_done), rewards, raw_rewards  # traj_list
 
     def explore_vec_env(self, env, target_step, random_exploration = None) -> list:
         """

@@ -23,6 +23,9 @@ class Evaluator:  # [ElegantRL.2022.01.01]
         self.used_time = 0
         self.total_step = 0
         self.start_time = time.time()
+
+        self.if_state_expand = args.if_state_expand
+
         print(
             f"{'#' * 80}\n"
             f"{'ID':<3}{'Step':>8}{'maxR':>8} |"
@@ -30,23 +33,19 @@ class Evaluator:  # [ElegantRL.2022.01.01]
             f"{'expR':>8}{'objC':>7}{'etc.':>7}"
         )
 
-    def evaluate_save_and_plot(
-            self, act, steps, r_exp, log_tuple
-    ) -> (bool, bool):  # 2021-09-09
+    def evaluate_save_and_plot(self, act, steps, r_exp, log_tuple) -> (bool, bool):  # 2021-09-09
         self.total_step += steps  # update total training steps
 
         if_reach_goal = False
         if_save = False
 
         self.eval_time = time.time()
-
         """evaluate first time"""
         rewards_steps_list = [
-            get_episode_return_and_step(self.eval_env, act)
+            get_episode_return_and_step(self.eval_env, act, self.if_state_expand)
             for _ in range(self.eval_times1)
         ]
         rewards_steps_ary = np.array(rewards_steps_list, dtype=np.float32)
-
         r_avg, s_avg = rewards_steps_ary.mean(
             axis=0
         )  # average of episode return and episode step
@@ -86,7 +85,6 @@ class Evaluator:  # [ElegantRL.2022.01.01]
         self.recorder.append(
             (self.total_step, r_avg, r_std, r_exp, *log_tuple)
         )  # update recorder
-
         """print some information to Terminal"""
         if_reach_goal = bool(self.r_max > self.target_return)  # check if_reach_goal
         if if_reach_goal and self.used_time is None:
@@ -99,7 +97,6 @@ class Evaluator:  # [ElegantRL.2022.01.01]
                 f"{r_avg:8.2f}{r_std:7.1f}{s_avg:7.0f}{s_std:6.0f} |"
                 f"{self.used_time:>8}  ########"
             )
-
         print(
             f"{self.agent_id:<3}{self.total_step:8.2e}{self.r_max:8.2f} |"
             f"{r_avg:8.2f}{r_std:7.1f}{s_avg:7.0f}{s_std:6.0f} |"
@@ -143,7 +140,7 @@ class Evaluator:  # [ElegantRL.2022.01.01]
 """util"""
 
 
-def get_episode_return_and_step(env, act) -> (float, int):  # [ElegantRL.2022.01.01]
+def get_episode_return_and_step(env, act, if_state_expand) -> (float, int):  # [ElegantRL.2022.01.01]
     """Usage
     eval_times = 4
     net_dim = 2 ** 7
@@ -165,6 +162,8 @@ def get_episode_return_and_step(env, act) -> (float, int):  # [ElegantRL.2022.01
     episode_step = None
     episode_return = 0.0  # sum of rewards in an episode
     for episode_step in range(max_step):
+        if if_state_expand:
+            state = state[1:]
         s_tensor = torch.as_tensor(state, dtype=torch.float32, device=device).unsqueeze(
             0
         )

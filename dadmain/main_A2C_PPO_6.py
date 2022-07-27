@@ -248,77 +248,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         args.if_allow_break = False
         args.break_step = int(1e7)
 
-    elif env_name == 'Humanoid-v3':
-        from elegantrl.envs.CustomGymEnv import HumanoidEnv
-        env_func = HumanoidEnv
-        env_args = {
-            'env_num': 1,
-            'env_name': 'Humanoid-v3',
-            'max_step': 1000,
-            'state_dim': 376,
-            'action_dim': 17,
-            'if_discrete': False,
-            'target_return': 5000.,
-        }
-        args = Arguments(agent_class, env_func=env_func, env_args=env_args)
-        args.reward_scale = 2 ** -4
 
-        args.if_cri_target = False
-        #
-        # args.target_step = args.max_step * 16
-        # args.lambda_entropy = 2 ** -6
-        # args.worker_num = 2
-        # args.batch_size = args.net_dim * 8
-        # args.repeat_times = 2 ** 6
-
-        args.learning_rate = 2 ** -14  # todo
-        args.target_step = args.max_step * 8
-        args.worker_num = 4
-        args.batch_size = args.net_dim * 2
-        args.repeat_times = 2 ** 5
-        args.gamma = 0.995  # important
-        args.if_use_gae = True
-        args.coeff_gae_adv = 0.98 if gpu_id == 3 else 0.993  # todo
-        args.coeff_entropy = 0.01
-
-        args.eval_times = 2 ** 2
-        args.max_step = int(8e7)
-        args.if_allow_break = False
-
-    elif env_name == 'Humanoid-v3.backup':
-        from elegantrl.envs.CustomGymEnv import HumanoidEnv
-        env_func = HumanoidEnv
-        env_args = {
-            'env_num': 1,
-            'env_name': 'Humanoid-v3',
-            'max_step': 1000,
-            'state_dim': 376,
-            'action_dim': 17,
-            'if_discrete': False,
-            'target_return': 5000.,
-        }
-        args = Arguments(agent_class, env_func=env_func, env_args=env_args)
-        args.reward_scale = 2 ** -4
-
-        args.if_cri_target = False
-        #
-        # args.target_step = args.max_step * 16
-        # args.lambda_entropy = 2 ** -6
-        # args.worker_num = 2
-        # args.batch_size = args.net_dim * 8
-        # args.repeat_times = 2 ** 6
-
-        args.learning_rate = 2 ** -16
-        args.target_step = args.max_step * 8
-        args.worker_num = 4
-        args.batch_size = args.net_dim * 2
-        args.repeat_times = 2 ** 5
-        args.gamma = 0.995  # important
-        args.if_use_gae = True
-        args.coeff_entropy = 0.01
-
-        args.eval_times = 2 ** 1
-        args.max_step = int(8e7)
 
     else:
         raise ValueError('env_name:', env_name)

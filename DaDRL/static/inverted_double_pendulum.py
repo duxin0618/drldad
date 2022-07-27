@@ -5,18 +5,18 @@ import pdb
 class StaticFns:
 
     @staticmethod
-    def termination_fn(obs, act):
+    def termination_res_fn(env, obs, act, next_obs):
 
-        sin1, cos1 = obs[1], obs[3]
-        sin2, cos2 = obs[2], obs[4]
+        sin1, cos1 = next_obs[1], next_obs[3]
+        sin2, cos2 = next_obs[2], next_obs[4]
         theta_1 = np.arctan2(sin1, cos1)
         theta_2 = np.arctan2(sin2, cos2)
 
-        x = 0.6 * (sin1 + np.sin(theta_1 + theta_2)) + obs[0]
+        x = 0.6 * (sin1 + np.sin(theta_1 + theta_2)) + next_obs[0]
         y = 0.6 * (cos1 + np.cos(theta_1 + theta_2))
 
         dist_penalty = 0.01 * x ** 2 + (y - 2) ** 2
-        v1, v2 = obs[6:8]
+        v1, v2 = next_obs[6:8]
         vel_penalty = 1e-3 * v1 ** 2 + 5e-3 * v2 ** 2
         alive_bonus = 10
 

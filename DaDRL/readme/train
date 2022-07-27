@@ -1,23 +1,38 @@
+(Not applicable env, done and reward structure is complex)
+1. LunarLanderContinuous-v2  (ok)               270                        4e5
+4. BipedalWalker-v2          (ok)               300
+
 finish env:
-1. CartPole-v0
-2. Pendulum-v0
+
 
 
 doing env:
 ppo
-1. LunarLanderContinuous-v2  (ok)               270                        4e5
-2. Hopper-v2                 (ok)               3700
-3. HalfCheetah-v2            (ok)               4800                       3e6
-4. BipedalWalker-v2          (ok)               300
-5. Swimmer-v2                (ok)               360       (only 120)
-6. Walker2d-v2               (ok)               4000                       1e7
-7. Humanoid-v3               (ok)                                       1.25e7
+1. inverted_double_pendulum  (done)               9100                       2e5
+2. Reacher-v2                (no do)
+3. HalfCheetah-v2            (redo)               4800                       3e6
+Question: dont reach max reward
+4. Hopper-v2                 (redo)               3700                      6e6
+Question: Great fluctuation
+5. Walker2d-v2               (done)               4000                       1e7
+Question: small fluctuation
+6. Humanoid-v3               (try)                                       1.25e7   (more complex)
+7. Ant-v2                    (try)
+9. inverted_pendulum         (doing)
+10. pendulum                 (doing)
 
-ppo+dad (fixed threshold is not great performance)                                   error bound
-1. LunarLanderContinuous-v2  (doing)        <16      (no del)    <4.0   (ok)    <=1 (no)
-2. HalfCheetah-v2            (doing)        <105.0   (no)    <75.0  (no)  <50(no)
-3. BipedalWalker-v2          (doing)        <30      (no)
-4. Hopper-v2                 (doing)        <20      (ok)
+dad+ppo
+1. inverted_double_pendulum  (doing)
+2. Reacher-v2                (doing)
+3. HalfCheetah-v2            (doing)               4800                       3e6
+4. Hopper-v2                 (doing)               3700
+5. Walker2d-v2               (no do)               4000                       1e7
+6. Humanoid-v3               (no do)                                       1.25e7   (more complex)
+7. Ant-v2                    (no do)
+
+9. inverted_pendulum
+10. pendulum
+
 
 tune-1:
 model_error_threshold
@@ -28,8 +43,3 @@ evaluate-time augment
 tune-4
 if use reward which is real env getting, the policy dont update before use dad.
 
-
-next env:
-3. Ant-v2
-5. CartPoleSwingUpDiscrete
-and pappers env

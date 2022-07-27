@@ -42,6 +42,8 @@ class Dagger:
         self.action_dim = args.action_dim
         self.if_discrete = args.if_discrete
 
+        self.if_state_expand = args.if_state_expand
+
         self.gamma = getattr(args, "gamma", 0.99)
         self.env_num = getattr(args, "env_num", 1)
         self.reward_scale = getattr(args, "reward_scale", 1.0)
@@ -76,10 +78,16 @@ class Dagger:
         """merge state and rewards"""
 
         # states_rewards = np.concatenate((buf_reward, buf_state), axis=1)
+
         """"""
-        states = buf_state[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), self.state_dim)[:, :-1]
+        if self.if_state_expand:
+            r_state_dim = self.state_dim + 1
+        else:
+            r_state_dim = self.state_dim
+
+        states = buf_state[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), r_state_dim)[:, :-1]
         actions = buf_action[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), self.action_dim)[:, :-1]
-        states_next = buf_state[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), self.state_dim)[:, 1:]
+        states_next = buf_state[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), r_state_dim)[:, 1:]
         self.doLearn(states, actions, states_next)
         self.dagger_trajectory()
         return self.dad.min_train_error, self.dad.initial_model_error
@@ -107,10 +115,15 @@ class Dagger:
             state = init_states[epoch]
             inner_steps = 0
             while inner_steps < k_steps and not done:
-                if not torch.is_tensor(state):
-                    ten_s = torch.as_tensor(state, dtype=torch.float32).unsqueeze(0)
+                if self.if_state_expand:
+                    state_s = state[1:]
                 else:
-                    ten_s = state.unsqueeze(0)
+                    state_s = state[:]
+                if not torch.is_tensor(state_s):
+                    ten_s = torch.as_tensor(state_s, dtype=torch.float32).unsqueeze(0)
+                else:
+                    ten_s = state_s.unsqueeze(0)
+
                 ten_a, ten_n = [
                     ten.cpu() for ten in act(ten_s.to(self.device))
                 ]  # different
@@ -119,9 +132,9 @@ class Dagger:
                 _ac_s = np.expand_dims(action, axis=0)  # if cartpole => [action]
                 _ob_next = predict(_ob_s, _ac_s)[0]
                 _ob_next = fc.clip_state(env, _ob_next)
-                done, reward = fc.termination_res_fn(state, action)
+                done, reward = fc.termination_res_fn(env, state, action, _ob_next)
 
-                traj_list.append((ten_s, reward, done, ten_a, ten_n))  # different
+                traj_list.append((ten_s, reward, done, ten_a, ten_n))
 
                 state = torch.tensor(_ob_next, dtype=torch.float32)
                 step_i += 1

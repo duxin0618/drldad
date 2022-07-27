@@ -40,6 +40,8 @@ class AgentBase:
         self.if_off_policy = getattr(args, 'if_off_policy', None)
         self.if_use_old_traj = getattr(args, 'if_use_old_traj', False)
 
+        self.if_state_expand = args.if_state_expand
+
         self.state = None  # assert self.state == (env_num, state_dim)
         self.device = torch.device(f"cuda:{gpu_id}" if (torch.cuda.is_available() and (gpu_id >= 0)) else "cpu")
 

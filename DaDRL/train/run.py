@@ -7,7 +7,7 @@ import multiprocessing as mp
 from DaDRL.DaD.learn_model_f import Dagger
 from elegantrl.train.config import build_env
 from DaDRL.train.evaluator import Evaluator
-from DaDRL.DaD.replay_buffer import ReplayBuffer, ReplayBufferList, DaDTrainBufferList
+from DaDRL.DaD.replay_buffer import ReplayBufferList, DaDTrainBufferList
 
 def train_and_evaluate(args, threshold, fc, n_k, k_steps):
     torch.set_grad_enabled(False)
@@ -63,12 +63,9 @@ def train_and_evaluate(args, threshold, fc, n_k, k_steps):
     train_number = 0
     while if_train:
         train_number += 1
-        trajectory, explore_reward ,raw_rewards = agent.explore_env(env, target_step)
-
+        trajectory, dad_train_trajectory, explore_reward ,raw_rewards = agent.explore_env(env, target_step)
         cur_use_dad_step = False
         explore_rewards.extend(explore_reward) # explore rewards
-
-
 
         '''
         DaD train
@@ -76,7 +73,7 @@ def train_and_evaluate(args, threshold, fc, n_k, k_steps):
         useDaD = useDaD
         useDaDTrain = useDaDTrain
         if useDaD:
-            dad_train_buffer.augment_buffer((trajectory,))
+            dad_train_buffer.augment_buffer((dad_train_trajectory,))
             min_model_error, init_model_error = dad.train(dad_train_buffer)
             init_model_errors.append(round(init_model_error, 2))
             min_model_errors.append(round(min_model_error, 2))
@@ -230,7 +227,7 @@ def init_agent(args, gpu_id: int, env=None):
         if args.env_num == 1:
             states = [env.reset(), ]
             assert isinstance(states[0], np.ndarray)
-            assert states[0].shape in {(args.state_dim,), args.state_dim}
+            assert states[0].shape in {(args.state_dim,), args.state_dim, (args.state_dim+1,), args.state_dim+1}
         else:
             states = env.reset()
             assert isinstance(states, torch.Tensor)
@@ -240,17 +237,7 @@ def init_agent(args, gpu_id: int, env=None):
 
 
 def init_buffer(args, gpu_id):
-    if args.if_off_policy:
-        buffer = ReplayBuffer(
-            gpu_id=gpu_id,
-            max_len=args.max_memo,
-            state_dim=args.state_dim,
-            action_dim=1 if args.if_discrete else args.action_dim,
-        )
-        buffer.save_or_load_history(args.cwd, if_save=False)
-
-    else:
-        buffer = ReplayBufferList()
+    buffer = ReplayBufferList()
     return buffer
 
 

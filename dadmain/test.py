@@ -511,27 +511,77 @@ import math
 # print(h, l)
 
 import gym
-import numpy as np
-from  gym.envs.mujoco import HopperEnv
+# import numpy as np
+# from  gym.envs.mujoco import HopperEnv
+#
+# """ wrapper hopper class """
+# class HopperWapper(HopperEnv):
+#     def __init__(self):
+#         HopperEnv.__init__(self)
+#
+#     def _get_obs(self):
+#         return np.concatenate([
+#             self.sim.data.qpos.flat[:],
+#             np.clip(self.sim.data.qvel.flat, -10, 10)
+#         ])
+# import os
+# import sys
+# current_dir = os.path.abspath(os.path.dirname(__file__))
+# sys.path.append(current_dir)
+# sys.path.append("..")
+#
+# from DaDRL.env.walker2d import Walker2dEnv
+# env = Walker2dEnv()
+# print("state: ", env.reset())
+# print("qpos: ", env.sim.data.qpos[:])
+# act = env.action_space.sample()
+# print("state_next: ", env.step(act))
+# print("qpos_next: ", env.sim.data.qpos[:])
+# print("state_vector(): ", env.state_vector())
 
-""" wrapper hopper class """
-class HopperWapper(HopperEnv):
-    def __init__(self):
-        HopperEnv.__init__(self)
+# import gym
+# env = gym.make("Humanoid-v3")
+# print("state", env.reset())
+# print("body_mass", env.model.body_mass)
+# print("xipos", env.sim.data.xipos)
+# print("qpos", env.sim.data.qpos)
 
-    def _get_obs(self):
-        return np.concatenate([
-            self.sim.data.qpos.flat[:],
-            np.clip(self.sim.data.qvel.flat, -10, 10)
-        ])
+# import gym
+# env = gym.make("Reacher-v2")
+# print("state", env.reset())
+# print("fingertip", env.get_body_com("fingertip"))
+# print("target", env.get_body_com("target"))
+# print("qpos", env.sim.data.qpos)
 
-env = HopperWapper()
-print("state: ", env.reset())
-print("qpos: ", env.sim.data.qpos[:])
-act = env.action_space.sample()
-print("state_next: ", env.step(act))
-print("qpos_next: ", env.sim.data.qpos[:])
-print("state_vector(): ", env.state_vector())
+# l = [1,2,3,4,5,6]
+# print(l[-3:])
+
+# import gym
+# env = gym.make("HalfCheetah-v2")
+# done = False
+# i = 0
+# state = env.reset()
+# while not done:
+#     i += 1
+#     print(i)
+#     act = env.action_space.sample()
+#     next, r, done, _ = env.step(act)
+
+# print(env.observation_space.shape)
+# print(env.action_space.shape)
+# low = [-1,-1,-1]
+# high = [2, 3, 4]
+# import numpy as np
+# state = [1,2,3,4]
+# a = np.clip(state[1:], low, high)
+# b = np.concatenate(([state[0]], a))
+# print(a)
+# print(b)
+
+import gym
+env = gym.make("InvertedPendulum-v2")
+print(env.action_space)
+print(env.observation_space)
 
 
 

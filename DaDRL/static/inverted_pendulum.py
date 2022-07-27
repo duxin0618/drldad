@@ -1,13 +1,13 @@
-import sys
+
 import numpy as np
-import pdb
+
 
 class StaticFns:
 
     @staticmethod
-    def termination_fn(obs, act):
+    def termination_res_fn(env, obs, act, next_obs):
 
-        notdone = np.isfinite(obs).all(axis=-1) and (np.abs(obs[1]) <= .2)
+        notdone = np.isfinite(next_obs).all(axis=-1) and (np.abs(next_obs[1]) <= .2)
         done = ~notdone
         reward = 1
         return done, reward

@@ -3,7 +3,7 @@ import math
 
 class StaticFns:
     @staticmethod
-    def termination_res_fn(obs, action):
+    def termination_res_fn(env, obs, act, next_obs):
         tau = 0.02  # seconds between state updates
         x, x_dot, theta, theta_dot = obs
         theta_threshold_radians = 12 * 2 * math.pi / 360

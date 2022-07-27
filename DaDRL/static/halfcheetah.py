@@ -3,7 +3,7 @@ import numpy as np
 class StaticFns:
 
     @staticmethod
-    def termination_fn(env, obs, action, next_obs):
+    def termination_res_fn(env, obs, action, next_obs):
 
         dt = env.model.opt.timestep * env.frame_skip
 
@@ -16,6 +16,15 @@ class StaticFns:
 
         done = False
         return done, reward
+
+    @staticmethod
+    def clip_state(env, state):
+        high = env.observation_space.high
+        low = env.observation_space.low
+
+        b_state = np.concatenate(([state[0]], np.clip(state[1:], low, high)))
+
+        return b_state
 
 
 
