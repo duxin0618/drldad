@@ -325,14 +325,21 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     else:
         raise ValueError('env_name:', env_name)
 
+
     args.learner_gpus = gpu_id
     args.random_seed += gpu_id
 
-    threshold = 105.0
-    args.useDaD = False
-    args.useDaDTrain = False
-    from DaDRL.static.ant_truncated_obs import StaticFns as fc
-    train_and_evaluate(args, threshold, fc)
+    threshold = 2.0
+    args.useDaD = True
+    args.useDaDTrain = True
+    args.if_state_expand = False
+
+    n_k = 6  # traj number
+    k_steps = 10  # traj length
+
+    # random
+    from DaDRL.static.Reacher import StaticFns as fc
+    train_and_evaluate(args, threshold, fc, n_k, k_steps)
 
 
 

@@ -2,6 +2,9 @@ import numpy as np
 
 class StaticFns:
 
+    steps_max = 1000
+    cur_step = 1
+
     @staticmethod
     def termination_res_fn(env, obs, action, next_obs):
 
@@ -14,7 +17,13 @@ class StaticFns:
         reward_run = (xposafter - xposbefore) / dt
         reward = reward_ctrl + reward_run
 
-        done = False
+        if StaticFns.cur_step < StaticFns.steps_max:
+            done = False
+            StaticFns.cur_step += 1
+        else:
+            done = True
+            StaticFns.cur_step = 1
+
         return done, reward
 
     @staticmethod

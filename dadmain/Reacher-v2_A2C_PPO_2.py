@@ -30,12 +30,11 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         }
         args = Arguments(agent_class, env_func=env_func, env_args=env_args)
         args.eval_times = 2 ** 5
-        args.reward_scale = 2 ** 1
-
+        args.reward_scale = 2 ** 0
+        args.learning_rate = 2 ** -14
         args.target_step = args.max_step * 6  # 6
-        args.worker_num = 2
         args.eval_gap = 2 * 60
-        args.net_dim = 2 ** 7
+        args.net_dim = 2 ** 6
         args.layer_num = 3
         args.batch_size = int(args.net_dim * 2)
         args.repeat_times = 2 ** 4
@@ -45,7 +44,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         args.lambda_h_term = 2 ** -5
 
         args.if_allow_break = False
-        args.break_step = int(5e6)
+        args.break_step = int(4e5)
 
 
     else:
@@ -58,7 +57,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.useDaD = False
     args.useDaDTrain = False
     n_k = 20  # traj number
-    k_steps = 20  # traj length
+    k_steps = 10  # traj length
     from DaDRL.static.halfcheetah import StaticFns as fc
     train_and_evaluate(args, threshold, fc, n_k, k_steps)
 
@@ -67,7 +66,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
 if __name__ == '__main__':
 
 
-    # Hopper-v2
+    # Reacher-v2
     GPU_ID = 2
     DRL_ID = 1
     ENV_ID = 0

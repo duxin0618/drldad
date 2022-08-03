@@ -28,6 +28,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
             'target_return': 4800.,
         }
         args = Arguments(agent_class, env_func=env_func, env_args=env_args)
+
         args.eval_times = 2 ** 4
         args.reward_scale = 2 ** -4
 
@@ -44,7 +45,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         args.lambda_h_term = 2 ** -5
 
         args.if_allow_break = False
-        args.break_step = int(1e7)
+        args.break_step = int(6e6)
 
     else:
         raise ValueError('env_name:', env_name)

@@ -36,6 +36,7 @@ class HalfCheetahEnv(gym.Wrapper):  # [ElegantRL.2022.04.04]
         if self.cur_step_number < self.max_step:
             done = False
         else:
+            self.cur_step_number = -1
             done = True
 
         self.cur_step_number += 1

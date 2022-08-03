@@ -67,6 +67,7 @@ class Evaluator:  # [ElegantRL.2022.01.01]
             axis=0
         )  # standard dev. of episode return and episode step
 
+
         """save the policy network"""
         if_save = r_avg > self.r_max
         if if_save:  # save checkpoint with highest episode return

@@ -75,6 +75,8 @@ class Arguments:
         self.useDaD = True
         self.useDaDTrain = True
         self.if_state_expand = False # train dad expand a list
+        self.k_steps = 20
+        self.n_k = 10
         
     def init_before_training(self):
         np.random.seed(self.random_seed)
@@ -85,7 +87,7 @@ class Arguments:
         '''auto set'''
         if self.cwd is None:
             if self.useDaDTrain:
-                self.cwd = f'./result/{self.env_name}_{self.agent.__name__[5:]}_{self.random_seed}_dadRL'
+                self.cwd = f'./result/{self.env_name}_{self.agent.__name__[5:]}_{self.random_seed}_dadRL_{self.n_k}X{self.k_steps}'
             else:
                 self.cwd = f'./result/{self.env_name}_{self.agent.__name__[5:]}_{self.random_seed}'
 

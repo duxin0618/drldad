@@ -36,9 +36,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         args.lambda_h_term = 2 ** -5
 
         args.if_allow_break = False
-        args.break_step = int(1e7)
-
-
+        args.break_step = int(6e6)
 
     else:
         raise ValueError('env_name:', env_name)
@@ -51,8 +49,10 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.useDaDTrain = True
     args.if_state_expand = True
 
-    n_k = 10  # traj number
-    k_steps = 100  # traj length
+    n_k = 20  # traj number
+    k_steps = 200  # traj length
+    args.k_steps = k_steps
+
     from DaDRL.static.walker2d import StaticFns as fc
     train_and_evaluate(args, threshold, fc, n_k, k_steps)
 
@@ -61,7 +61,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
 if __name__ == '__main__':
 
     # Walker2d-v2
-    GPU_ID = 2
+    GPU_ID = 3
     DRL_ID = 1
     ENV_ID = 0
 

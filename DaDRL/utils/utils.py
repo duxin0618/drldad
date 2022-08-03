@@ -82,9 +82,8 @@ def plot_info_3(title, y1: np.array, idx: np.array, y2: np.array=None):
     # delete Abnormal point
 
     import matplotlib.pyplot as plt
-    import seaborn as sns
 
-    # y1 = np.log10(y1)
+    y1 = np.log10(y1)
     length = idx
     # length = idx
     y1 = y1.ravel()
@@ -177,14 +176,14 @@ def read_npy_data_1(cwd, plot=1, cwd2 = None):
             if len(reward1) > len(reward2):
                 idx = data2[:, 0]
                 reward1 = uniform_dataandidx(reward1, reward2)
-                reward1 = get_max_re(reward1, interval)
-                reward2 = get_max_re(reward2, interval)
+                # reward1 = get_max_re(reward1, interval)
+                # reward2 = get_max_re(reward2, interval)
                 plot_info_3(cwd, reward1, idx, reward2)
             elif len(reward1) < len(reward2):
 
                 reward2 = uniform_dataandidx(reward2, reward1)
-                reward1 = get_max_re(reward1, interval)
-                reward2 = get_max_re(reward2, interval)
+                # reward1 = get_max_re(reward1, interval)
+                # reward2 = get_max_re(reward2, interval)
                 plot_info_3(cwd, reward1, idx, reward2)
             else:
                 plot_info_3(cwd, reward1, idx, reward2)
@@ -194,7 +193,30 @@ def read_npy_data_1(cwd, plot=1, cwd2 = None):
 
 
 # read_npy_data_1("./dad_train_error.npy", plot=True)
-read_npy_data_1("./nodad_hopper_recorder.npy", plot=3, cwd2="dad_hopper_recorder.npy")
+# read_npy_data_1("./recorder_ppo.npy", plot=3, cwd2="./recorder_dad.npy")
 # data = np.load("./p_recorder.npy", allow_pickle=True)
 
 # print(len(data))
+a = np.load("./recorder_ppo.npy")
+b = np.load("./recorder_dad.npy")
+la = len(a)
+lb = len(b)
+lamax = 0
+lbmax = 0
+for i in range(la):
+    if a[i][1] > 4000.0:
+        lamax = i+1
+        break
+for i in range(la):
+    if b[i][0] > 5e6:
+        lbmax = i+1
+        break
+
+stepsa = a[:lamax, 0]
+rewa = a[:lamax, 1]
+stepsb = b[:, 0]
+rewb = b[:, 1]
+
+
+
+plot_info_3("ppo", y1=rewa, idx=stepsa)

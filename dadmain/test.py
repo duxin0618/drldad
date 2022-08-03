@@ -556,16 +556,30 @@ import gym
 # l = [1,2,3,4,5,6]
 # print(l[-3:])
 
+"""test env"""
+# import os
+# import sys
+# current_dir = os.path.abspath(os.path.dirname(__file__))
+# sys.path.append(current_dir)
+# sys.path.append("..")
 # import gym
-# env = gym.make("HalfCheetah-v2")
-# done = False
+# env = gym.make("InvertedPendulum-v2")
+# d = False
 # i = 0
 # state = env.reset()
-# while not done:
+# from DaDRL.static.inverted_pendulum import StaticFns as fc
+# while not d:
 #     i += 1
 #     print(i)
 #     act = env.action_space.sample()
+#     # print("state: ", state)
 #     next, r, done, _ = env.step(act)
+#     d , rew = fc.termination_res_fn(env, state, act, next_obs=next)
+#     print("real: ", r, done)
+#     print("fake: ", rew, d)
+
+
+
 
 # print(env.observation_space.shape)
 # print(env.action_space.shape)
@@ -578,10 +592,11 @@ import gym
 # print(a)
 # print(b)
 
-import gym
-env = gym.make("InvertedPendulum-v2")
-print(env.action_space)
-print(env.observation_space)
+# import gym
+# env = gym.make("Ant-v3m")
+# print(env.action_space)
+# print(env.observation_space)
+
 
 
 

@@ -25,7 +25,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         args.eval_times = 2 ** 4
         args.layer_num = 2
         args.net_dim = 2 ** 6
-        args.break_step = int(1e5)
+        args.break_step = int(8e4)
         args.if_allow_break = False
         args.if_discrete = False
         args.eval_gap = 2 * 6
@@ -43,7 +43,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     k_steps = 20         # traj length
 
     # fc = None
-    from DaDRL.static.pendulum import StaticFns as fc
+    from DaDRL.static.inverted_pendulum import StaticFns as fc
     train_and_evaluate(args, threshold, fc, n_k, k_steps)
 
 if __name__ == '__main__':

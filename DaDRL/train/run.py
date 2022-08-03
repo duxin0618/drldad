@@ -9,7 +9,7 @@ from elegantrl.train.config import build_env
 from DaDRL.train.evaluator import Evaluator
 from DaDRL.DaD.replay_buffer import ReplayBufferList, DaDTrainBufferList
 
-def train_and_evaluate(args, threshold, fc, n_k, k_steps):
+def train_and_evaluate(args, threshold, fc):
     torch.set_grad_enabled(False)
     args.init_before_training()
     gpu_id = args.learner_gpus
@@ -25,11 +25,10 @@ def train_and_evaluate(args, threshold, fc, n_k, k_steps):
 
     """ DaD"""
     dad = Dagger(args)
-    dad_train_buffer = init_dad_trainbuffer(int(args.target_step)*5)
+    dad_train_buffer = init_dad_trainbuffer(int(args.target_step))
     useDaD = args.useDaD
     useDaDTrain = args.useDaDTrain
     if_save = None
-
     agent.state = env.reset()
 
     if args.if_off_policy:
@@ -66,7 +65,7 @@ def train_and_evaluate(args, threshold, fc, n_k, k_steps):
         trajectory, dad_train_trajectory, explore_reward ,raw_rewards = agent.explore_env(env, target_step)
         cur_use_dad_step = False
         explore_rewards.extend(explore_reward) # explore rewards
-
+        steps, r_exp = buffer.update_buffer((trajectory,))
         '''
         DaD train
         '''
@@ -84,7 +83,7 @@ def train_and_evaluate(args, threshold, fc, n_k, k_steps):
             threshold = model_error_mean / 2.0 + pow(0.9, n) * model_error_mean / 2.0
 
             if train_number <= 10 or min_model_error <= threshold and useDaDTrain:
-                dad_trajectory, dad_step = dad.explore_env(env, target_step, dad_train_buffer, raw_rewards, agent.act.get_action, fc, n_k, k_steps)
+                dad_trajectory, dad_step = dad.explore_env(env, target_step, dad_train_buffer, raw_rewards, agent.act, fc)
                 trajectory = [torch.cat((trajectory[idx], dad_trajectory[idx])) for idx in range(5)]
                 cur_use_dad_step = True
                 use_dad_trains += 1
@@ -99,13 +98,11 @@ def train_and_evaluate(args, threshold, fc, n_k, k_steps):
         '''
         The End
         '''
-
-        steps, r_exp = buffer.update_buffer((trajectory,))
+        if cur_use_dad_step:
+            dad_steps, dad_r_exp = buffer.update_buffer((trajectory,))
         torch.set_grad_enabled(True)
         logging_tuple = agent.update_net(buffer)
         torch.set_grad_enabled(False)
-        if cur_use_dad_step:
-            steps -= dad_step
 
         (if_reach_goal, if_save) = evaluator.evaluate_save_and_plot(
             agent.act, steps, r_exp, logging_tuple
@@ -144,7 +141,9 @@ def train_and_evaluate(args, threshold, fc, n_k, k_steps):
     print(f"| UsedTime: {time.time() - evaluator.start_time:.0f} | SavedDir: {cwd}")
     agent.save_or_load_agent(cwd, if_save=if_save)
     buffer.save_or_load_history(cwd, if_save=True) if agent.if_off_policy else None
-    print(dad_steps)
+
+    """record add dad steps number"""
+    np.save(cwd + "/" + "dadaddstepsnumber", dad_steps)
     evaluator.save_explorerewards_curve_plot_and_npy(cwd, explore_rewards, useDaD, threshold)
 
     if useDaD:

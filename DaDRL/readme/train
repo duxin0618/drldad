@@ -5,33 +5,39 @@
 finish env:
 
 
-
 doing env:
 ppo
 1. inverted_double_pendulum  (done)               9100                       2e5
-2. Reacher-v2                (no do)
-3. HalfCheetah-v2            (redo)               4800                       3e6
+2. Reacher-v2                (redo)                                          4e5
+3. HalfCheetah-v2            (done)               4800                       3e6
 Question: dont reach max reward
 4. Hopper-v2                 (redo)               3700                      6e6
 Question: Great fluctuation
-5. Walker2d-v2               (done)               4000                       1e7
+5. Walker2d-v2               (done)               4000                       6e6
 Question: small fluctuation
 6. Humanoid-v3               (try)                                       1.25e7   (more complex)
 7. Ant-v2                    (try)
-9. inverted_pendulum         (doing)
-10. pendulum                 (doing)
+9. inverted_pendulum         (done)
+10. pendulum                 (done)
+11. Cartpole                 (done)
+8. swimmer                   (done)
 
 dad+ppo
-1. inverted_double_pendulum  (doing)
-2. Reacher-v2                (doing)
-3. HalfCheetah-v2            (doing)               4800                       3e6
-4. Hopper-v2                 (doing)               3700
-5. Walker2d-v2               (no do)               4000                       1e7
+1. cartpole                  (nodone)
+2. inverted_double_pendulum  (nodone)
+3. Reacher-v2                (nodone)
+4. HalfCheetah-v2            (nodone)               4800                       3e6
+5. Hopper-v2                 (nodone)               3700
+6. Walker2d-v2               (nodone)               4000                       6e6
+7. pendulum                  (doing)
+8. invertedPendulum          (nodone)
+
 6. Humanoid-v3               (no do)                                       1.25e7   (more complex)
 7. Ant-v2                    (no do)
-
 9. inverted_pendulum
-10. pendulum
+8. swimmer
+9. striker
+
 
 
 tune-1:
@@ -42,4 +48,15 @@ tune-3
 evaluate-time augment
 tune-4
 if use reward which is real env getting, the policy dont update before use dad.
+tune-5
+add a sample, example: 1000 -> 1001, to train dad
+
+
+
+result:
+train dad with different action trajectory, policy would be robustness
+
+
+thinking:
+we can use other lib to train envs, such as Stable Baseline 3 etc.
 

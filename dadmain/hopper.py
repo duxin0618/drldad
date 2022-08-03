@@ -19,23 +19,23 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         env = HopperEnv()
         args = Arguments(agent_class, env=env)
 
-        args.eval_times = 2 ** 4
-        args.reward_scale = 2 ** -4
-
+        args.eval_times = 2 ** 5
+        args.reward_scale = 2 ** -2
+        args.learning_rate = 2 ** -14
         args.target_step = args.max_step * 6  # 6
         args.worker_num = 2
         args.eval_gap = 2 * 60
         args.net_dim = 2 ** 7
-        args.layer_num = 3
+        args.layer_num = 2
         args.batch_size = int(args.net_dim * 2)
         args.repeat_times = 2 ** 4
-        args.ratio_clip = 0.25
-        args.gamma = 0.993
+        args.ratio_clip = 0.2
+        args.gamma = 0.995
         args.lambda_entropy = 0.02
         args.lambda_h_term = 2 ** -5
 
         args.if_allow_break = False
-        args.break_step = int(8e6)
+        args.break_step = int(4e6)
     else:
         raise ValueError('env_name:', env_name)
 
@@ -47,8 +47,8 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.useDaDTrain = True
     args.if_state_expand = True
 
-    n_k = 10  # traj number
-    k_steps = 100  # traj length
+    n_k = 20  # traj number
+    k_steps = 200  # traj length
     from DaDRL.static.hopper import StaticFns as fc
     train_and_evaluate(args, threshold, fc, n_k, k_steps)
 

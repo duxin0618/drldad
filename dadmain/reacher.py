@@ -58,7 +58,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.useDaDTrain = True
     args.if_state_expand = False
 
-    n_k = 6  # traj number
+    n_k = 20  # traj number
     k_steps = 10  # traj length
     from DaDRL.static.Reacher import StaticFns as fc
     train_and_evaluate(args, threshold, fc, n_k, k_steps)

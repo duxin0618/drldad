@@ -49,8 +49,8 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.if_state_expand = True
 
 
-    n_k = 10  # traj number
-    k_steps = 100  # traj length
+    n_k = 20  # traj number
+    k_steps = 200  # traj length
     from DaDRL.static.halfcheetah import StaticFns as fc
     train_and_evaluate(args, threshold, fc, n_k, k_steps)
 
@@ -59,7 +59,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
 if __name__ == '__main__':
 
     # HalfCheetah-v2
-    GPU_ID = 2
+    GPU_ID = 1
     DRL_ID = 1
     ENV_ID = 0
 

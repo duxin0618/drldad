@@ -1,8 +1,6 @@
 
 import torch
 
-
-
 class ReplayBufferList(list):  # for on-policy
     def __init__(self):
         list.__init__(self)

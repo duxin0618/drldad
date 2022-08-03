@@ -27,7 +27,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
                     'id': 'CartPole-v0'}
         args = Arguments(agent_class, env_func=env_func, env_args=env_args)
 
-        args.target_step = args.max_step * 10
+        args.target_step = args.max_step * 5
         args.reward_scale = 2 ** 0
         args.gamma = 0.99
 
@@ -36,7 +36,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         args.batch_size = int(args.net_dim * 2)
         args.repeat_times = 2 ** 4
         args.break_step = 5e3
-        args.if_allow_break = True # 到达break_step就停止
+        args.if_allow_break = False # 到达break_step就停止
         args.eval_times = 2 ** 5
         args.eval_gap = 2 ** 1  # eva time sec
         args.lambda_h_term = 2 ** -5
@@ -50,14 +50,14 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.if_state_expand = False
     n_k = 20             # traj number
     k_steps = 20         # traj length
-    from DaDRL.static.pendulum import StaticFns as fc
+    from DaDRL.static.cartpole import StaticFns as fc
     train_and_evaluate(args, threshold, fc, n_k, k_steps)
 
 if __name__ == '__main__':
 
 
     GPU_ID = 0
-    DRL_ID = 1
+    DRL_ID = 2
     ENV_ID = 0
 
     demo_a2c_ppo(GPU_ID, DRL_ID, ENV_ID)

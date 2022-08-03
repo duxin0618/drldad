@@ -58,6 +58,9 @@ class Dagger:
         self.device = torch.device(f"cuda:{gpu_id}" if (torch.cuda.is_available() and (gpu_id >= 0)) else "cpu")
         self.it_steps = 1
 
+        self.n_k = args.n_k
+        self.k_steps = args.k_steps
+
     def doLearn(self, states, actions, states_next):
 
         state_train = np.stack(states, axis=2)
@@ -93,28 +96,37 @@ class Dagger:
         return self.dad.min_train_error, self.dad.initial_model_error
 
     # explore_env
-    def explore_env(self, env, target_step, buffer, raw_reward, act, fc, n_k, k_steps):
+    def explore_env(self, env, target_step, buffer, raw_reward, act, fc):
 
         predict = self.dad.min_train_error_model.predict
         buf_state, buf_reward, buf_mask, buf_action, buf_noise = [ten for ten in buffer]
         # sample random number init states
 
-        n_k = n_k
 
-        init_states_index = np.random.choice(np.array(buf_state).shape[0], n_k)
+        init_states_index = np.random.choice(np.array(buf_state).shape[0], self.n_k)
         init_states = buf_state[init_states_index]
+        # print("init_states_index_state: ",buf_state[0])
+        # print("init_states_index_state_next: ", buf_state[1])
+        # action = buf_action[0]
+        # state = buf_state[0]
+        # _ac_s = np.expand_dims([action], axis=0)
+        # _ob_s = np.expand_dims(state, axis=0)
+        # _ob_next = predict(_ob_s, _ac_s)[0]
+        # print("predict: ", _ob_next)
+        # return None
         traj_list = list()
         last_done = [
             0,
         ]
 
         step_i = 0
-        k_steps = k_steps
-        done = False
-        for epoch in range(n_k):
+
+        for epoch in range(self.n_k):
             state = init_states[epoch]
             inner_steps = 0
-            while inner_steps < k_steps and not done:
+            done = False
+            fc.resetModel()
+            while inner_steps < self.k_steps and not done:
                 if self.if_state_expand:
                     state_s = state[1:]
                 else:
@@ -125,24 +137,28 @@ class Dagger:
                     ten_s = state_s.unsqueeze(0)
 
                 ten_a, ten_n = [
-                    ten.cpu() for ten in act(ten_s.to(self.device))
+                    ten.cpu() for ten in act.get_action(ten_s.to(self.device))
                 ]  # different
-                action = ten_a.tanh()[0].numpy()
+                action = act.get_a_to_e(ten_a)[0].numpy()
                 _ob_s = np.expand_dims(state, axis=0)
-                _ac_s = np.expand_dims(action, axis=0)  # if cartpole => [action]
+                if self.if_discrete:
+                    _ac_s = np.expand_dims([action], axis=0)  # if cartpole => [action]
+                else:
+                    _ac_s = np.expand_dims(action, axis=0)
                 _ob_next = predict(_ob_s, _ac_s)[0]
                 _ob_next = fc.clip_state(env, _ob_next)
                 done, reward = fc.termination_res_fn(env, state, action, _ob_next)
-
+                if inner_steps+1 == self.k_steps:
+                    done = True
                 traj_list.append((ten_s, reward, done, ten_a, ten_n))
 
                 state = torch.tensor(_ob_next, dtype=torch.float32)
                 step_i += 1
                 inner_steps += 1
 
-                if done:
-                    cur_states_index = np.random.choice(np.array(buf_state).shape[0], 1)
-                    state = buf_state[cur_states_index][0]
+                # if done:
+                #     cur_states_index = np.random.choice(np.array(buf_state).shape[0], 1)
+                #     state = buf_state[cur_states_index][0]
 
         last_done[0] = step_i
         return self.convert_trajectory(traj_list, last_done), step_i  # traj_list
