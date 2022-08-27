@@ -1,0 +1,1081 @@
+nohup: ignoring input
+Intel(R) Extension for Scikit-learn* enabled (https://github.com/intel/scikit-learn-intelex)
+Intel(R) Extension for Scikit-learn* enabled (https://github.com/intel/scikit-learn-intelex)
+
+| PendulumEnv: Pendulum Env set its action space as (-2, +2).
+| And we scale the action, and set the action space as (-1, +1).
+| So do not use your policy network on raw env directly.
+| Arguments Remove cwd: ./result/Pendulum-v0_PPO_1_dadRL_20X10
+Using DaDRL
+################################################################################
+ID     Step    maxR |    avgR   stdR   avgS  stdS |    expR   objC   etc.
+eval_reward_mean:  -1516.773019410731
+real_explore_steps is : 800
+rew_info [-1842.8016999672561, -1201.1972184091412, -1516.773019410731]
+eval_reward_mean:  -1409.7558280208298
+real_explore_steps is : 1600
+rew_info [-1519.0438323577366, -1164.3891203597643, -1409.7558280208298]
+model_loss :  -2.0885551108254328
+cur_rollout_steps is:  810
+model train number is : 1 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  810
+1  8.10e+02-1626.41 |
+1  8.10e+02-1626.41 |-1626.41  145.3    200     0 |   -3.27   9.68   0.10   0.00
+cur_rollout_steps is:  810
+model train number is : 2 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  1620
+1  1.62e+03-1486.68 |
+1  1.62e+03-1486.68 |-1486.68   67.3    200     0 |   -2.85   5.43   0.16   0.00
+cur_rollout_steps is:  810
+model train number is : 3 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  2430
+1  2.43e+03-1486.68 |-1497.84  150.9    200     0 |   -2.93   5.92   0.00   0.00
+model_loss :  -2.826682376861572
+cur_rollout_steps is:  810
+model train number is : 4 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  3240
+1  3.24e+03-1448.48 |
+1  3.24e+03-1448.48 |-1448.48   84.1    200     0 |   -3.40   6.58  -0.07   0.00
+cur_rollout_steps is:  810
+model train number is : 5 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  4050
+1  4.05e+03-1448.48 |-1477.24  199.3    200     0 |   -3.12   5.89   0.17   0.00
+cur_rollout_steps is:  810
+model train number is : 6 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  4860
+1  4.86e+03-1448.48 |-1512.19  225.7    200     0 |   -3.24   6.43   0.04   0.00
+model_loss :  -3.5824875150408064
+cur_rollout_steps is:  780
+model train number is : 7 real_explore_steps 1600  cur_rollout_steps is  780 sum_rollout_steps:  5640
+1  5.64e+03-1316.37 |
+1  5.64e+03-1316.37 |-1316.37  152.5    200     0 |   -3.46   6.24   0.07   0.00
+cur_rollout_steps is:  800
+model train number is : 8 real_explore_steps 1600  cur_rollout_steps is  800 sum_rollout_steps:  6440
+1  6.44e+03-1316.37 |-1466.00  197.5    200     0 |   -3.35   6.48  -0.04   0.00
+cur_rollout_steps is:  800
+model train number is : 9 real_explore_steps 1600  cur_rollout_steps is  800 sum_rollout_steps:  7240
+1  7.24e+03-1316.37 |-1563.11  234.7    200     0 |   -3.56   7.42  -0.09   0.00
+model_loss :  -4.326026524816241
+cur_rollout_steps is:  640
+model train number is : 10 real_explore_steps 1600  cur_rollout_steps is  640 sum_rollout_steps:  7880
+1  7.88e+03-1316.37 |-1592.79  271.4    200     0 |   -3.48   6.83  -0.13   0.00
+cur_rollout_steps is:  660
+model train number is : 11 real_explore_steps 1600  cur_rollout_steps is  660 sum_rollout_steps:  8540
+1  8.54e+03-1316.37 |-1534.31  202.4    200     0 |   -3.49   6.95   0.03   0.00
+cur_rollout_steps is:  610
+model train number is : 12 real_explore_steps 1600  cur_rollout_steps is  610 sum_rollout_steps:  9150
+1  9.15e+03-1316.37 |-1438.89  189.6    200     0 |   -3.25   6.37  -0.03   0.00
+model_loss :  -4.417215852176442
+cur_rollout_steps is:  450
+model train number is : 13 real_explore_steps 1600  cur_rollout_steps is  450 sum_rollout_steps:  9600
+1  9.60e+03-1314.28 |
+1  9.60e+03-1314.28 |-1314.28  246.0    200     0 |   -3.70   7.81  -0.15   0.00
+cur_rollout_steps is:  570
+model train number is : 14 real_explore_steps 1600  cur_rollout_steps is  570 sum_rollout_steps:  10170
+1  1.02e+04-1314.28 |-1611.33  339.5    200     0 |   -3.42   7.57   0.00   0.00
+cur_rollout_steps is:  550
+model train number is : 15 real_explore_steps 1600  cur_rollout_steps is  550 sum_rollout_steps:  10720
+1  1.07e+04-1314.28 |-1360.09  215.7    200     0 |   -3.49   7.35  -0.01   0.00
+model_loss :  -4.459570050239563
+cur_rollout_steps is:  700
+model train number is : 16 real_explore_steps 1600  cur_rollout_steps is  700 sum_rollout_steps:  11420
+1  1.14e+04-1314.28 |-1519.30  290.2    200     0 |   -3.36   7.04   0.15   0.00
+cur_rollout_steps is:  630
+model train number is : 17 real_explore_steps 1600  cur_rollout_steps is  630 sum_rollout_steps:  12050
+1  1.20e+04-1314.28 |-1572.19  220.6    200     0 |   -3.63   6.60  -0.02   0.00
+cur_rollout_steps is:  690
+model train number is : 18 real_explore_steps 1600  cur_rollout_steps is  690 sum_rollout_steps:  12740
+1  1.27e+04-1231.08 |
+1  1.27e+04-1231.08 |-1231.08  359.7    200     0 |   -3.39   6.92   0.00   0.00
+model_loss :  -4.494521306908649
+cur_rollout_steps is:  630
+model train number is : 19 real_explore_steps 1600  cur_rollout_steps is  630 sum_rollout_steps:  13370
+1  1.34e+04-1231.08 |-1289.23  258.3    200     0 |   -3.26   7.23  -0.06   0.00
+cur_rollout_steps is:  660
+model train number is : 20 real_explore_steps 1600  cur_rollout_steps is  660 sum_rollout_steps:  14030
+1  1.40e+04-1231.08 |-1559.64  228.5    200     0 |   -3.42   5.93  -0.05   0.00
+cur_rollout_steps is:  640
+model train number is : 21 real_explore_steps 1600  cur_rollout_steps is  640 sum_rollout_steps:  14670
+1  1.47e+04-1231.08 |-1528.10  286.7    200     0 |   -3.39   6.49  -0.03   0.00
+model_loss :  -4.523136471802333
+cur_rollout_steps is:  790
+model train number is : 22 real_explore_steps 1600  cur_rollout_steps is  790 sum_rollout_steps:  15460
+1  1.55e+04-1231.08 |-1642.20  266.3    200     0 |   -3.45   7.26  -0.15   0.00
+cur_rollout_steps is:  720
+model train number is : 23 real_explore_steps 1600  cur_rollout_steps is  720 sum_rollout_steps:  16180
+1  1.62e+04-1231.08 |-1435.60  102.0    200     0 |   -3.23   4.78   0.18   0.00
+cur_rollout_steps is:  730
+model train number is : 24 real_explore_steps 1600  cur_rollout_steps is  730 sum_rollout_steps:  16910
+1  1.69e+04-1231.08 |-1496.60  219.8    200     0 |   -3.41   6.80   0.11   0.00
+model_loss :  -4.548452474303165
+cur_rollout_steps is:  770
+model train number is : 25 real_explore_steps 1600  cur_rollout_steps is  770 sum_rollout_steps:  17680
+1  1.77e+04-1231.08 |-1543.06  211.3    200     0 |   -3.36   6.30  -0.00   0.00
+cur_rollout_steps is:  740
+model train number is : 26 real_explore_steps 1600  cur_rollout_steps is  740 sum_rollout_steps:  18420
+1  1.84e+04-1231.08 |-1499.14  278.9    200     0 |   -3.25   5.75  -0.05   0.00
+cur_rollout_steps is:  800
+model train number is : 27 real_explore_steps 1600  cur_rollout_steps is  800 sum_rollout_steps:  19220
+1  1.92e+04-1231.08 |-1466.66   74.3    200     0 |   -3.42   7.07   0.06   0.00
+model_loss :  -4.561428018716666
+cur_rollout_steps is:  790
+model train number is : 28 real_explore_steps 1600  cur_rollout_steps is  790 sum_rollout_steps:  20010
+1  2.00e+04-1231.08 |-1581.34  208.9    200     0 |   -3.33   6.57  -0.04   0.00
+cur_rollout_steps is:  780
+model train number is : 29 real_explore_steps 1600  cur_rollout_steps is  780 sum_rollout_steps:  20790
+1  2.08e+04-1231.08 |-1396.60  123.7    200     0 |   -3.58   6.79   0.15   0.00
+cur_rollout_steps is:  770
+model train number is : 30 real_explore_steps 1600  cur_rollout_steps is  770 sum_rollout_steps:  21560
+1  2.16e+04-1231.08 |-1702.24  247.0    200     0 |   -3.27   6.24   0.05   0.00
+model_loss :  -4.568496375016763
+cur_rollout_steps is:  770
+model train number is : 31 real_explore_steps 1600  cur_rollout_steps is  770 sum_rollout_steps:  22330
+1  2.23e+04-1231.08 |-1604.66  197.3    200     0 |   -3.55   7.80   0.07   0.00
+cur_rollout_steps is:  790
+model train number is : 32 real_explore_steps 1600  cur_rollout_steps is  790 sum_rollout_steps:  23120
+1  2.31e+04-1231.08 |-1440.56  200.2    200     0 |   -3.60   5.91  -0.03   0.00
+cur_rollout_steps is:  790
+model train number is : 33 real_explore_steps 1600  cur_rollout_steps is  790 sum_rollout_steps:  23910
+1  2.39e+04-1231.08 |-1480.82  268.5    200     0 |   -3.29   6.00  -0.04   0.00
+model_loss :  -4.578481790346977
+cur_rollout_steps is:  790
+model train number is : 34 real_explore_steps 1600  cur_rollout_steps is  790 sum_rollout_steps:  24700
+1  2.47e+04-1231.08 |-1497.03  167.1    200     0 |   -3.59   6.45   0.10   0.00
+cur_rollout_steps is:  810
+model train number is : 35 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  25510
+1  2.55e+04-1231.08 |-1562.17  208.2    200     0 |   -3.26   6.54   0.15   0.00
+cur_rollout_steps is:  810
+model train number is : 36 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  26320
+1  2.63e+04-1231.08 |-1592.75  185.7    200     0 |   -3.63   6.54  -0.09   0.00
+model_loss :  -4.58361109665462
+cur_rollout_steps is:  800
+model train number is : 37 real_explore_steps 1600  cur_rollout_steps is  800 sum_rollout_steps:  27120
+1  2.71e+04-1231.08 |-1547.97  173.4    200     0 |   -3.13   6.04   0.00   0.00
+cur_rollout_steps is:  800
+model train number is : 38 real_explore_steps 1600  cur_rollout_steps is  800 sum_rollout_steps:  27920
+1  2.79e+04-1231.08 |-1389.66  232.4    200     0 |   -3.42   6.64  -0.01   0.00
+cur_rollout_steps is:  810
+model train number is : 39 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  28730
+1  2.87e+04-1231.08 |-1694.94  292.7    200     0 |   -3.34   6.36  -0.07   0.00
+model_loss :  -4.595026546054417
+cur_rollout_steps is:  790
+model train number is : 40 real_explore_steps 1600  cur_rollout_steps is  790 sum_rollout_steps:  29520
+1  2.95e+04-1231.08 |-1446.57  220.6    200     0 |   -3.41   7.27   0.05   0.00
+cur_rollout_steps is:  810
+model train number is : 41 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  30330
+1  3.03e+04-1231.08 |-1578.32  328.6    200     0 |   -3.52   6.61   0.16   0.00
+cur_rollout_steps is:  800
+model train number is : 42 real_explore_steps 1600  cur_rollout_steps is  800 sum_rollout_steps:  31130
+1  3.11e+04-1231.08 |-1423.63  347.2    200     0 |   -3.11   5.54   0.16   0.00
+model_loss :  -4.599126736323039
+cur_rollout_steps is:  810
+model train number is : 43 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  31940
+1  3.19e+04-1231.08 |-1491.61  263.4    200     0 |   -3.14   6.27   0.16   0.00
+cur_rollout_steps is:  810
+model train number is : 44 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  32750
+1  3.28e+04-1231.08 |-1492.45  353.4    200     0 |   -3.48   7.85  -0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 45 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  33560
+1  3.36e+04-1231.08 |-1614.74  222.5    200     0 |   -3.45   6.26   0.16   0.00
+model_loss :  -4.605355031281999
+cur_rollout_steps is:  810
+model train number is : 46 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  34370
+1  3.44e+04-1231.08 |-1362.43  211.8    200     0 |   -3.14   6.36  -0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 47 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  35180
+1  3.52e+04-1231.08 |-1508.37  231.1    200     0 |   -3.30   5.04   0.00   0.00
+cur_rollout_steps is:  810
+model train number is : 48 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  35990
+1  3.60e+04-1231.08 |-1608.60  255.7    200     0 |   -3.21   5.84  -0.22   0.00
+model_loss :  -4.610882925331046
+cur_rollout_steps is:  810
+model train number is : 49 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  36800
+1  3.68e+04-1231.08 |-1504.28  158.8    200     0 |   -3.22   6.29   0.14   0.00
+cur_rollout_steps is:  810
+model train number is : 50 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  37610
+1  3.76e+04-1231.08 |-1477.50  207.2    200     0 |   -3.47   7.36  -0.09   0.00
+cur_rollout_steps is:  810
+model train number is : 51 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  38420
+1  3.84e+04-1231.08 |-1577.98  228.9    200     0 |   -3.35   6.75   0.17   0.00
+model_loss :  -4.6208796459695565
+cur_rollout_steps is:  810
+model train number is : 52 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  39230
+1  3.92e+04-1231.08 |-1506.23  174.0    200     0 |   -3.25   5.33  -0.08   0.00
+cur_rollout_steps is:  810
+model train number is : 53 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  40040
+1  4.00e+04-1231.08 |-1612.23  357.5    200     0 |   -3.21   6.07  -0.02   0.00
+cur_rollout_steps is:  810
+model train number is : 54 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  40850
+1  4.08e+04-1231.08 |-1656.69  257.1    200     0 |   -3.31   6.60  -0.08   0.00
+model_loss :  -4.626246219824169
+cur_rollout_steps is:  810
+model train number is : 55 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  41660
+1  4.17e+04-1231.08 |-1549.24  158.5    200     0 |   -3.24   5.49  -0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 56 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  42470
+1  4.25e+04-1231.08 |-1398.87   96.3    200     0 |   -3.25   4.99   0.08   0.00
+cur_rollout_steps is:  810
+model train number is : 57 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  43280
+1  4.33e+04-1231.08 |-1637.39  208.8    200     0 |   -3.05   4.71  -0.07   0.00
+model_loss :  -4.622317276895046
+cur_rollout_steps is:  810
+model train number is : 58 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  44090
+1  4.41e+04-1231.08 |-1536.52  174.2    200     0 |   -3.30   5.49  -0.01   0.00
+cur_rollout_steps is:  810
+model train number is : 59 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  44900
+1  4.49e+04-1231.08 |-1699.79  236.5    200     0 |   -3.38   6.90   0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 60 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  45710
+1  4.57e+04-1231.08 |-1481.72  160.7    200     0 |   -3.24   5.78   0.16   0.00
+model_loss :  -4.632251337393006
+cur_rollout_steps is:  810
+model train number is : 61 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  46520
+1  4.65e+04-1231.08 |-1616.38  135.5    200     0 |   -3.27   4.81  -0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 62 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  47330
+1  4.73e+04-1231.08 |-1507.96  113.2    200     0 |   -3.10   5.26   0.11   0.00
+cur_rollout_steps is:  810
+model train number is : 63 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  48140
+1  4.81e+04-1231.08 |-1586.57  144.5    200     0 |   -3.37   5.07   0.03   0.00
+model_loss :  -4.633921548298427
+cur_rollout_steps is:  810
+model train number is : 64 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  48950
+1  4.90e+04-1231.08 |-1670.73  107.1    200     0 |   -3.15   5.80  -0.10   0.00
+cur_rollout_steps is:  810
+model train number is : 65 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  49760
+1  4.98e+04-1231.08 |-1471.90  172.4    200     0 |   -3.20   5.85  -0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 66 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  50570
+1  5.06e+04-1231.08 |-1529.02  164.8    200     0 |   -3.04   5.03   0.11   0.00
+model_loss :  -4.6384031772613525
+cur_rollout_steps is:  810
+model train number is : 67 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  51380
+1  5.14e+04-1231.08 |-1516.00   73.9    200     0 |   -3.16   5.22   0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 68 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  52190
+1  5.22e+04-1231.08 |-1527.67  156.2    200     0 |   -3.31   5.54  -0.16   0.00
+cur_rollout_steps is:  810
+model train number is : 69 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  53000
+1  5.30e+04-1231.08 |-1561.11  130.7    200     0 |   -3.24   5.96   0.04   0.00
+model_loss :  -4.638782111647862
+cur_rollout_steps is:  810
+model train number is : 70 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  53810
+1  5.38e+04-1231.08 |-1483.34  206.8    200     0 |   -3.21   5.47   0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 71 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  54620
+1  5.46e+04-1231.08 |-1479.68  160.4    200     0 |   -3.09   4.96   0.04   0.00
+cur_rollout_steps is:  810
+model train number is : 72 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  55430
+1  5.54e+04-1231.08 |-1541.31  196.3    200     0 |   -3.06   4.40   0.00   0.00
+model_loss :  -4.645169330093096
+cur_rollout_steps is:  810
+model train number is : 73 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  56240
+1  5.62e+04-1231.08 |-1564.10  219.7    200     0 |   -3.31   5.82  -0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 74 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  57050
+1  5.70e+04-1231.08 |-1512.40  227.1    200     0 |   -3.03   4.55   0.15   0.00
+cur_rollout_steps is:  810
+model train number is : 75 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  57860
+1  5.79e+04-1231.08 |-1550.57  163.0    200     0 |   -3.35   5.70  -0.02   0.00
+model_loss :  -4.653675047556559
+cur_rollout_steps is:  810
+model train number is : 76 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  58670
+1  5.87e+04-1231.08 |-1542.82  172.3    200     0 |   -3.26   5.94   0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 77 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  59480
+1  5.95e+04-1231.08 |-1457.11  226.3    200     0 |   -3.00   5.26  -0.14   0.00
+cur_rollout_steps is:  810
+model train number is : 78 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  60290
+1  6.03e+04-1231.08 |-1406.66  144.6    200     0 |   -3.12   5.41   0.13   0.00
+model_loss :  -4.6545189528437385
+cur_rollout_steps is:  810
+model train number is : 79 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  61100
+1  6.11e+04-1231.08 |-1400.86  228.9    200     0 |   -3.13   5.25  -0.08   0.00
+cur_rollout_steps is:  810
+model train number is : 80 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  61910
+1  6.19e+04-1231.08 |-1566.38  195.0    200     0 |   -3.26   5.34   0.02   0.00
+cur_rollout_steps is:  810
+model train number is : 81 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  62720
+1  6.27e+04-1231.08 |-1382.65  237.1    200     0 |   -3.11   4.68  -0.01   0.00
+model_loss :  -4.662328117349174
+cur_rollout_steps is:  810
+model train number is : 82 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  63530
+1  6.35e+04-1231.08 |-1614.76  123.1    200     0 |   -3.16   4.78   0.04   0.00
+cur_rollout_steps is:  810
+model train number is : 83 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  64340
+1  6.43e+04-1231.08 |-1333.84  327.2    200     0 |   -3.07   5.66   0.01   0.00
+cur_rollout_steps is:  810
+model train number is : 84 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  65150
+1  6.52e+04-1231.08 |-1308.53  281.4    200     0 |   -3.21   4.82   0.02   0.00
+model_loss :  -4.6665209998255195
+cur_rollout_steps is:  810
+model train number is : 85 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  65960
+1  6.60e+04-1080.71 |
+1  6.60e+04-1080.71 |-1080.71  312.0    200     0 |   -3.12   5.97   0.05   0.00
+cur_rollout_steps is:  810
+model train number is : 86 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  66770
+1  6.68e+04-1080.71 |-1347.64  136.5    200     0 |   -3.12   5.25  -0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 87 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  67580
+1  6.76e+04-1080.71 |-1365.59  282.1    200     0 |   -2.90   5.66   0.16   0.00
+model_loss :  -4.671974884836297
+cur_rollout_steps is:  810
+model train number is : 88 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  68390
+1  6.84e+04-1080.71 |-1309.81  222.8    200     0 |   -3.25   5.94  -0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 89 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  69200
+1  6.92e+04-1080.71 |-1361.09  161.7    200     0 |   -2.94   5.01   0.11   0.00
+cur_rollout_steps is:  810
+model train number is : 90 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  70010
+1  7.00e+04-1080.71 |-1192.33  145.4    200     0 |   -3.03   6.52   0.14   0.00
+model_loss :  -4.673229845202699
+cur_rollout_steps is:  810
+model train number is : 91 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  70820
+1  7.08e+04-1080.71 |-1243.84  217.0    200     0 |   -3.29   5.65  -0.05   0.00
+cur_rollout_steps is:  810
+model train number is : 92 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  71630
+1  7.16e+04-1080.71 |-1301.20  206.0    200     0 |   -2.99   5.53  -0.00   0.00
+cur_rollout_steps is:  810
+model train number is : 93 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  72440
+1  7.24e+04-1080.71 |-1352.08  225.8    200     0 |   -3.16   5.86  -0.03   0.00
+model_loss :  -4.6798461309754025
+cur_rollout_steps is:  810
+model train number is : 94 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  73250
+1  7.32e+04-1080.71 |-1277.69  115.9    200     0 |   -3.16   4.69  -0.12   0.00
+cur_rollout_steps is:  810
+model train number is : 95 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  74060
+1  7.41e+04-1080.71 |-1274.40  144.2    200     0 |   -3.21   5.60   0.09   0.00
+cur_rollout_steps is:  810
+model train number is : 96 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  74870
+1  7.49e+04-1080.71 |-1325.18  203.0    200     0 |   -2.97   6.00   0.16   0.00
+model_loss :  -4.682229032927153
+cur_rollout_steps is:  810
+model train number is : 97 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  75680
+1  7.57e+04-1080.71 |-1349.14  188.1    200     0 |   -3.26   5.62  -0.11   0.00
+cur_rollout_steps is:  810
+model train number is : 98 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  76490
+1  7.65e+04-1080.71 |-1498.83  179.6    200     0 |   -3.28   5.26   0.11   0.00
+cur_rollout_steps is:  810
+model train number is : 99 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  77300
+1  7.73e+04-1080.71 |-1471.65  208.2    200     0 |   -3.21   5.37   0.04   0.00
+model_loss :  -4.687713279280552
+cur_rollout_steps is:  810
+model train number is : 100 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  78110
+1  7.81e+04-1080.71 |-1411.72  191.2    200     0 |   -3.20   5.46  -0.07   0.00
+cur_rollout_steps is:  810
+model train number is : 101 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  78920
+1  7.89e+04-1080.71 |-1364.28  253.6    200     0 |   -2.93   4.36   0.13   0.00
+cur_rollout_steps is:  810
+model train number is : 102 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  79730
+1  7.97e+04-1080.71 |-1413.50  209.2    200     0 |   -3.21   4.91   0.16   0.00
+model_loss :  -4.690991621751052
+cur_rollout_steps is:  810
+model train number is : 103 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  80540
+1  8.05e+04-1080.71 |-1382.26  162.3    200     0 |   -3.08   6.72   0.08   0.00
+cur_rollout_steps is:  810
+model train number is : 104 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  81350
+1  8.14e+04-1080.71 |-1363.92  239.1    200     0 |   -3.06   4.89  -0.10   0.00
+cur_rollout_steps is:  810
+model train number is : 105 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  82160
+1  8.22e+04-1080.71 |-1223.84  135.5    200     0 |   -3.21   4.52  -0.02   0.00
+model_loss :  -4.694214577191727
+cur_rollout_steps is:  810
+model train number is : 106 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  82970
+1  8.30e+04-1080.71 |-1198.04  181.3    200     0 |   -3.23   4.86  -0.04   0.00
+cur_rollout_steps is:  810
+model train number is : 107 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  83780
+1  8.38e+04-1080.71 |-1314.92  206.9    200     0 |   -2.87   4.26  -0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 108 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  84590
+1  8.46e+04-1080.71 |-1404.66  266.8    200     0 |   -2.95   5.51   0.14   0.00
+model_loss :  -4.701277749151246
+cur_rollout_steps is:  810
+model train number is : 109 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  85400
+1  8.54e+04-1080.71 |-1374.71  183.6    200     0 |   -3.29   5.44   0.04   0.00
+cur_rollout_steps is:  810
+model train number is : 110 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  86210
+1  8.62e+04-1080.71 |-1402.87  211.4    200     0 |   -3.20   6.01  -0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 111 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  87020
+1  8.70e+04-1080.71 |-1296.86  201.9    200     0 |   -3.09   5.80  -0.03   0.00
+model_loss :  -4.704653386274973
+cur_rollout_steps is:  810
+model train number is : 112 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  87830
+1  8.78e+04-1080.71 |-1481.83  124.7    200     0 |   -3.18   4.77   0.03   0.00
+cur_rollout_steps is:  810
+model train number is : 113 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  88640
+1  8.86e+04-1080.71 |-1225.24  156.7    200     0 |   -3.22   5.05   0.06   0.00
+cur_rollout_steps is:  810
+model train number is : 114 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  89450
+1  8.94e+04-1080.71 |-1474.17  161.2    200     0 |   -3.28   5.29   0.01   0.00
+model_loss :  -4.709636538978515
+cur_rollout_steps is:  810
+model train number is : 115 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  90260
+1  9.03e+04-1080.71 |-1450.70  188.1    200     0 |   -3.08   4.38  -0.07   0.00
+cur_rollout_steps is:  810
+model train number is : 116 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  91070
+1  9.11e+04-1080.71 |-1363.57  173.3    200     0 |   -3.07   5.86  -0.04   0.00
+cur_rollout_steps is:  810
+model train number is : 117 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  91880
+1  9.19e+04-1080.71 |-1305.54  238.5    200     0 |   -2.79   4.42   0.07   0.00
+model_loss :  -4.680333637055897
+cur_rollout_steps is:  810
+model train number is : 118 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  92690
+1  9.27e+04-1080.71 |-1296.14  245.6    200     0 |   -3.00   4.92  -0.04   0.00
+cur_rollout_steps is:  810
+model train number is : 119 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  93500
+1  9.35e+04-1080.71 |-1357.87  231.2    200     0 |   -3.04   4.54  -0.16   0.00
+cur_rollout_steps is:  810
+model train number is : 120 real_explore_steps 1600  cur_rollout_steps is  810 sum_rollout_steps:  94310
+1  9.43e+04-1080.71 |-1186.44  114.9    200     0 |   -3.21   5.21   0.02   0.00
+eval_reward_mean:  -1151.4580917659007
+real_explore_steps is : 2400
+rew_info [-1281.3681517249322, -979.2012359806561, -1151.4580917659007]
+model_loss :  -4.689912603101657
+cur_rollout_steps is:  740
+model train number is : 121 real_explore_steps 2400  cur_rollout_steps is  740 sum_rollout_steps:  95050
+1  9.50e+04-1080.71 |-1422.43  175.8    200     0 |   -2.97   4.97   0.02   0.00
+cur_rollout_steps is:  760
+model train number is : 122 real_explore_steps 2400  cur_rollout_steps is  760 sum_rollout_steps:  95810
+1  9.58e+04-1080.71 |-1339.31  278.5    200     0 |   -3.14   4.86  -0.06   0.00
+cur_rollout_steps is:  720
+model train number is : 123 real_explore_steps 2400  cur_rollout_steps is  720 sum_rollout_steps:  96530
+1  9.65e+04-1080.71 |-1231.82  216.5    200     0 |   -3.13   5.31   0.19   0.00
+model_loss :  -4.6883060448284075
+cur_rollout_steps is:  680
+model train number is : 124 real_explore_steps 2400  cur_rollout_steps is  680 sum_rollout_steps:  97210
+1  9.72e+04-1080.71 |-1345.01  216.9    200     0 |   -3.08   5.50   0.04   0.00
+cur_rollout_steps is:  630
+model train number is : 125 real_explore_steps 2400  cur_rollout_steps is  630 sum_rollout_steps:  97840
+1  9.78e+04-1080.71 |-1316.77  216.8    200     0 |   -3.31   6.10  -0.09   0.00
+cur_rollout_steps is:  670
+model train number is : 126 real_explore_steps 2400  cur_rollout_steps is  670 sum_rollout_steps:  98510
+1  9.85e+04-1080.71 |-1222.57  110.3    200     0 |   -3.32   5.02   0.05   0.00
+model_loss :  -4.683400732766691
+cur_rollout_steps is:  630
+model train number is : 127 real_explore_steps 2400  cur_rollout_steps is  630 sum_rollout_steps:  99140
+1  9.91e+04-1080.71 |-1334.30  189.4    200     0 |   -3.22   4.81  -0.03   0.00
+cur_rollout_steps is:  660
+model train number is : 128 real_explore_steps 2400  cur_rollout_steps is  660 sum_rollout_steps:  99800
+1  9.98e+04-1080.71 |-1476.07  167.4    200     0 |   -3.31   5.41   0.06   0.00
+cur_rollout_steps is:  670
+model train number is : 129 real_explore_steps 2400  cur_rollout_steps is  670 sum_rollout_steps:  100470
+1  1.00e+05-1080.71 |-1299.49  159.8    200     0 |   -3.26   5.99   0.05   0.00
+model_loss :  -4.675035479973102
+cur_rollout_steps is:  630
+model train number is : 130 real_explore_steps 2400  cur_rollout_steps is  630 sum_rollout_steps:  101100
+1  1.01e+05-1080.71 |-1236.87  263.8    200     0 |   -3.13   4.54   0.01   0.00
+cur_rollout_steps is:  620
+model train number is : 131 real_explore_steps 2400  cur_rollout_steps is  620 sum_rollout_steps:  101720
+1  1.02e+05-1080.71 |-1214.62  189.7    200     0 |   -3.46   6.41  -0.13   0.00
+cur_rollout_steps is:  580
+model train number is : 132 real_explore_steps 2400  cur_rollout_steps is  580 sum_rollout_steps:  102300
+1  1.02e+05-1080.71 |-1319.22  196.2    200     0 |   -3.20   5.54  -0.02   0.00
+model_loss :  -4.616974078691923
+cur_rollout_steps is:  540
+model train number is : 133 real_explore_steps 2400  cur_rollout_steps is  540 sum_rollout_steps:  102840
+1  1.03e+05-1080.71 |-1261.58  140.5    200     0 |   -3.30   4.80   0.09   0.00
+cur_rollout_steps is:  600
+model train number is : 134 real_explore_steps 2400  cur_rollout_steps is  600 sum_rollout_steps:  103440
+1  1.03e+05-1080.71 |-1280.14  162.4    200     0 |   -3.02   5.28   0.01   0.00
+cur_rollout_steps is:  520
+model train number is : 135 real_explore_steps 2400  cur_rollout_steps is  520 sum_rollout_steps:  103960
+1  1.04e+05-1080.71 |-1492.05  216.0    200     0 |   -3.18   6.49   0.15   0.00
+model_loss :  -4.650489347266533
+cur_rollout_steps is:  710
+model train number is : 136 real_explore_steps 2400  cur_rollout_steps is  710 sum_rollout_steps:  104670
+1  1.05e+05-1080.71 |-1352.91  211.1    200     0 |   -3.12   5.24   0.03   0.00
+cur_rollout_steps is:  680
+model train number is : 137 real_explore_steps 2400  cur_rollout_steps is  680 sum_rollout_steps:  105350
+1  1.05e+05-1080.71 |-1246.94  191.3    200     0 |   -3.22   5.93   0.13   0.00
+cur_rollout_steps is:  640
+model train number is : 138 real_explore_steps 2400  cur_rollout_steps is  640 sum_rollout_steps:  105990
+1  1.06e+05-1080.71 |-1208.46  178.9    200     0 |   -3.27   5.25   0.13   0.00
+model_loss :  -4.65127391635247
+cur_rollout_steps is:  520
+model train number is : 139 real_explore_steps 2400  cur_rollout_steps is  520 sum_rollout_steps:  106510
+1  1.07e+05-1080.71 |-1357.02  187.2    200     0 |   -3.09   5.42   0.09   0.00
+cur_rollout_steps is:  590
+model train number is : 140 real_explore_steps 2400  cur_rollout_steps is  590 sum_rollout_steps:  107100
+1  1.07e+05-1080.71 |-1203.75  198.7    200     0 |   -3.11   6.08   0.24   0.00
+cur_rollout_steps is:  580
+model train number is : 141 real_explore_steps 2400  cur_rollout_steps is  580 sum_rollout_steps:  107680
+1  1.08e+05-1080.71 |-1343.14  223.9    200     0 |   -3.43   6.15   0.24   0.00
+model_loss :  -4.644644672352968
+cur_rollout_steps is:  480
+model train number is : 142 real_explore_steps 2400  cur_rollout_steps is  480 sum_rollout_steps:  108160
+1  1.08e+05-1080.71 |-1440.02  177.1    200     0 |   -2.97   4.43   0.05   0.00
+cur_rollout_steps is:  480
+model train number is : 143 real_explore_steps 2400  cur_rollout_steps is  480 sum_rollout_steps:  108640
+1  1.09e+05-1080.71 |-1361.10  215.3    200     0 |   -3.06   4.96  -0.01   0.00
+cur_rollout_steps is:  560
+model train number is : 144 real_explore_steps 2400  cur_rollout_steps is  560 sum_rollout_steps:  109200
+1  1.09e+05-1080.71 |-1321.69  135.9    200     0 |   -3.15   4.55   0.04   0.00
+model_loss :  -4.643861532918777
+cur_rollout_steps is:  580
+model train number is : 145 real_explore_steps 2400  cur_rollout_steps is  580 sum_rollout_steps:  109780
+1  1.10e+05-1080.71 |-1304.67  239.5    200     0 |   -3.14   5.00  -0.13   0.00
+cur_rollout_steps is:  590
+model train number is : 146 real_explore_steps 2400  cur_rollout_steps is  590 sum_rollout_steps:  110370
+1  1.10e+05-1080.71 |-1451.67  209.7    200     0 |   -3.07   4.81   0.09   0.00
+cur_rollout_steps is:  540
+model train number is : 147 real_explore_steps 2400  cur_rollout_steps is  540 sum_rollout_steps:  110910
+1  1.11e+05-1080.71 |-1347.04  238.9    200     0 |   -2.85   4.61   0.06   0.00
+model_loss :  -4.6132663302338885
+cur_rollout_steps is:  450
+model train number is : 148 real_explore_steps 2400  cur_rollout_steps is  450 sum_rollout_steps:  111360
+1  1.11e+05-1080.71 |-1346.21  263.3    200     0 |   -2.40   3.95   0.16   0.00
+cur_rollout_steps is:  520
+model train number is : 149 real_explore_steps 2400  cur_rollout_steps is  520 sum_rollout_steps:  111880
+1  1.12e+05-1080.71 |-1275.04  224.3    200     0 |   -2.78   6.35   0.01   0.00
+cur_rollout_steps is:  500
+model train number is : 150 real_explore_steps 2400  cur_rollout_steps is  500 sum_rollout_steps:  112380
+1  1.12e+05-1080.71 |-1303.87  256.4    200     0 |   -3.10   5.78  -0.01   0.00
+model_loss :  -4.629665795336948
+cur_rollout_steps is:  440
+model train number is : 151 real_explore_steps 2400  cur_rollout_steps is  440 sum_rollout_steps:  112820
+1  1.13e+05-1080.71 |-1460.06  184.0    200     0 |   -3.18   5.16  -0.07   0.00
+cur_rollout_steps is:  530
+model train number is : 152 real_explore_steps 2400  cur_rollout_steps is  530 sum_rollout_steps:  113350
+1  1.13e+05-1080.71 |-1369.78  213.7    200     0 |   -2.94   6.22   0.04   0.00
+cur_rollout_steps is:  480
+model train number is : 153 real_explore_steps 2400  cur_rollout_steps is  480 sum_rollout_steps:  113830
+1  1.14e+05-1080.71 |-1289.35  162.5    200     0 |   -3.13   5.93   0.07   0.00
+model_loss :  -4.628593154149513
+cur_rollout_steps is:  600
+model train number is : 154 real_explore_steps 2400  cur_rollout_steps is  600 sum_rollout_steps:  114430
+1  1.14e+05-1080.71 |-1308.87  247.3    200     0 |   -2.88   5.25   0.02   0.00
+cur_rollout_steps is:  520
+model train number is : 155 real_explore_steps 2400  cur_rollout_steps is  520 sum_rollout_steps:  114950
+1  1.15e+05-1080.71 |-1289.64  219.8    200     0 |   -3.22   4.69  -0.02   0.00
+cur_rollout_steps is:  550
+model train number is : 156 real_explore_steps 2400  cur_rollout_steps is  550 sum_rollout_steps:  115500
+1  1.16e+05-1080.71 |-1412.32  201.1    200     0 |   -2.92   4.84   0.09   0.00
+model_loss :  -4.62346818485362
+cur_rollout_steps is:  590
+model train number is : 157 real_explore_steps 2400  cur_rollout_steps is  590 sum_rollout_steps:  116090
+1  1.16e+05-1080.71 |-1356.00  204.9    200     0 |   -3.08   5.70   0.09   0.00
+cur_rollout_steps is:  510
+model train number is : 158 real_explore_steps 2400  cur_rollout_steps is  510 sum_rollout_steps:  116600
+1  1.17e+05-1080.71 |-1257.10  203.1    200     0 |   -3.28   5.36  -0.05   0.00
+cur_rollout_steps is:  560
+model train number is : 159 real_explore_steps 2400  cur_rollout_steps is  560 sum_rollout_steps:  117160
+1  1.17e+05-1080.71 |-1352.39  143.9    200     0 |   -3.28   6.11   0.03   0.00
+model_loss :  -4.626362305755417
+cur_rollout_steps is:  460
+model train number is : 160 real_explore_steps 2400  cur_rollout_steps is  460 sum_rollout_steps:  117620
+1  1.18e+05-1080.71 |-1290.65  181.1    200     0 |   -3.07   5.37   0.01   0.00
+cur_rollout_steps is:  460
+model train number is : 161 real_explore_steps 2400  cur_rollout_steps is  460 sum_rollout_steps:  118080
+1  1.18e+05-1080.71 |-1418.26  193.9    200     0 |   -2.98   5.34   0.11   0.00
+cur_rollout_steps is:  420
+model train number is : 162 real_explore_steps 2400  cur_rollout_steps is  420 sum_rollout_steps:  118500
+1  1.18e+05-1080.71 |-1292.66  234.7    200     0 |   -3.10   6.08   0.03   0.00
+model_loss :  -4.598089992241702
+cur_rollout_steps is:  770
+model train number is : 163 real_explore_steps 2400  cur_rollout_steps is  770 sum_rollout_steps:  119270
+1  1.19e+05-1080.71 |-1232.33  226.1    200     0 |   -3.24   5.31   0.03   0.00
+cur_rollout_steps is:  730
+model train number is : 164 real_explore_steps 2400  cur_rollout_steps is  730 sum_rollout_steps:  120000
+1  1.20e+05-1080.71 |-1304.71  179.4    200     0 |   -3.19   4.67   0.02   0.00
+cur_rollout_steps is:  780
+model train number is : 165 real_explore_steps 2400  cur_rollout_steps is  780 sum_rollout_steps:  120780
+1  1.21e+05-1080.71 |-1275.95  202.2    200     0 |   -3.02   5.88   0.10   0.00
+model_loss :  -4.517582455084692
+cur_rollout_steps is:  680
+model train number is : 166 real_explore_steps 2400  cur_rollout_steps is  680 sum_rollout_steps:  121460
+1  1.21e+05-1080.71 |-1292.92  142.4    200     0 |   -3.14   4.75   0.10   0.00
+cur_rollout_steps is:  630
+model train number is : 167 real_explore_steps 2400  cur_rollout_steps is  630 sum_rollout_steps:  122090
+1  1.22e+05-1080.71 |-1376.64  219.5    200     0 |   -3.04   5.76   0.03   0.00
+cur_rollout_steps is:  640
+model train number is : 168 real_explore_steps 2400  cur_rollout_steps is  640 sum_rollout_steps:  122730
+1  1.23e+05-1080.71 |-1479.96  141.6    200     0 |   -3.34   4.91   0.12   0.00
+model_loss :  -4.590156554018409
+cur_rollout_steps is:  660
+model train number is : 169 real_explore_steps 2400  cur_rollout_steps is  660 sum_rollout_steps:  123390
+1  1.23e+05-1080.71 |-1385.45  189.3    200     0 |   -3.34   6.50   0.05   0.00
+cur_rollout_steps is:  530
+model train number is : 170 real_explore_steps 2400  cur_rollout_steps is  530 sum_rollout_steps:  123920
+1  1.24e+05-1080.71 |-1303.94  255.7    200     0 |   -2.84   3.73  -0.02   0.00
+cur_rollout_steps is:  580
+model train number is : 171 real_explore_steps 2400  cur_rollout_steps is  580 sum_rollout_steps:  124500
+1  1.24e+05-1080.71 |-1295.76  153.9    200     0 |   -2.83   5.50   0.22   0.00
+model_loss :  -4.602562511901675
+cur_rollout_steps is:  390
+model train number is : 172 real_explore_steps 2400  cur_rollout_steps is  390 sum_rollout_steps:  124890
+1  1.25e+05-1080.71 |-1364.80  167.2    200     0 |   -3.46   5.06  -0.08   0.00
+cur_rollout_steps is:  370
+model train number is : 173 real_explore_steps 2400  cur_rollout_steps is  370 sum_rollout_steps:  125260
+1  1.25e+05-1080.71 |-1368.50  242.2    200     0 |   -2.83   5.13  -0.04   0.00
+cur_rollout_steps is:  430
+model train number is : 174 real_explore_steps 2400  cur_rollout_steps is  430 sum_rollout_steps:  125690
+1  1.26e+05-1080.71 |-1231.17  224.5    200     0 |   -3.35   5.35   0.02   0.00
+model_loss :  -4.602671286346188
+cur_rollout_steps is:  440
+model train number is : 175 real_explore_steps 2400  cur_rollout_steps is  440 sum_rollout_steps:  126130
+1  1.26e+05-1080.71 |-1227.39  159.5    200     0 |   -3.19   4.71  -0.04   0.00
+cur_rollout_steps is:  390
+model train number is : 176 real_explore_steps 2400  cur_rollout_steps is  390 sum_rollout_steps:  126520
+1  1.27e+05-1080.71 |-1325.49  213.2    200     0 |   -3.16   6.10   0.07   0.00
+cur_rollout_steps is:  390
+model train number is : 177 real_explore_steps 2400  cur_rollout_steps is  390 sum_rollout_steps:  126910
+1  1.27e+05-1080.71 |-1239.27  199.7    200     0 |   -2.98   4.39  -0.00   0.00
+model_loss :  -4.575923139398748
+cur_rollout_steps is:  400
+model train number is : 178 real_explore_steps 2400  cur_rollout_steps is  400 sum_rollout_steps:  127310
+1  1.27e+05-1080.71 |-1206.82   91.5    200     0 |   -3.16   5.26  -0.06   0.00
+cur_rollout_steps is:  410
+model train number is : 179 real_explore_steps 2400  cur_rollout_steps is  410 sum_rollout_steps:  127720
+1  1.28e+05-1080.71 |-1221.38  173.4    200     0 |   -3.00   5.05  -0.05   0.00
+cur_rollout_steps is:  450
+model train number is : 180 real_explore_steps 2400  cur_rollout_steps is  450 sum_rollout_steps:  128170
+1  1.28e+05-1080.71 |-1357.28  196.0    200     0 |   -3.16   4.80  -0.02   0.00
+model_loss :  -4.605895613774425
+cur_rollout_steps is:  330
+model train number is : 181 real_explore_steps 2400  cur_rollout_steps is  330 sum_rollout_steps:  128500
+1  1.28e+05-1080.71 |-1310.92  175.4    200     0 |   -3.20   5.64   0.12   0.00
+cur_rollout_steps is:  350
+model train number is : 182 real_explore_steps 2400  cur_rollout_steps is  350 sum_rollout_steps:  128850
+1  1.29e+05-1080.71 |-1408.72  220.2    200     0 |   -3.07   7.05  -0.02   0.00
+cur_rollout_steps is:  350
+model train number is : 183 real_explore_steps 2400  cur_rollout_steps is  350 sum_rollout_steps:  129200
+1  1.29e+05-1080.71 |-1280.16  193.7    200     0 |   -3.18   4.60  -0.01   0.00
+model_loss :  -4.608931905563621
+cur_rollout_steps is:  390
+model train number is : 184 real_explore_steps 2400  cur_rollout_steps is  390 sum_rollout_steps:  129590
+1  1.30e+05-1080.71 |-1455.76  189.0    200     0 |   -3.23   7.01   0.06   0.00
+cur_rollout_steps is:  340
+model train number is : 185 real_explore_steps 2400  cur_rollout_steps is  340 sum_rollout_steps:  129930
+1  1.30e+05-1080.71 |-1274.78  250.3    200     0 |   -3.25   5.21   0.03   0.00
+cur_rollout_steps is:  350
+model train number is : 186 real_explore_steps 2400  cur_rollout_steps is  350 sum_rollout_steps:  130280
+1  1.30e+05-1080.71 |-1336.10  198.1    200     0 |   -2.87   4.67  -0.06   0.00
+model_loss :  -4.572896677204686
+cur_rollout_steps is:  410
+model train number is : 187 real_explore_steps 2400  cur_rollout_steps is  410 sum_rollout_steps:  130690
+1  1.31e+05-1080.71 |-1197.21  160.3    200     0 |   -3.19   4.55  -0.01   0.00
+cur_rollout_steps is:  400
+model train number is : 188 real_explore_steps 2400  cur_rollout_steps is  400 sum_rollout_steps:  131090
+1  1.31e+05-1080.71 |-1421.65  213.9    200     0 |   -3.09   6.57   0.30   0.00
+cur_rollout_steps is:  430
+model train number is : 189 real_explore_steps 2400  cur_rollout_steps is  430 sum_rollout_steps:  131520
+1  1.32e+05-1080.71 |-1341.08  239.6    200     0 |   -3.56   6.16  -0.00   0.00
+model_loss :  -4.617528211145781
+cur_rollout_steps is:  350
+model train number is : 190 real_explore_steps 2400  cur_rollout_steps is  350 sum_rollout_steps:  131870
+1  1.32e+05-1080.71 |-1293.80  204.0    200     0 |   -2.86   5.04   0.11   0.00
+cur_rollout_steps is:  390
+model train number is : 191 real_explore_steps 2400  cur_rollout_steps is  390 sum_rollout_steps:  132260
+1  1.32e+05-1080.71 |-1318.86  210.1    200     0 |   -2.71   5.25  -0.01   0.00
+cur_rollout_steps is:  400
+model train number is : 192 real_explore_steps 2400  cur_rollout_steps is  400 sum_rollout_steps:  132660
+1  1.33e+05-1080.71 |-1349.67  237.0    200     0 |   -2.96   5.98  -0.05   0.00
+model_loss :  -4.640374037764156
+cur_rollout_steps is:  370
+model train number is : 193 real_explore_steps 2400  cur_rollout_steps is  370 sum_rollout_steps:  133030
+1  1.33e+05-1080.71 |-1357.03  215.0    200     0 |   -2.99   5.71   0.15   0.00
+cur_rollout_steps is:  380
+model train number is : 194 real_explore_steps 2400  cur_rollout_steps is  380 sum_rollout_steps:  133410
+1  1.33e+05-1080.71 |-1206.20   93.0    200     0 |   -3.27   6.68  -0.07   0.00
+cur_rollout_steps is:  380
+model train number is : 195 real_explore_steps 2400  cur_rollout_steps is  380 sum_rollout_steps:  133790
+1  1.34e+05-1080.71 |-1292.26  128.0    200     0 |   -3.09   6.81  -0.08   0.00
+model_loss :  -4.644528950895032
+cur_rollout_steps is:  260
+model train number is : 196 real_explore_steps 2400  cur_rollout_steps is  260 sum_rollout_steps:  134050
+1  1.34e+05-1080.71 |-1440.66  140.5    200     0 |   -2.90   4.79  -0.03   0.00
+cur_rollout_steps is:  320
+model train number is : 197 real_explore_steps 2400  cur_rollout_steps is  320 sum_rollout_steps:  134370
+1  1.34e+05-1080.71 |-1263.29  197.9    200     0 |   -3.27   6.30  -0.05   0.00
+cur_rollout_steps is:  330
+model train number is : 198 real_explore_steps 2400  cur_rollout_steps is  330 sum_rollout_steps:  134700
+1  1.35e+05-1080.71 |-1146.70   84.6    200     0 |   -3.09   5.75   0.09   0.00
+model_loss :  -4.651560538358027
+cur_rollout_steps is:  290
+model train number is : 199 real_explore_steps 2400  cur_rollout_steps is  290 sum_rollout_steps:  134990
+1  1.35e+05-1080.71 |-1342.73  140.7    200     0 |   -3.46   5.65   0.01   0.00
+cur_rollout_steps is:  350
+model train number is : 200 real_explore_steps 2400  cur_rollout_steps is  350 sum_rollout_steps:  135340
+1  1.35e+05-1080.71 |-1296.96  140.9    200     0 |   -2.89   4.88  -0.10   0.00
+cur_rollout_steps is:  300
+model train number is : 201 real_explore_steps 2400  cur_rollout_steps is  300 sum_rollout_steps:  135640
+1  1.36e+05-1080.71 |-1191.32   92.4    200     0 |   -3.25   6.37   0.08   0.00
+model_loss :  -4.663519531083338
+cur_rollout_steps is:  320
+model train number is : 202 real_explore_steps 2400  cur_rollout_steps is  320 sum_rollout_steps:  135960
+1  1.36e+05-1080.71 |-1363.93  247.5    200     0 |   -2.96   6.17   0.17   0.00
+cur_rollout_steps is:  250
+model train number is : 203 real_explore_steps 2400  cur_rollout_steps is  250 sum_rollout_steps:  136210
+1  1.36e+05-1080.71 |-1249.87  156.5    200     0 |   -3.36   6.46   0.21   0.00
+cur_rollout_steps is:  250
+model train number is : 204 real_explore_steps 2400  cur_rollout_steps is  250 sum_rollout_steps:  136460
+1  1.36e+05-1080.71 |-1248.53  163.1    200     0 |   -3.06   4.68   0.05   0.00
+model_loss :  -4.667789734956872
+cur_rollout_steps is:  350
+model train number is : 205 real_explore_steps 2400  cur_rollout_steps is  350 sum_rollout_steps:  136810
+1  1.37e+05-1080.71 |-1181.45  143.1    200     0 |   -3.03   5.83   0.17   0.00
+cur_rollout_steps is:  310
+model train number is : 206 real_explore_steps 2400  cur_rollout_steps is  310 sum_rollout_steps:  137120
+1  1.37e+05-1080.71 |-1350.98  140.4    200     0 |   -3.45   6.65   0.22   0.00
+cur_rollout_steps is:  270
+model train number is : 207 real_explore_steps 2400  cur_rollout_steps is  270 sum_rollout_steps:  137390
+1  1.37e+05-1080.71 |-1230.14  169.3    200     0 |   -3.47   4.80   0.12   0.00
+model_loss :  -4.667586086841112
+cur_rollout_steps is:  330
+model train number is : 208 real_explore_steps 2400  cur_rollout_steps is  330 sum_rollout_steps:  137720
+1  1.38e+05-1080.71 |-1189.38   86.6    200     0 |   -3.31   7.14   0.10   0.00
+cur_rollout_steps is:  310
+model train number is : 209 real_explore_steps 2400  cur_rollout_steps is  310 sum_rollout_steps:  138030
+1  1.38e+05-1080.71 |-1342.65  187.2    200     0 |   -3.16   5.47  -0.03   0.00
+cur_rollout_steps is:  350
+model train number is : 210 real_explore_steps 2400  cur_rollout_steps is  350 sum_rollout_steps:  138380
+1  1.38e+05-1080.71 |-1304.14  149.0    200     0 |   -3.26   5.88   0.06   0.00
+model_loss :  -4.664736434680103
+cur_rollout_steps is:  260
+model train number is : 211 real_explore_steps 2400  cur_rollout_steps is  260 sum_rollout_steps:  138640
+1  1.39e+05-1080.71 |-1352.15  193.7    200     0 |   -2.86   5.38   0.25   0.00
+cur_rollout_steps is:  270
+model train number is : 212 real_explore_steps 2400  cur_rollout_steps is  270 sum_rollout_steps:  138910
+1  1.39e+05-1080.71 |-1177.25  100.2    200     0 |   -3.24   6.19  -0.09   0.00
+cur_rollout_steps is:  280
+model train number is : 213 real_explore_steps 2400  cur_rollout_steps is  280 sum_rollout_steps:  139190
+1  1.39e+05-1080.71 |-1238.74  104.2    200     0 |   -3.07   4.14   0.05   0.00
+model_loss :  -4.664226770401001
+cur_rollout_steps is:  320
+model train number is : 214 real_explore_steps 2400  cur_rollout_steps is  320 sum_rollout_steps:  139510
+1  1.40e+05-1080.71 |-1282.59  159.6    200     0 |   -3.22   5.17   0.05   0.00
+cur_rollout_steps is:  310
+model train number is : 215 real_explore_steps 2400  cur_rollout_steps is  310 sum_rollout_steps:  139820
+1  1.40e+05-1080.71 |-1341.35  218.8    200     0 |   -3.06   6.12   0.05   0.00
+cur_rollout_steps is:  310
+model train number is : 216 real_explore_steps 2400  cur_rollout_steps is  310 sum_rollout_steps:  140130
+1  1.40e+05-1080.71 |-1380.72  151.8    200     0 |   -2.97   4.62  -0.05   0.00
+model_loss :  -4.66381349385421
+cur_rollout_steps is:  250
+model train number is : 217 real_explore_steps 2400  cur_rollout_steps is  250 sum_rollout_steps:  140380
+1  1.40e+05-1080.71 |-1396.70  213.4    200     0 |   -3.00   5.13  -0.03   0.00
+cur_rollout_steps is:  340
+model train number is : 218 real_explore_steps 2400  cur_rollout_steps is  340 sum_rollout_steps:  140720
+1  1.41e+05-1080.71 |-1289.49  192.4    200     0 |   -3.38   6.50   0.19   0.00
+cur_rollout_steps is:  270
+model train number is : 219 real_explore_steps 2400  cur_rollout_steps is  270 sum_rollout_steps:  140990
+1  1.41e+05-1080.71 |-1201.17  211.0    200     0 |   -3.22   7.23  -0.06   0.00
+model_loss :  -4.66317161536676
+cur_rollout_steps is:  380
+model train number is : 220 real_explore_steps 2400  cur_rollout_steps is  380 sum_rollout_steps:  141370
+1  1.41e+05-1080.71 |-1322.63  204.9    200     0 |   -3.30   5.42   0.00   0.00
+cur_rollout_steps is:  240
+model train number is : 221 real_explore_steps 2400  cur_rollout_steps is  240 sum_rollout_steps:  141610
+1  1.42e+05-1080.71 |-1258.01  142.6    200     0 |   -3.14   5.72   0.14   0.00
+cur_rollout_steps is:  200
+model train number is : 222 real_explore_steps 2400  cur_rollout_steps is  200 sum_rollout_steps:  141810
+1  1.42e+05-1080.71 |-1311.21  243.6    200     0 |   -3.24   3.79   0.03   0.00
+model_loss :  -4.658288135199712
+cur_rollout_steps is:  190
+model train number is : 223 real_explore_steps 2400  cur_rollout_steps is  190 sum_rollout_steps:  142000
+1  1.42e+05-1080.71 |-1150.47  190.7    200     0 |   -3.10   6.17   0.05   0.00
+cur_rollout_steps is:  150
+model train number is : 224 real_explore_steps 2400  cur_rollout_steps is  150 sum_rollout_steps:  142150
+1  1.42e+05-1080.71 |-1247.20  260.3    200     0 |   -3.11   6.02  -0.04   0.00
+cur_rollout_steps is:  210
+model train number is : 225 real_explore_steps 2400  cur_rollout_steps is  210 sum_rollout_steps:  142360
+1  1.42e+05-1080.71 |-1271.56  233.0    200     0 |   -3.04   5.20  -0.07   0.00
+model_loss :  -4.6633509134842175
+cur_rollout_steps is:  290
+model train number is : 226 real_explore_steps 2400  cur_rollout_steps is  290 sum_rollout_steps:  142650
+1  1.43e+05-1080.71 |-1321.98  244.2    200     0 |   -3.21   6.03   0.08   0.00
+cur_rollout_steps is:  230
+model train number is : 227 real_explore_steps 2400  cur_rollout_steps is  230 sum_rollout_steps:  142880
+1  1.43e+05-1080.71 |-1296.73  176.0    200     0 |   -3.09   6.18   0.02   0.00
+cur_rollout_steps is:  290
+model train number is : 228 real_explore_steps 2400  cur_rollout_steps is  290 sum_rollout_steps:  143170
+1  1.43e+05-1080.71 |-1384.59  268.1    200     0 |   -2.66   5.50   0.07   0.00
+model_loss :  -4.666277987332097
+cur_rollout_steps is:  260
+model train number is : 229 real_explore_steps 2400  cur_rollout_steps is  260 sum_rollout_steps:  143430
+1  1.43e+05-1080.71 |-1256.71  238.0    200     0 |   -3.10   6.09   0.07   0.00
+cur_rollout_steps is:  170
+model train number is : 230 real_explore_steps 2400  cur_rollout_steps is  170 sum_rollout_steps:  143600
+1  1.44e+05-1080.71 |-1260.41  224.9    200     0 |   -3.23   6.49  -0.10   0.00
+cur_rollout_steps is:  280
+model train number is : 231 real_explore_steps 2400  cur_rollout_steps is  280 sum_rollout_steps:  143880
+1  1.44e+05-1080.71 |-1366.63  253.4    200     0 |   -3.09   5.36   0.08   0.00
+model_loss :  -4.6679725259395655
+cur_rollout_steps is:  270
+model train number is : 232 real_explore_steps 2400  cur_rollout_steps is  270 sum_rollout_steps:  144150
+1  1.44e+05-1080.71 |-1184.32  182.3    200     0 |   -3.02   3.98  -0.03   0.00
+cur_rollout_steps is:  320
+model train number is : 233 real_explore_steps 2400  cur_rollout_steps is  320 sum_rollout_steps:  144470
+1  1.44e+05-1080.71 |-1287.53  147.3    200     0 |   -3.21   5.25   0.07   0.00
+cur_rollout_steps is:  280
+model train number is : 234 real_explore_steps 2400  cur_rollout_steps is  280 sum_rollout_steps:  144750
+1  1.45e+05-1080.71 |-1408.06  199.4    200     0 |   -3.29   5.57  -0.12   0.00
+model_loss :  -4.667031032753608
+cur_rollout_steps is:  170
+model train number is : 235 real_explore_steps 2400  cur_rollout_steps is  170 sum_rollout_steps:  144920
+1  1.45e+05-1080.71 |-1504.14  164.6    200     0 |   -3.01   6.28  -0.07   0.00
+cur_rollout_steps is:  230
+model train number is : 236 real_explore_steps 2400  cur_rollout_steps is  230 sum_rollout_steps:  145150
+1  1.45e+05-1080.71 |-1389.44  197.0    200     0 |   -3.30   5.41   0.16   0.00
+cur_rollout_steps is:  170
+model train number is : 237 real_explore_steps 2400  cur_rollout_steps is  170 sum_rollout_steps:  145320
+1  1.45e+05-1080.71 |-1328.16  291.6    200     0 |   -3.47   6.71   0.14   0.00
+model_loss :  -4.667580297689119
+cur_rollout_steps is:  260
+model train number is : 238 real_explore_steps 2400  cur_rollout_steps is  260 sum_rollout_steps:  145580
+1  1.46e+05-1080.71 |-1144.69  206.4    200     0 |   -3.16   6.21   0.08   0.00
+cur_rollout_steps is:  150
+model train number is : 239 real_explore_steps 2400  cur_rollout_steps is  150 sum_rollout_steps:  145730
+1  1.46e+05-1080.71 |-1178.09  212.6    200     0 |   -2.83   5.52  -0.03   0.00
+cur_rollout_steps is:  170
+model train number is : 240 real_explore_steps 2400  cur_rollout_steps is  170 sum_rollout_steps:  145900
+1  1.46e+05-1080.71 |-1142.59  224.0    200     0 |   -3.13   4.90   0.01   0.00
+eval_reward_mean:  -1283.5885496400483
+real_explore_steps is : 3200
+rew_info [-1504.6531367916116, -994.0014963358224, -1283.5885496400483]
+model_loss :  -4.653058386594057
+cur_rollout_steps is:  380
+model train number is : 241 real_explore_steps 3200  cur_rollout_steps is  380 sum_rollout_steps:  146280
+1  1.46e+05-1080.71 |-1346.65  278.4    200     0 |   -3.61   6.33  -0.08   0.00
+cur_rollout_steps is:  480
+model train number is : 242 real_explore_steps 3200  cur_rollout_steps is  480 sum_rollout_steps:  146760
+1  1.47e+05-1080.71 |-1199.11  212.4    200     0 |   -3.07   4.98  -0.07   0.00
+cur_rollout_steps is:  470
+model train number is : 243 real_explore_steps 3200  cur_rollout_steps is  470 sum_rollout_steps:  147230
+1  1.47e+05-1080.71 |-1258.21  258.7    200     0 |   -3.11   6.35  -0.03   0.00
+model_loss :  -4.6336106818877845
+cur_rollout_steps is:  570
+model train number is : 244 real_explore_steps 3200  cur_rollout_steps is  570 sum_rollout_steps:  147800
+1  1.48e+05-1080.71 |-1189.49  238.7    200     0 |   -3.39   6.46   0.10   0.00
+cur_rollout_steps is:  500
+model train number is : 245 real_explore_steps 3200  cur_rollout_steps is  500 sum_rollout_steps:  148300
+1  1.48e+05-1080.71 |-1252.71  287.1    200     0 |   -2.92   4.91  -0.12   0.00
+cur_rollout_steps is:  450
+model train number is : 246 real_explore_steps 3200  cur_rollout_steps is  450 sum_rollout_steps:  148750
+1  1.49e+05-1080.71 |-1294.15  315.2    200     0 |   -3.47   6.47  -0.02   0.00
+model_loss :  -4.616431903122063
+cur_rollout_steps is:  570
+model train number is : 247 real_explore_steps 3200  cur_rollout_steps is  570 sum_rollout_steps:  149320
+1  1.49e+05-1080.71 |-1154.39  303.0    200     0 |   -3.26   6.14   0.09   0.00
+cur_rollout_steps is:  450
+model train number is : 248 real_explore_steps 3200  cur_rollout_steps is  450 sum_rollout_steps:  149770
+1  1.50e+05-1080.71 |-1352.80  341.5    200     0 |   -3.11   6.23   0.18   0.00
+cur_rollout_steps is:  490
+model train number is : 249 real_explore_steps 3200  cur_rollout_steps is  490 sum_rollout_steps:  150260
+1  1.50e+05-1080.71 |-1548.42  117.1    200     0 |   -3.18   6.11   0.24   0.00
+model_loss :  -4.596386963542843
+cur_rollout_steps is:  440
+model train number is : 250 real_explore_steps 3200  cur_rollout_steps is  440 sum_rollout_steps:  150700
+1  1.51e+05-1080.71 |-1153.49  376.9    200     0 |   -3.30   6.28   0.01   0.00
+cur_rollout_steps is:  380
+model train number is : 251 real_explore_steps 3200  cur_rollout_steps is  380 sum_rollout_steps:  151080
+1  1.51e+05-1080.71 |-1328.15  305.1    200     0 |   -3.13   6.33  -0.00   0.00
+cur_rollout_steps is:  450
+model train number is : 252 real_explore_steps 3200  cur_rollout_steps is  450 sum_rollout_steps:  151530
+1  1.52e+05-1080.71 |-1499.04  224.2    200     0 |   -3.27   7.37  -0.08   0.00
+model_loss :  -4.582919911716296
+cur_rollout_steps is:  420
+model train number is : 253 real_explore_steps 3200  cur_rollout_steps is  420 sum_rollout_steps:  151950
+1  1.52e+05-1080.71 |-1395.48  280.1    200     0 |   -2.87   4.27  -0.04   0.00
+cur_rollout_steps is:  460
+model train number is : 254 real_explore_steps 3200  cur_rollout_steps is  460 sum_rollout_steps:  152410
+1  1.52e+05-1080.71 |-1407.52  272.8    200     0 |   -3.26   6.06   0.03   0.00
+cur_rollout_steps is:  370
+model train number is : 255 real_explore_steps 3200  cur_rollout_steps is  370 sum_rollout_steps:  152780
+1  1.53e+05-1080.71 |-1209.67  250.8    200     0 |   -3.08   5.88   0.08   0.00
+model_loss :  -4.559730446236765
+cur_rollout_steps is:  460
+model train number is : 256 real_explore_steps 3200  cur_rollout_steps is  460 sum_rollout_steps:  153240
+1  1.53e+05-1080.71 |-1421.51  215.4    200     0 |   -3.29   5.63   0.15   0.00
+cur_rollout_steps is:  470
+model train number is : 257 real_explore_steps 3200  cur_rollout_steps is  470 sum_rollout_steps:  153710
+1  1.54e+05-1080.71 |-1419.98  225.5    200     0 |   -3.11   5.85  -0.10   0.00
+cur_rollout_steps is:  470
+model train number is : 258 real_explore_steps 3200  cur_rollout_steps is  470 sum_rollout_steps:  154180
+1  1.54e+05-1080.71 |-1388.18  201.1    200     0 |   -3.41   6.95   0.03   0.00
+model_loss :  -4.5393622936902345
+cur_rollout_steps is:  680
+model train number is : 259 real_explore_steps 3200  cur_rollout_steps is  680 sum_rollout_steps:  154860
+1  1.55e+05-1080.71 |-1360.66  264.9    200     0 |   -3.08   6.53  -0.05   0.00
+cur_rollout_steps is:  720
+model train number is : 260 real_explore_steps 3200  cur_rollout_steps is  720 sum_rollout_steps:  155580
+1  1.56e+05-1080.71 |-1278.84  166.8    200     0 |   -3.32   5.74   0.11   0.00
+cur_rollout_steps is:  670
+model train number is : 261 real_explore_steps 3200  cur_rollout_steps is  670 sum_rollout_steps:  156250
+1  1.56e+05-1080.71 |-1398.48  168.9    200     0 |   -3.48   5.09   0.12   0.00
+model_loss :  -4.528405083832747
+cur_rollout_steps is:  520
+model train number is : 262 real_explore_steps 3200  cur_rollout_steps is  520 sum_rollout_steps:  156770
+1  1.57e+05-1080.71 |-1280.48  188.8    200     0 |   -3.24   6.10   0.05   0.00
+cur_rollout_steps is:  460
+model train number is : 263 real_explore_steps 3200  cur_rollout_steps is  460 sum_rollout_steps:  157230
+1  1.57e+05-1080.71 |-1375.66  200.8    200     0 |   -3.31   5.71  -0.05   0.00
+cur_rollout_steps is:  470
+model train number is : 264 real_explore_steps 3200  cur_rollout_steps is  470 sum_rollout_steps:  157700
+1  1.58e+05-1080.71 |-1342.05  235.2    200     0 |   -3.00   6.12   0.01   0.00
+model_loss :  -4.51325533293389
+cur_rollout_steps is:  480
+model train number is : 265 real_explore_steps 3200  cur_rollout_steps is  480 sum_rollout_steps:  158180
+1  1.58e+05-1080.71 |-1222.48  152.0    200     0 |   -3.15   6.15  -0.14   0.00
+cur_rollout_steps is:  490
+model train number is : 266 real_explore_steps 3200  cur_rollout_steps is  490 sum_rollout_steps:  158670
+1  1.59e+05-1080.71 |-1296.56  146.8    200     0 |   -3.13   7.05   0.09   0.00
+cur_rollout_steps is:  460
+model train number is : 267 real_explore_steps 3200  cur_rollout_steps is  460 sum_rollout_steps:  159130
+1  1.59e+05-1080.71 |-1334.20  168.1    200     0 |   -3.21   6.64   0.02   0.00
+model_loss :  -4.511302847018901
+cur_rollout_steps is:  350
+model train number is : 268 real_explore_steps 3200  cur_rollout_steps is  350 sum_rollout_steps:  159480
+1  1.59e+05-1080.71 |-1233.67  189.3    200     0 |   -3.40   6.58  -0.01   0.00
+cur_rollout_steps is:  370
+model train number is : 269 real_explore_steps 3200  cur_rollout_steps is  370 sum_rollout_steps:  159850
+1  1.60e+05-1080.71 |-1271.30  170.0    200     0 |   -3.18   6.08  -0.04   0.00
+cur_rollout_steps is:  440
+model train number is : 270 real_explore_steps 3200  cur_rollout_steps is  440 sum_rollout_steps:  160290
+1  1.60e+05-1080.71 |-1184.64  189.9    200     0 |   -2.99   6.88  -0.11   0.00
+model_loss :  -4.492493969007255
+cur_rollout_steps is:  340
+model train number is : 271 real_explore_steps 3200  cur_rollout_steps is  340 sum_rollout_steps:  160630
+1  1.61e+05-1080.71 |-1281.58  206.6    200     0 |   -3.19   5.35   0.04   0.00
+cur_rollout_steps is:  390
+model train number is : 272 real_explore_steps 3200  cur_rollout_steps is  390 sum_rollout_steps:  161020
+1  1.61e+05-1080.71 |-1368.26  197.2    200     0 |   -3.02   5.16   0.06   0.00
+cur_rollout_steps is:  400
+model train number is : 273 real_explore_steps 3200  cur_rollout_steps is  400 sum_rollout_steps:  161420
+1  1.61e+05-1080.71 |-1222.57  222.3    200     0 |   -2.92   6.12   0.08   0.00
+model_loss :  -4.4798148086479115
+cur_rollout_steps is:  520
+model train number is : 274 real_explore_steps 3200  cur_rollout_steps is  520 sum_rollout_steps:  161940
+1  1.62e+05-1080.71 |-1175.82  113.4    200     0 |   -3.33   5.69  -0.07   0.00
+cur_rollout_steps is:  490
+model train number is : 275 real_explore_steps 3200  cur_rollout_steps is  490 sum_rollout_steps:  162430
+1  1.62e+05-1080.71 |-1309.68  229.0    200     0 |   -3.15   5.02   0.06   0.00
+cur_rollout_steps is:  510
+model train number is : 276 real_explore_steps 3200  cur_rollout_steps is  510 sum_rollout_steps:  162940
+1  1.63e+05-1080.71 |-1124.86  209.6    200     0 |   -3.17   6.24  -0.00   0.00
+model_loss :  -4.468245837356471
+cur_rollout_steps is:  470
+model train number is : 277 real_explore_steps 3200  cur_rollout_steps is  470 sum_rollout_steps:  163410
+1  1.63e+05-1080.71 |-1189.18  264.7    200     0 |   -3.20   5.68   0.09   0.00
+cur_rollout_steps is:  550
+model train number is : 278 real_explore_steps 3200  cur_rollout_steps is  550 sum_rollout_steps:  163960
+1  1.64e+05-1080.71 |-1282.09  266.5    200     0 |   -3.43   5.80  -0.13   0.00
+cur_rollout_steps is:  540
+model train number is : 279 real_explore_steps 3200  cur_rollout_steps is  540 sum_rollout_steps:  164500
+1  1.64e+05-1080.71 |-1191.26  190.3    200     0 |   -2.86   5.26   0.22   0.00
+model_loss :  -4.454796614640966
+cur_rollout_steps is:  510
+model train number is : 280 real_explore_steps 3200  cur_rollout_steps is  510 sum_rollout_steps:  165010
+1  1.65e+05-1080.71 |-1199.29  108.3    200     0 |   -3.40   5.22  -0.01   0.00
+cur_rollout_steps is:  470
+model train number is : 281 real_explore_steps 3200  cur_rollout_steps is  470 sum_rollout_steps:  165480
+1  1.65e+05-1080.71 |-1146.15  137.4    200     0 |   -3.17   5.34  -0.03   0.00
+cur_rollout_steps is:  510
+model train number is : 282 real_explore_steps 3200  cur_rollout_steps is  510 sum_rollout_steps:  165990
+1  1.66e+05-1080.71 |-1183.42  188.4    200     0 |   -2.92   6.32   0.22   0.00
+model_loss :  -4.445535774538122
+cur_rollout_steps is:  550
+model train number is : 283 real_explore_steps 3200  cur_rollout_steps is  550 sum_rollout_steps:  166540
+1  1.67e+05-1080.71 |-1286.82  278.5    200     0 |   -3.19   6.05   0.08   0.00
+cur_rollout_steps is:  490
+model train number is : 284 real_explore_steps 3200  cur_rollout_steps is  490 sum_rollout_steps:  167030
+1  1.67e+05-1080.71 |-1305.26  215.9    200     0 |   -3.23   5.68  -0.19   0.00
+cur_rollout_steps is:  400
+model train number is : 285 real_explore_steps 3200  cur_rollout_steps is  400 sum_rollout_steps:  167430
+1  1.67e+05-1080.71 |-1296.48  211.7    200     0 |   -3.17   5.99   0.12   0.00
+model_loss :  -4.423886710311654
+cur_rollout_steps is:  470
+model train number is : 286 real_explore_steps 3200  cur_rollout_steps is  470 sum_rollout_steps:  167900
+1  1.68e+05-1080.71 |-1432.62  262.3    200     0 |   -3.33   5.85   0.09   0.00
+cur_rollout_steps is:  460
+model train number is : 287 real_explore_steps 3200  cur_rollout_steps is  460 sum_rollout_steps:  168360
+1  1.68e+05-1080.71 |-1205.52  154.3    200     0 |   -3.06   5.88   0.15   0.00
+cur_rollout_steps is:  490
+model train number is : 288 real_explore_steps 3200  cur_rollout_steps is  490 sum_rollout_steps:  168850
+1  1.69e+05-1053.05 |
+1  1.69e+05-1053.05 |-1053.05  155.1    200     0 |   -3.03   6.48  -0.01   0.00
+model_loss :  -4.418563028247584
+cur_rollout_steps is:  530
+model train number is : 289 real_explore_steps 3200  cur_rollout_steps is  530 sum_rollout_steps:  169380
+1  1.69e+05-1053.05 |-1224.15  241.8    200     0 |   -3.12   5.55  -0.06   0.00
+cur_rollout_steps is:  580
+model train number is : 290 real_explore_steps 3200  cur_rollout_steps is  580 sum_rollout_steps:  169960
+1  1.70e+05-1053.05 |-1118.99  236.2    200     0 |   -2.93   4.87  -0.09   0.00
+cur_rollout_steps is:  540
+model train number is : 291 real_explore_steps 3200  cur_rollout_steps is  540 sum_rollout_steps:  170500
+1  1.70e+05-1053.05 |-1234.22  295.8    200     0 |   -3.00   6.66   0.07   0.00
+model_loss :  -4.413412530377437
+cur_rollout_steps is:  410
+model train number is : 292 real_explore_steps 3200  cur_rollout_steps is  410 sum_rollout_steps:  170910
+1  1.71e+05-1053.05 |-1236.43  289.2    200     0 |   -2.88   5.21   0.07   0.00
+cur_rollout_steps is:  410
+model train number is : 293 real_explore_steps 3200  cur_rollout_steps is  410 sum_rollout_steps:  171320
+1  1.71e+05-1053.05 |-1188.74  254.1    200     0 |   -3.20   5.07  -0.11   0.00
+cur_rollout_steps is:  380
+model train number is : 294 real_explore_steps 3200  cur_rollout_steps is  380 sum_rollout_steps:  171700
+1  1.72e+05-1053.05 |-1277.19  293.9    200     0 |   -2.87   4.57   0.04   0.00
+model_loss :  -4.403999799110986
+cur_rollout_steps is:  390
+model train number is : 295 real_explore_steps 3200  cur_rollout_steps is  390 sum_rollout_steps:  172090
+1  1.72e+05-1053.05 |-1257.80  270.7    200     0 |   -3.09   5.35  -0.10   0.00
+cur_rollout_steps is:  420
+model train number is : 296 real_explore_steps 3200  cur_rollout_steps is  420 sum_rollout_steps:  172510
+1  1.73e+05-1053.05 |-1136.84  220.9    200     0 |   -3.07   4.59   0.05   0.00
+cur_rollout_steps is:  430
+model train number is : 297 real_explore_steps 3200  cur_rollout_steps is  430 sum_rollout_steps:  172940
+1  1.73e+05-1053.05 |-1262.31  286.1    200     0 |   -3.31   6.60  -0.03   0.00
+model_loss :  -4.391233998870089
+cur_rollout_steps is:  460
+model train number is : 298 real_explore_steps 3200  cur_rollout_steps is  460 sum_rollout_steps:  173400
+1  1.73e+05-1053.05 |-1189.22  251.5    200     0 |   -2.93   6.40   0.04   0.00
+cur_rollout_steps is:  510
+model train number is : 299 real_explore_steps 3200  cur_rollout_steps is  510 sum_rollout_steps:  173910
+1  1.74e+05-1053.05 |-1210.00  237.3    200     0 |   -3.38   5.68   0.17   0.00
+cur_rollout_steps is:  520
+model train number is : 300 real_explore_steps 3200  cur_rollout_steps is  520 sum_rollout_steps:  174430
+1  1.74e+05-1053.05 |-1280.72  233.6    200     0 |   -3.07   4.80   0.14   0.00
+model_loss :  -4.382803528161531
+cur_rollout_steps is:  540
+model train number is : 301 real_explore_steps 3200  cur_rollout_steps is  540 sum_rollout_steps:  174970
+1  1.75e+05-1053.05 |-1276.45  234.2    200     0 |   -3.05   6.29   0.07   0.00
+cur_rollout_steps is:  640
+model train number is : 302 real_explore_steps 3200  cur_rollout_steps is  640 sum_rollout_steps:  175610
+1  1.76e+05-1053.05 |-1144.81  157.6    200     0 |   -3.29   5.45   0.01   0.00
+cur_rollout_steps is:  550
+model train number is : 303 real_explore_steps 3200  cur_rollout_steps is  550 sum_rollout_steps:  176160
+1  1.76e+05-1053.05 |-1230.05  205.1    200     0 |   -2.78   5.41   0.13   0.00
+model_loss :  -4.3743469765670016
+cur_rollout_steps is:  560
+model train number is : 304 real_explore_steps 3200  cur_rollout_steps is  560 sum_rollout_steps:  176720
+1  1.77e+05-1053.05 |-1301.05  256.4    200     0 |   -3.07   5.21  -0.06   0.00
+cur_rollout_steps is:  620
+model train number is : 305 real_explore_steps 3200  cur_rollout_steps is  620 sum_rollout_steps:  177340
+1  1.77e+05-1053.05 |-1283.30  143.7    200     0 |   -3.31   4.85  -0.02   0.00
+cur_rollout_steps is:  590
+model train number is : 306 real_explore_steps 3200  cur_rollout_steps is  590 sum_rollout_steps:  177930
+1  1.78e+05-1053.05 |-1120.65  170.7    200     0 |   -3.05   5.35  -0.10   0.00
+model_loss :  -4.362918329369175
+cur_rollout_steps is:  620
+model train number is : 307 real_explore_steps 3200  cur_rollout_steps is  620 sum_rollout_steps:  178550
+1  1.79e+05-1053.05 |-1347.88  179.8    200     0 |   -3.25   5.07  -0.07   0.00
+cur_rollout_steps is:  570
+model train number is : 308 real_explore_steps 3200  cur_rollout_steps is  570 sum_rollout_steps:  179120
+1  1.79e+05-1053.05 |-1218.57  174.0    200     0 |   -3.07   7.14   0.03   0.00
+cur_rollout_steps is:  540
+model train number is : 309 real_explore_steps 3200  cur_rollout_steps is  540 sum_rollout_steps:  179660
+1  1.80e+05-1053.05 |-1321.82  247.6    200     0 |   -3.20   6.59   0.15   0.00
+model_loss :  -4.34419380911217
+cur_rollout_steps is:  460
+model train number is : 310 real_explore_steps 3200  cur_rollout_steps is  460 sum_rollout_steps:  180120
+1  1.80e+05-1053.05 |-1320.04  241.9    200     0 |   -3.14   4.10   0.03   0.00
+cur_rollout_steps is:  580
+model train number is : 311 real_explore_steps 3200  cur_rollout_steps is  580 sum_rollout_steps:  180700
+1  1.81e+05-1053.05 |-1308.60  282.8    200     0 |   -3.00   5.96  -0.02   0.00
+cur_rollout_steps is:  520
+model train number is : 312 real_explore_steps 3200  cur_rollout_steps is  520 sum_rollout_steps:  181220
+1  1.81e+05-1053.05 |-1334.07  242.0    200     0 |   -3.07   5.29   0.09   0.00
+model_loss :  -4.345534164220728
+cur_rollout_steps is:  640
+model train number is : 313 real_explore_steps 3200  cur_rollout_steps is  640 sum_rollout_steps:  181860
+1  1.82e+05-1053.05 |-1242.28  215.6    200     0 |   -3.08   6.49  -0.00   0.00
+cur_rollout_steps is:  680
+model train number is : 314 real_explore_steps 3200  cur_rollout_steps is  680 sum_rollout_steps:  182540
+1  1.83e+05-1053.05 |-1320.96  200.6    200     0 |   -3.01   4.71   0.01   0.00
+cur_rollout_steps is:  650
+model train number is : 315 real_explore_steps 3200  cur_rollout_steps is  650 sum_rollout_steps:  183190
+1  1.83e+05-1053.05 |-1226.24  193.5    200     0 |   -3.23   5.11   0.14   0.00

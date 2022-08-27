@@ -42,7 +42,7 @@ class Arguments:
             self.if_use_per = False
             self.replay_buffer_size = 2 ** 12  # capacity of replay buffer
             self.horizon_len = self.replay_buffer_size  # repeatedly update network to keep critic's loss small
-            self.batch_size = self.net_dim * 2  # num of transitions sampled from replay buffer.
+            # self.batch_size = self.net_dim * 2  # num of transitions sampled from replay buffer.
             self.repeat_times = 2 ** 4  # collect horizon_len, then update network
             self.if_use_gae = True  # use PER: GAE (Generalized Advantage Estimation) for sparse reward
 
@@ -73,10 +73,28 @@ class Arguments:
 
         """DaDRL"""
         self.useDaD = True
-        self.useDaDTrain = True
+        self.useTrainModel = True
         self.if_state_expand = False # train dad expand a list
         self.k_steps = 20
         self.n_k = 10
+        self.model_training_argu_rollout_length = 20
+        self.fc = None
+
+        """model setting"""
+        self.model_ensemble_size = 4  # number of models in the bootstrap ensemble
+        self.model_n_units = 512  # number of hidden units in each hidden layer (hidden layer size)
+        self.model_n_layers = 4  # number of hidden layers in the model (at least 2)
+        self.model_activation = 'swish'  # activation function (see models.py for options)
+        self.model_lr = 1e-4
+        self.model_weight_decay = 1e-4
+        self.model_grad_clip = 5
+        # Model Training Parameters
+        self.model_expand_steps = 10
+        self.model_batch_size = 256
+        self.model_training_freq = 400
+        self.model_training_n_batches = 120
+
+        self.grad_clip = 5
         
     def init_before_training(self):
         np.random.seed(self.random_seed)
@@ -86,8 +104,8 @@ class Arguments:
 
         '''auto set'''
         if self.cwd is None:
-            if self.useDaDTrain:
-                self.cwd = f'./result/{self.env_name}_{self.agent.__name__[5:]}_{self.random_seed}_dadRL_{self.n_k}X{self.k_steps}'
+            if self.useTrainModel:
+                self.cwd = f'./result/{self.env_name}_{self.agent.__name__[5:]}_{self.random_seed}_dadRL_{self.n_k}X{self.k_steps}_trlenadd_{self.model_training_argu_rollout_length}_test'
             else:
                 self.cwd = f'./result/{self.env_name}_{self.agent.__name__[5:]}_{self.random_seed}'
 
@@ -100,7 +118,7 @@ class Arguments:
             print(f"| Arguments Remove cwd: {self.cwd}")
         else:
             print(f"| Arguments Keep cwd: {self.cwd}")
-        if self.useDaDTrain:
+        if self.useTrainModel:
             print("Using DaDRL")
         os.makedirs(self.cwd, exist_ok=True)
 

@@ -123,7 +123,7 @@ class Evaluator:  # [ElegantRL.2022.01.01]
 
         save_learning_curve(self.recorder, self.cwd, save_title)
 
-        return if_reach_goal, if_save
+        return if_reach_goal, if_save, r_avg
 
     def save_or_load_recoder(self, if_save):
         if if_save:
@@ -182,12 +182,53 @@ def get_episode_return_and_step(env, act, if_state_expand) -> (float, int):  # [
     episode_step += 1
     return episode_return, episode_step
 
+
+def get_model_episode_return_and_step(self, env, n_batch, act, model):
+    """evaluator model"""
+    predict = model.min_train_error_model.predict
+    cur_rews = list()
+    for epoch in range(n_batch):
+        state = env.reset()
+        done = False
+        self.fc.resetModel()
+        cur_traj_list = list()
+        while not done:
+            if self.if_state_expand:
+                state_s = state[1:]
+            else:
+                state_s = state[:]
+            if not torch.is_tensor(state_s):
+                ten_s = torch.as_tensor(state_s, dtype=torch.float32).unsqueeze(0)
+            else:
+                ten_s = state_s.unsqueeze(0)
+
+            ten_a = act(ten_s.to(self.device))
+
+            action = act.get_a_to_e(ten_a)[0].numpy()
+            _ob_s = np.expand_dims(state, axis=0)
+            if self.if_discrete:
+                _ac_s = np.expand_dims([action], axis=0)  # if cartpole => [action]
+            else:
+                _ac_s = np.expand_dims(action, axis=0)
+            _ob_next = predict(_ob_s, _ac_s)[0]
+            _ob_next = self.fc.clip_state(env, _ob_next)
+            done, reward = self.fc.termination_res_fn(env, state, action, _ob_next)
+
+            cur_traj_list.append(reward)
+            state = torch.as_tensor(_ob_next, dtype=torch.float32)
+
+        cur_rew = np.sum(cur_traj_list)
+        cur_rews.append(cur_rew)
+
+    return np.mean(cur_rews)
+
+
 # save explore rewards
 def explorerewards_curve_plot(cwd, rewards : list, useDad=False, threshold=None):
     # store npy
     store_npy_data(("explore_rewards", rewards), cwd=cwd, name="explore_rewards")
 
-    import matplotlib.pyplot as plt
+
     rewards = np.asarray(rewards, dtype=np.float32).ravel()
     steps = rewards.size
     length = range(steps)
@@ -200,6 +241,7 @@ def explorerewards_curve_plot(cwd, rewards : list, useDad=False, threshold=None)
     else:
         filename = "No_DaD_explore_rewards"
         title = "No DaD Explore Episode Return"
+    import matplotlib.pyplot as plt
     plt.title(title, fontweight="bold")
     plt.ylabel("Episode Return")
     plt.xlabel("Episode Steps")

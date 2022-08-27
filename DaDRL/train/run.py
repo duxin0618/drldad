@@ -4,12 +4,12 @@ import torch
 import numpy as np
 import multiprocessing as mp
 
-from DaDRL.DaD.learn_model_f import Dagger
+from DaDRL.DaD.learn_model_f import ModelBased
 from elegantrl.train.config import build_env
 from DaDRL.train.evaluator import Evaluator
-from DaDRL.DaD.replay_buffer import ReplayBufferList, DaDTrainBufferList
+from DaDRL.DaD.replay_buffer import ReplayBufferList, ModelTrainBufferList
 
-def train_and_evaluate(args, threshold, fc):
+def train_and_evaluate(args, threshold):
     torch.set_grad_enabled(False)
     args.init_before_training()
     gpu_id = args.learner_gpus
@@ -24,10 +24,10 @@ def train_and_evaluate(args, threshold, fc):
     evaluator = init_evaluator(args, gpu_id)
 
     """ DaD"""
-    dad = Dagger(args)
-    dad_train_buffer = init_dad_trainbuffer(int(args.target_step))
+    MB = ModelBased(args)
+    train_model_buffer = init_model_trainbuffer(int(args.target_step))
     useDaD = args.useDaD
-    useDaDTrain = args.useDaDTrain
+    useTrainModel = args.useTrainModel
     if_save = None
     agent.state = env.reset()
 
@@ -40,125 +40,142 @@ def train_and_evaluate(args, threshold, fc):
     break_step = args.break_step  # 为replaybuffer准备的
     target_step = args.target_step
     if_allow_break = args.if_allow_break
+    model_training_argu_rollout_length = args.model_training_argu_rollout_length
     del args
 
     explore_rewards = list()
 
-    """ record dad model error"""
-    init_model_errors = list()
-    min_model_errors = list()
+    """ record model error"""
+    init_dad_model_errors = list()
+    min_dad_model_errors = list()
+    model_loss = list()
+    # reaL_steps, train_model_sample_reward, fake_env_steps, fake_env_reward, eval_reward
+    record_compete_info = list()
 
     threshold = threshold
     if_train = True
-    fc = fc
-    dad_step = 0
-    dad_steps = 0
-    use_dad_trains = 0
+
+    real_explore_steps = 0
+    rollout_steps = 0
 
     # control print dad info
-    control_out_num = 1e6
+    control_out_num = 1e3
 
     # train number
     train_number = 0
     while if_train:
-        train_number += 1
-        trajectory, dad_train_trajectory, explore_reward ,raw_rewards = agent.explore_env(env, target_step)
-        cur_use_dad_step = False
-        explore_rewards.extend(explore_reward) # explore rewards
-        steps, r_exp = buffer.update_buffer((trajectory,))
+
+        trajectory, model_train_trajectory, explore_reward ,raw_rewards, steps_i = agent.explore_env(env, target_step)
+        explore_rewards.append(explore_reward)
+        new_exp_rew = explore_reward
+        real_explore_steps += steps_i
+        explore_reward_mean = np.mean(explore_reward)
+        print("eval_reward_mean: ", np.mean(explore_reward))
+        print("real_explore_steps is :", real_explore_steps)
+        cur_train_min_rew = np.min(new_exp_rew)
+        cur_train_max_rew = np.max(new_exp_rew)
+        cur_train_mean_rew = np.mean(new_exp_rew)
+        rew_info = [cur_train_min_rew, cur_train_max_rew, cur_train_mean_rew]
+        print("rew_info", rew_info)
         '''
-        DaD train
+        Model train
         '''
-        useDaD = useDaD
-        useDaDTrain = useDaDTrain
-        if useDaD:
-            dad_train_buffer.augment_buffer((dad_train_trajectory,))
-            min_model_error, init_model_error = dad.train(dad_train_buffer)
-            init_model_errors.append(round(init_model_error, 2))
-            min_model_errors.append(round(min_model_error, 2))
+        useTrainModel = useTrainModel
+        if useTrainModel:
+            if real_explore_steps < 1000:
+                continue
+            p = 0; q = min(p + model_training_argu_rollout_length, steps_i)
+            cur_items = list(map(list, zip((model_train_trajectory))))
+            while p < steps_i:
+                train_model_buffer.augment_buffer(cur_items[p: q], is_map=True)
+                loss, t = MB.train(train_model_buffer)
+                if not t:
+                    continue
+                model_loss.append(loss)
+                print("model_loss : ", loss)
+                p = q
+                q = min(p + model_training_argu_rollout_length, steps_i)
 
-            print("dad_error : ", min_model_error)
-            n = max(train_number - 100, 0) / 2
-            model_error_mean = np.mean(min_model_errors)
-            threshold = model_error_mean / 2.0 + pow(0.9, n) * model_error_mean / 2.0
+                if useDaD:
+                    min_model_error, init_model_error = MB.get_dad_iter_error()
+                    init_dad_model_errors.append(round(init_model_error, 2))
+                    min_dad_model_errors.append(round(min_model_error, 2))
+                for i in range(int(5)):
+                    rollout_trajectory, rollout_step, mean_model_explore_reward = MB.explore_env(env, target_step, train_model_buffer, agent.act, rew_info)
+                    print("cur_rollout_steps is: ", rollout_step)
+                    if rollout_trajectory is False:
+                        continue
+                    if rollout_step < 128:
+                        continue
+                    steps, r_exp = buffer.update_buffer((rollout_trajectory,))
+                    train_number += 1
+                    rollout_steps += rollout_step
+                    torch.set_grad_enabled(True)
+                    logging_tuple = agent.update_net(buffer)
+                    torch.set_grad_enabled(False)
 
-            if train_number <= 10 or min_model_error <= threshold and useDaDTrain:
-                dad_trajectory, dad_step = dad.explore_env(env, target_step, dad_train_buffer, raw_rewards, agent.act, fc)
-                trajectory = [torch.cat((trajectory[idx], dad_trajectory[idx])) for idx in range(5)]
-                cur_use_dad_step = True
-                use_dad_trains += 1
-                dad_steps += dad_step
-                # dad_step, dad_r_exp = buffer.update_buffer((dad_trajectory,))
-                # dad_steps += dad_step
-                # torch.set_grad_enabled(True)
-                # dad_logging_tuple = agent.update_net(buffer)
-                # torch.set_grad_enabled(False)
-                print("use dad train numbers is :", use_dad_trains, " cur_steps is ", dad_step)
+                    print("model train number is :", train_number,"real_explore_steps", real_explore_steps, " cur_rollout_steps is ", rollout_step, "sum_rollout_steps: ", rollout_steps)
 
-        '''
-        The End
-        '''
-        if cur_use_dad_step:
-            dad_steps, dad_r_exp = buffer.update_buffer((trajectory,))
-        torch.set_grad_enabled(True)
-        logging_tuple = agent.update_net(buffer)
-        torch.set_grad_enabled(False)
+                    (if_reach_goal, if_save, r_avg) = evaluator.evaluate_save_and_plot(
+                        agent.act, steps, r_exp, logging_tuple
+                    )
+                    # reaL_steps, train_model_sample_reward, fake_env_steps, fake_env_reward, eval_reward
+                    record_compete_info.append((real_explore_steps, explore_reward_mean, rollout_steps,
+                                                mean_model_explore_reward, r_avg))
+                    dont_break = not if_allow_break
+                    not_reached_goal = not if_reach_goal
+                    stop_dir_absent = not os.path.exists(f"{cwd}/stop")
+                    if_train = (
+                        (dont_break or not_reached_goal)
+                        and evaluator.total_step <= break_step
+                        and stop_dir_absent
+                    )
 
-        (if_reach_goal, if_save) = evaluator.evaluate_save_and_plot(
-            agent.act, steps, r_exp, logging_tuple
-        )
-        dont_break = not if_allow_break
-        not_reached_goal = not if_reach_goal
-        stop_dir_absent = not os.path.exists(f"{cwd}/stop")
-        if_train = (
-            (dont_break or not_reached_goal)
-            and evaluator.total_step <= break_step
-            and stop_dir_absent
-        )
+                    if steps // (control_out_num) > 0 :
+                        control_out_num = control_out_num + 1e3
+                        plot_info("Model loss", model_loss, "model_loss", cwd, "model_loss")
+                        """store train loss"""
+                        store_npy_data(("Model loss", model_loss), cwd=cwd, name="model_loss")
+                        """store compete info"""
+                        np.save(f"{cwd}/record_model_opt_info.npy", record_compete_info)
+                        if useDaD:
 
-        if steps // (control_out_num) > 0 :
-            control_out_num = control_out_num + 1e6
-            if useDaD:
+                            min_train_error, train_error, train_recession_error = MB.get_dad_model_error()
 
-                min_train_error = dad.get_data().min_iter_all_model_error
-                train_error = dad.get_data().min_iter_error_gather
-                train_recession_error = dad.get_data().min_iter_recession_error_gather
+                            """draw min_error and init_error curve"""
+                            plot_info("Dad model Init_error and Min_error", init_dad_model_errors, "init_dad_model_errors", cwd,
+                                      "dad error",
+                                      min_dad_model_errors, "min_dad_model_errors")
 
-                """draw min_error and init_error curve"""
-                plot_info("Dad model Init_error and Min_error", init_model_errors, "init_model_errors", cwd,
-                          "dad error",
-                          min_model_errors, "min_model_errors")
+                            """store min_error and init_error data"""
+                            store_npy_data(("min_dad_error", min_dad_model_errors), ("init_dad_error", init_dad_model_errors), cwd=cwd,
+                                           name="dad model error")
 
-                """store min_error and init_error data"""
-                store_npy_data(("min_error", min_model_errors), ("init_error", init_model_errors), cwd=cwd,
-                               name="dad model error")
+                            """store train error"""
+                            store_npy_data(("train_error", train_error), cwd=cwd, name="dad_train_error")
 
-                """store train error"""
-                store_npy_data(("train_error", train_error), cwd=cwd, name="dad_train_error")
-
-                """store train recession error"""
-                store_npy_data(("train_recession_error", train_recession_error), cwd=cwd, name="train_recession_error")
+                            """store train recession error"""
+                            store_npy_data(("train_recession_error", train_recession_error), cwd=cwd, name="train_recession_error")
+                    # if mean_model_explore_reward > cur_train_max_rew:
+                    #     break
     print(f"| UsedTime: {time.time() - evaluator.start_time:.0f} | SavedDir: {cwd}")
     agent.save_or_load_agent(cwd, if_save=if_save)
     buffer.save_or_load_history(cwd, if_save=True) if agent.if_off_policy else None
 
     """record add dad steps number"""
-    np.save(cwd + "/" + "dadaddstepsnumber", dad_steps)
+    np.save(cwd + "/" + "modeladdstepsnumber", rollout_steps)
     evaluator.save_explorerewards_curve_plot_and_npy(cwd, explore_rewards, useDaD, threshold)
 
     if useDaD:
-
-        min_train_error = dad.get_data().min_iter_all_model_error
-        train_error = dad.get_data().min_iter_error_gather
-        train_recession_error = dad.get_data().min_iter_recession_error_gather
+        min_train_error, train_error, train_recession_error = MB.get_dad_model_error()
 
         """draw min_error and init_error curve"""
-        plot_info("Dad model Init_error and Min_error", init_model_errors, "init_model_errors", cwd,
+        plot_info("Dad model Init_error and Min_error", init_dad_model_errors, "init_dad_model_errors", cwd,
                   "dad error",
-                  min_model_errors, "min_model_errors")
+                  min_dad_model_errors, "min_dad_model_errors")
 
         """store min_error and init_error data"""
-        store_npy_data(("min_error", min_model_errors), ("init_error", init_model_errors), cwd=cwd,
+        store_npy_data(("min_error", min_dad_model_errors), ("init_error", init_dad_model_errors), cwd=cwd,
                        name="dad model error")
 
         """store train error"""
@@ -240,8 +257,8 @@ def init_buffer(args, gpu_id):
     return buffer
 
 
-def init_dad_trainbuffer(max_size):
-    buffer = DaDTrainBufferList(max_size=max_size)
+def init_model_trainbuffer(max_size):
+    buffer = ModelTrainBufferList(max_size=max_size)
     return buffer
 
 

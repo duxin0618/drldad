@@ -21,11 +21,11 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
 
         args.reward_scale = 2 ** -1  # RewardRange: -1800 < -200 < -50 < 0
         args.gamma = 0.97
-        args.target_step = args.max_step * 6
+        args.target_step = args.max_step * 4
         args.eval_times = 2 ** 3
         args.layer_num = 2
         args.net_dim = 2 ** 6
-        args.break_step = int(1e5)
+        args.break_step = int(2e8)
         args.if_allow_break = False
         args.if_discrete = False
         args.eval_gap = 2 * 6
@@ -36,15 +36,17 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.random_seed += gpu_id
 
     threshold = 2.0
-    args.useDaD = True
-    args.useDaDTrain = True
+    args.useDaD = False
+    args.useTrainModel = True
     args.if_state_expand = False
-    n_k = 40             # traj number
+    n_k =  20           # traj number
     k_steps = 10         # traj length
     args.n_k = n_k
     args.k_steps = k_steps
-    from DaDRL.static.pendulum import StaticFns
-    train_and_evaluate(args, threshold, StaticFns)
+    args.model_training_argu_rollout_length = 200
+    from DaDRL.static.pendulum import StaticFns as fc
+    args.fc = fc
+    train_and_evaluate(args, threshold)
 
 if __name__ == '__main__':
 

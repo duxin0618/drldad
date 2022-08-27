@@ -24,7 +24,7 @@ class DaDModel(object):
         self.min_iter_all_model_error = math.inf
 
 
-    def learn(self, state_s, action_s, state_s_next):
+    def init_info(self, state_s, action_s, state_s_next):
         # 数据变形
 
         # state_t 由[timesteps , dim_state , num_traj] ==> [num_traj*timesteps, dim_data]
@@ -42,7 +42,7 @@ class DaDModel(object):
 
         # 拟合(s_t, a_t, s_{t+1})  这里的学习器使用的是sklearn的Ridge
 
-        self.learner.fit(self.state_t, self.action_t, self.state_t1)
+        # self.learner.fit(self.state_t, self.action_t, self.state_t1)
         self.initial_model = deepcopy(self.learner)
 
         # 初始化训练误差
@@ -50,7 +50,7 @@ class DaDModel(object):
         self.mean_train_rollout_err = np.mean(errors)
         self.initial_model_error = self.mean_train_rollout_err
         self.min_train_error = self.mean_train_rollout_err
-        self.min_train_error_model = deepcopy(self.learner)
+        self.min_train_error_model = self.min_train_error_model
 
         print(' Init error: {0:.4g}'.format(self.mean_train_rollout_err))
 

@@ -4,38 +4,20 @@ patch_sklearn() #启动加速补丁
 import os, sys
 import numpy as np
 from DaDRL.DaD.DaggerTrajactory_f import DaDModel
-from DaDRL.DaD.ModelNet import DynamicsModelDeltaWrapper
+from DaDRL.DaD.ModelNet import DynamicsModel
 
 import torch
 
 GAIL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../')
 sys.path.append(GAIL_PATH)
 
-from sklearn.linear_model import Ridge
-from sklearn.kernel_ridge import KernelRidge
+from DaDRL.DaD.replay_buffer import Buffer
 
 
-class Dagger:
+
+class ModelBased:
 
     def __init__(self, args):
-
-
-        # 线性学习网络
-        # learner = MLPRegressor(
-        #     hidden_layer_sizes=hidden_layer_size, activation='tanh', solver='adam', alpha=0.0001, batch_size='auto',
-        #     learning_rate='constant', learning_rate_init=0.001, power_t=0.5, max_iter=50000, shuffle=True,
-        #     random_state=1, tol=0.0001, verbose=False, warm_start=False, momentum=0.9, nesterovs_momentum=True,
-        #     early_stopping=False, beta_1=0.9, beta_2=0.999, epsilon=1e-08)
-
-        # learner = MLPRegressor(hidden_layer_sizes=(10, 2),
-        #              activation='tanh', alpha=1e-3, max_iter=int(1e4), warm_start=False)
-
-        learner = Ridge(alpha=1e-4, fit_intercept=True)
-        # learner = KernelRidge(alpha=1e-4)
-
-        self.ModelNet = DynamicsModelDeltaWrapper(learner)
-        self.iters = None
-        self.dad = DaDModel(self.ModelNet)
 
         self.maxsteps = args.max_step
         self.state_dim = args.state_dim
@@ -56,10 +38,19 @@ class Dagger:
         ]
         gpu_id = args.learner_gpus
         self.device = torch.device(f"cuda:{gpu_id}" if (torch.cuda.is_available() and (gpu_id >= 0)) else "cpu")
-        self.it_steps = 1
+
+        self.ModelNet = DynamicsModel(args, self.state_dim, self.action_dim, self.device)
+        self.useDaD = args.useDaD
+        self.iters = None
+        self.model = DaDModel(self.ModelNet)
 
         self.n_k = args.n_k
         self.k_steps = args.k_steps
+        self.fc = args.fc
+
+        self.buffer = Buffer(self.state_dim, self.action_dim, args.break_step)
+
+        self.step_i = 0
 
     def doLearn(self, states, actions, states_next):
 
@@ -72,61 +63,59 @@ class Dagger:
     # train model
     def train(self, buffer):
         buf_state, buf_reward, buf_mask, buf_action, buf_noise = [ten for ten in buffer]
-        if self.if_discrete:
-            self.action_dim = 1
-        len = buf_state.shape[0]
-        train_sample = (len - len % self.maxsteps)
-        self.it_traj = train_sample / self.maxsteps
+        aux_len = buf_state.size(0)
+        self.step_i += aux_len
+        aux_states = buf_state[:-1]
+        aux_next_states = buf_state[1:]
+        aux_actions = buf_action[:-1]
+        aux_rewards = buf_reward[:-1]
+        self.buffer.add(aux_states, aux_actions, aux_next_states, aux_rewards)
+        if self.step_i < 1000:
+            return 0, False
+        loss = self.ModelNet.trainModel(self.buffer)
 
-        """merge state and rewards"""
+        if self.useDaD:
+            states, actions, states_next = self.buffer.trajectory(self.if_state_expand)
+            self.doLearn(states, actions, states_next)
+            self.dagger_trajectory()
 
-        # states_rewards = np.concatenate((buf_reward, buf_state), axis=1)
+        return loss, True
 
-        """"""
-        if self.if_state_expand:
-            r_state_dim = self.state_dim + 1
-        else:
-            r_state_dim = self.state_dim
-
-        states = buf_state[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), r_state_dim)[:, :-1]
-        actions = buf_action[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), self.action_dim)[:, :-1]
-        states_next = buf_state[:train_sample, :].reshape(int(self.it_traj), int(self.maxsteps), r_state_dim)[:, 1:]
-        self.doLearn(states, actions, states_next)
-        self.dagger_trajectory()
-        return self.dad.min_train_error, self.dad.initial_model_error
-
+    def getDaDError(self):
+        return self.model.min_train_error, self.model.initial_model_error
     # explore_env
-    def explore_env(self, env, target_step, buffer, raw_reward, act, fc):
+    def explore_env(self, env, target_step, buffer, act, rew_bound):
 
-        predict = self.dad.min_train_error_model.predict
+        predict = self.model.min_train_error_model.predict
         buf_state, buf_reward, buf_mask, buf_action, buf_noise = [ten for ten in buffer]
         # sample random number init states
 
-
-        init_states_index = np.random.choice(np.array(buf_state).shape[0], self.n_k)
+        self.n_k = (target_step // self.k_steps + 1)
+        # min_choice_bound = min(np.array(buf_state).shape[0], target_step*2)
+        # expord_num = max(np.array(buf_state).shape[0] - target_step*2, 0)
+        # init_states_index = np.random.choice(min_choice_bound, self.n_k)
+        # init_states_index += expord_num
+        choice_bound = np.array(buf_state).shape[0]
+        init_states_index = np.random.choice(choice_bound, self.n_k)
         init_states = buf_state[init_states_index]
-        # print("init_states_index_state: ",buf_state[0])
-        # print("init_states_index_state_next: ", buf_state[1])
-        # action = buf_action[0]
-        # state = buf_state[0]
-        # _ac_s = np.expand_dims([action], axis=0)
-        # _ob_s = np.expand_dims(state, axis=0)
-        # _ob_next = predict(_ob_s, _ac_s)[0]
-        # print("predict: ", _ob_next)
-        # return None
+
         traj_list = list()
         last_done = [
             0,
         ]
 
         step_i = 0
-
+        cur_rews = list()
+        rew_bound_min = rew_bound[0]  # mean_explore_rewards as bound
         for epoch in range(self.n_k):
+            if step_i > target_step:
+                break
             state = init_states[epoch]
-            inner_steps = 0
+            inner_step = 0
             done = False
-            fc.resetModel()
-            while inner_steps < self.k_steps and not done:
+            self.fc.resetModel()
+            cur_traj_list = list()
+            while not done:
                 if self.if_state_expand:
                     state_s = state[1:]
                 else:
@@ -146,22 +135,38 @@ class Dagger:
                 else:
                     _ac_s = np.expand_dims(action, axis=0)
                 _ob_next = predict(_ob_s, _ac_s)[0]
-                _ob_next = fc.clip_state(env, _ob_next)
-                done, reward = fc.termination_res_fn(env, state, action, _ob_next)
-                if inner_steps+1 == self.k_steps:
-                    done = True
-                traj_list.append((ten_s, reward, done, ten_a, ten_n))
+                _ob_next = self.fc.clip_state(env, _ob_next)
+                done, reward = self.fc.termination_res_fn(env, state, action, _ob_next)
 
-                state = torch.tensor(_ob_next, dtype=torch.float32)
-                step_i += 1
-                inner_steps += 1
-
+                cur_traj_list.append([ten_s, reward, done, ten_a, ten_n])
+                state = torch.as_tensor(_ob_next, dtype=torch.float32)
+            buf_items = list(
+                map(list, zip(*cur_traj_list))
+            )
+            cur_rew = np.sum(buf_items[1])
+            cur_rews.append(cur_rew)
+            # print("model_explore_cur_rew", cur_rew)
+            if cur_rew >= rew_bound_min:
+                i = 0
+                # print("第几个加入", step_i+1)
+                cur_traj_list_len = len(cur_traj_list)
+                while i < cur_traj_list_len and i < self.k_steps:
+                    if i+1 >= self.k_steps or i+1 >= cur_traj_list_len:
+                        cur_traj_list[i][2] = True
+                    traj_list.append((cur_traj_list[i][:]))
+                    step_i += 1
+                    inner_step += 1
+                    i += 1
+                # print("traj have number steps:", i)
+                # print(traj_list[step_i-1][2])
                 # if done:
                 #     cur_states_index = np.random.choice(np.array(buf_state).shape[0], 1)
                 #     state = buf_state[cur_states_index][0]
 
         last_done[0] = step_i
-        return self.convert_trajectory(traj_list, last_done), step_i  # traj_list
+        if step_i < 128:
+            return False, step_i, np.mean(cur_rews)
+        return self.convert_trajectory(traj_list, last_done), step_i, np.mean(cur_rews)  # traj_list
 
     def convert_trajectory(self, buf_items, last_done):  # [ElegantRL.2022.01.01]
         """convert trajectory (env exploration type) to trajectory (replay buffer type)
@@ -231,7 +236,7 @@ class Dagger:
         return buf_items
 
     def dagger_trajectory(self):
-        self.dad.dagger_trajectory()
+        self.model.dagger_trajectory()
 
 
     def doDagger(self, states, actions, states_next, iters):
@@ -241,22 +246,19 @@ class Dagger:
         self.dagger_data_dad(state_train, action_train, state_next_train, iters)
 
 
-
-    # 利用交叉验证的方法，划分成训练集和测试集，训练集进行训练DaD模型，测试集进行测试model的准确度
     def optimize_learner_dad(self, states, actions, state_next):
 
-        # learn
-        self.dad.learn(states, actions, state_next)
+        self.model.init_info(states, actions, state_next)
 
     def dagger_data_dad(self, states, actions, state_next, iters):
-        self.dad.dagger_data(states, actions, state_next, iters)
+        self.model.dagger_data(states, actions, state_next, iters)
 
 
-    def get_data(self):
-        return self.dad
+    def get_dad_model_error(self):
+        return self.model.min_iter_all_model_error, self.model.min_iter_error_gather, self.model.min_iter_recession_error_gather
 
-
-
+    def get_dad_iter_error(self):
+        return self.model.initial_model_error, self.model.min_train_error
 
 
 

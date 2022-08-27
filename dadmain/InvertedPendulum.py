@@ -31,7 +31,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
         args.eval_gap = 2 * 6
     else:
         raise ValueError('env_name:', env_name)
-
+    from DaDRL.static.inverted_pendulum import StaticFns as fc
     args.learner_gpus = gpu_id
     args.random_seed += gpu_id
 
@@ -40,12 +40,12 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.useDaDTrain = True
     args.if_state_expand = False
     n_k = 100             # traj number
-    k_steps = 10         # traj length
+    k_steps = 200         # traj length
     args.k_steps = k_steps
     args.n_k = n_k
-    # fc = None
-    from DaDRL.static.inverted_pendulum import StaticFns as fc
-    train_and_evaluate(args, threshold, fc)
+    args.fc = fc
+
+    train_and_evaluate(args, threshold)
 
 if __name__ == '__main__':
 

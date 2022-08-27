@@ -27,7 +27,7 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
                     'id': 'CartPole-v0'}
         args = Arguments(agent_class, env_func=env_func, env_args=env_args)
 
-        args.target_step = args.max_step * 5
+        args.target_step = args.max_step * 2
         args.reward_scale = 2 ** 0
         args.gamma = 0.99
 
@@ -48,12 +48,13 @@ def demo_a2c_ppo(gpu_id, drl_id, env_id):
     args.useDaD = True
     args.useDaDTrain = True
     args.if_state_expand = False
-    n_k = 50             # traj number
+    n_k = 10             # traj number
     k_steps = 10         # traj length
     args.n_k = n_k
     args.k_steps = k_steps
     from DaDRL.static.cartpole import StaticFns as fc
-    train_and_evaluate(args, threshold, fc)
+    args.fc = fc
+    train_and_evaluate(args, threshold)
 
 if __name__ == '__main__':
 

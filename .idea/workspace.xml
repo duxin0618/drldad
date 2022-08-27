@@ -2,172 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c00ef305-a333-45db-945e-322237048a75" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/No_DaD_explore_rewards.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/act_optimizer.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/act_target.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00004000_-0002.303.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00052000_00108.557.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00064000_00111.616.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00076000_00200.525.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00128000_00607.530.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00220000_00655.986.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00248000_00675.818.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00252000_00683.824.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00256000_00790.728.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00348000_00795.979.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00384000_00854.123.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00388000_00869.937.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00428000_00871.370.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00432000_00898.651.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00636000_00940.093.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00676000_00951.599.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_00716000_00978.509.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01156000_01001.804.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01204000_01140.747.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01220000_01156.365.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01244000_01298.289.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01260000_01358.483.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01284000_01510.687.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01300000_01658.335.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01364000_01801.039.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01428000_01837.357.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01452000_01976.345.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01460000_02422.583.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01468000_02474.674.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01492000_02604.296.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01548000_02792.346.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01860000_02808.070.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01932000_02862.185.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01940000_02892.050.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_01956000_02902.693.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_02780000_02909.095.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_02796000_02953.090.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_02820000_02970.920.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_02964000_02985.542.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_02996000_03014.990.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/actor_03004000_03029.136.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/cri_optimizer.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/cri_target.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/critic.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/explore_rewards.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/plot_learning_curve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/result/ppo/HalfCheetah-v2_PPO_2/recorder.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/utils/dad_hopper_recorder.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/utils/dad_hopper_recorder.npy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/utils/nodad_hopper_recorder.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/utils/nodad_hopper_recorder.npy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaDRL/utils/p_recorder.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LastVersion/ElegantRL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/No_DaD_explore_rewards.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/act_optimizer.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/act_target.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor_00000401_00021.906.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor_00000807_00070.062.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor_00001228_00130.500.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor_00002067_00137.906.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor_00002471_00163.812.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor_00003037_00170.938.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/actor_00003599_00200.000.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/cri_optimizer.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/cri_target.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/critic.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/explore_rewards.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/plot_learning_curve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0/recorder.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/Use_DaD_explore_rewards.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/act_optimizer.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/act_target.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/actor.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/actor_00001025_00081.406.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/actor_00002029_00189.781.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/actor_00004205_00199.469.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/cri_optimizer.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/cri_target.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/critic.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/dad error.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/dad model error.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/dad_train_error.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/explore_rewards.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/plot_learning_curve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/recorder.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/CartPole-v0_DiscretePPO_0_dadRL/train_recession_error.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/Use_DaD_explore_rewards.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00001600_-1291.691.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00006400_-1255.152.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00022400_-1241.193.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00024000_-1210.427.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00030400_-1167.418.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00036800_-1144.768.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00044800_-1140.143.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00049600_-1114.460.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00052800_-1113.963.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00054400_-1089.135.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00056000_-1009.133.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/actor_00078400_-0952.363.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/dad error.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/dad model error.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/dad_train_error.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/explore_rewards.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/plot_learning_curve.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/recorder.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0_dadRL/train_recession_error.npy" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/DaD/v1/learn_model_f.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/DaD/v2/DaggerTrajactory_f.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/DaD/v2/ModelNet.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/DaD/v2/learn_model_f.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/evaluator_model.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/net.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v1/run.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v2/AgentBase.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v2/AgentPPO.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v2/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v2/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v2/evaluator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v2/net.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DaDRL/train/v2/run.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/DaD/DaggerTrajactory_f.py" afterPath="$PROJECT_DIR$/DaDRL/DaD/DaggerTrajactory_f.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/DaD/ModelNet.py" afterPath="$PROJECT_DIR$/DaDRL/DaD/ModelNet.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/DaD/learn_model_f.py" afterPath="$PROJECT_DIR$/DaDRL/DaD/learn_model_f.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/DaD/replay_buffer.py" afterPath="$PROJECT_DIR$/DaDRL/DaD/replay_buffer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/env/halfcheetah.py" afterPath="$PROJECT_DIR$/DaDRL/env/halfcheetah.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/readme/train" afterPath="$PROJECT_DIR$/DaDRL/readme/train" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/static/cartpole.py" afterPath="$PROJECT_DIR$/DaDRL/static/cartpole.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/static/halfcheetah.py" afterPath="$PROJECT_DIR$/DaDRL/static/halfcheetah.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/static/inverted_pendulum.py" afterPath="$PROJECT_DIR$/DaDRL/static/inverted_pendulum.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/static/pendulum.py" afterPath="$PROJECT_DIR$/DaDRL/static/pendulum.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/train/AgentPPO.py" afterPath="$PROJECT_DIR$/DaDRL/train/AgentPPO.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/train/config.py" afterPath="$PROJECT_DIR$/DaDRL/train/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/train/evaluator.py" afterPath="$PROJECT_DIR$/DaDRL/train/evaluator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/train/run.py" afterPath="$PROJECT_DIR$/DaDRL/train/run.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DaDRL/utils/utils.py" afterPath="$PROJECT_DIR$/DaDRL/utils/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/CartPole-v0_A2C_PPO.py" afterPath="$PROJECT_DIR$/dadmain/CartPole-v0_A2C_PPO.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/HalfCheetah-v2_A2C_PPO_3.py" afterPath="$PROJECT_DIR$/dadmain/HalfCheetah-v2_A2C_PPO_3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/Hopper-v2_A2C_PPO.py" afterPath="$PROJECT_DIR$/dadmain/Hopper-v2_A2C_PPO.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/InvertedDoublePendulum-v2_A2C_PPO.py" afterPath="$PROJECT_DIR$/dadmain/InvertedDoublePendulum-v2_A2C_PPO.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/InvertedDoublePendulum.py" afterPath="$PROJECT_DIR$/dadmain/InvertedDoublePendulum.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/InvertedPendulum-v2_A2C_PPO.py" afterPath="$PROJECT_DIR$/dadmain/InvertedPendulum-v2_A2C_PPO.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/Reacher-v2_A2C_PPO_2.py" afterPath="$PROJECT_DIR$/dadmain/Reacher-v2_A2C_PPO_2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/Walker2D-v2_A2C_PPO.py" afterPath="$PROJECT_DIR$/dadmain/Walker2D-v2_A2C_PPO.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/InvertedPendulum.py" afterPath="$PROJECT_DIR$/dadmain/InvertedPendulum.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/cartpole.py" afterPath="$PROJECT_DIR$/dadmain/cartpole.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/halfcheetah.py" afterPath="$PROJECT_DIR$/dadmain/halfcheetah.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/hopper.py" afterPath="$PROJECT_DIR$/dadmain/hopper.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/main_A2C_PPO_7.py" afterPath="$PROJECT_DIR$/dadmain/main_A2C_PPO_7.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/pendulum.py" afterPath="$PROJECT_DIR$/dadmain/pendulum.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/reacher.py" afterPath="$PROJECT_DIR$/dadmain/reacher.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/test.py" afterPath="$PROJECT_DIR$/dadmain/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadmain/walker2d.py" afterPath="$PROJECT_DIR$/dadmain/walker2d.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/No_DaD_explore_rewards.jpg" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/No_DaD_explore_rewards.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00001600_-1238.950.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00001600_-1238.950.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00025600_-1234.760.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00025600_-1234.760.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00030400_-1142.808.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00030400_-1142.808.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00040000_-1089.798.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00040000_-1089.798.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00041600_-1032.014.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00041600_-1032.014.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00044800_-1003.306.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00044800_-1003.306.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00048000_-0952.451.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00048000_-0952.451.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00049600_-0867.626.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00049600_-0867.626.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00051200_-0811.612.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00051200_-0811.612.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00054400_-0780.810.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00054400_-0780.810.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00056000_-0764.240.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00056000_-0764.240.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00059200_-0759.432.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00059200_-0759.432.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00064000_-0713.236.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00064000_-0713.236.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00065600_-0682.123.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00065600_-0682.123.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00068800_-0565.266.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00068800_-0565.266.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00072000_-0494.148.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00072000_-0494.148.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00075200_-0392.715.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00075200_-0392.715.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00078400_-0273.485.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00078400_-0273.485.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00081600_-0239.611.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00081600_-0239.611.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00084800_-0210.523.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00084800_-0210.523.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00086400_-0166.629.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00086400_-0166.629.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/actor_00094400_-0148.545.pth" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/actor_00094400_-0148.545.pth" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/explore_rewards.npy" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/explore_rewards.npy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/plot_learning_curve.jpg" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/plot_learning_curve.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dadmain/result/Pendulum-v0_PPO_0/recorder.npy" afterPath="$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_0/recorder.npy" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -178,110 +39,110 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DRLDAD$New_Schedule.coverage" NAME="New_Schedule Coverage Results" MODIFIED="1658486988875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dadmain" />
-    <SUITE FILE_PATH="coverage/DRLDAD$cartpole.coverage" NAME="cartpole Coverage Results" MODIFIED="1659369227831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dadmain" />
+    <SUITE FILE_PATH="coverage/DRLDAD$cartpole.coverage" NAME="cartpole Coverage Results" MODIFIED="1659760540239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dadmain" />
     <SUITE FILE_PATH="coverage/DRLDAD$utils.coverage" NAME="utils Coverage Results" MODIFIED="1659117424713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DaDRL/utils" />
-    <SUITE FILE_PATH="coverage/DRLDAD$test.coverage" NAME="test Coverage Results" MODIFIED="1659453560321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dadmain" />
-    <SUITE FILE_PATH="coverage/DRLDAD$pendulum.coverage" NAME="pendulum Coverage Results" MODIFIED="1658498805222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dadmain" />
+    <SUITE FILE_PATH="coverage/DRLDAD$test.coverage" NAME="test Coverage Results" MODIFIED="1660348560555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dadmain" />
+    <SUITE FILE_PATH="coverage/DRLDAD$pendulum.coverage" NAME="pendulum Coverage Results" MODIFIED="1660125356171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dadmain" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="learn_model_f.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DaDRL/DaD/learn_model_f.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="150" column="32" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvertedPendulum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dadmain/InvertedPendulum.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inverted_pendulum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DaDRL/static/inverted_pendulum.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot_learning_curve.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/InvertedPendulum-v2_PPO_1/plot_learning_curve.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot_learning_curve.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_1/plot_learning_curve.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DaDRL/train/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="79" column="42" lean-forward="false" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+            <state relative-caret-position="783">
+              <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#6535#7711#0" expanded="false" />
+                <element signature="e#5781#6926#0" expanded="false" />
+                <element signature="e#7366#8179#0" expanded="false" />
+                <element signature="e#8272#9448#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dadmain/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="604" column="0" lean-forward="false" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="632" column="0" lean-forward="true" selection-start-line="632" selection-start-column="0" selection-end-line="632" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot_learning_curve.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPOV2/Pendulum-v0_PPO_1_dadRL_20X10/plot_learning_curve.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pendulum2.out" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPOV2/Pendulum-v0_PPO_1_dadRL_20X10/pendulum2.out">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29187">
+              <caret line="1081" column="0" lean-forward="false" selection-start-line="1081" selection-start-column="0" selection-end-line="1081" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DaDRL/train/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3024">
+              <caret line="116" column="55" lean-forward="false" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentPPO.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DaDRL/train/AgentPPO.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2646">
+              <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DaDRL/train/evaluator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5886">
+              <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="net.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DaDRL/train/net.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10206">
+              <caret line="382" column="58" lean-forward="false" selection-start-line="382" selection-start-column="58" selection-end-line="382" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pendulum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DaDRL/env/pendulum.py">
+        <entry file="file://$PROJECT_DIR$/dadmain/pendulum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="1161">
+              <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DaDRL/readme/train">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inverted_double_pendulum.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DaDRL/static/inverted_double_pendulum.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="plot_learning_curve.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPOV2/Pendulum-v0_PPO_1_dadRL_20X10_2/plot_learning_curve.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -296,34 +157,42 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>state_dim</find>
-      <find>state</find>
-      <find>states</find>
-      <find>ReplayBuffer</find>
-      <find>work</find>
-      <find>return</find>
-      <find>convert_trajectory</find>
-      <find>Evaluator</find>
-      <find>asse</find>
-      <find>if_state_expand</find>
-      <find>111</find>
-      <find>self.if_state_expand:</find>
-      <find>if_act_target</find>
-      <find>if_cri_target</find>
-      <find>cri</find>
-      <find>if_use_gae</find>
-      <find>coeff_gae_adv</find>
-      <find>gae_adv</find>
-      <find>gae</find>
-      <find>coeff_entropy</find>
-      <find>raw_rewards</find>
-      <find>get_a_to_e</find>
-      <find>if_discrete</find>
       <find>last_done</find>
-      <find>batch_size</find>
       <find>env_func</find>
       <find>seed</find>
+      <find>explore_reward</find>
+      <find>explore_rewards</find>
+      <find>agent</find>
+      <find>buffer</find>
+      <find>act</find>
+      <find>net</find>
+      <find>ActorDiscretePPO</find>
+      <find>step_i</find>
+      <find>n_k</find>
+      <find>get_if_off_policy</find>
+      <find>batch_size</find>
+      <find>torch</find>
+      <find>, device=device</find>
+      <find>clone</find>
+      <find>args</find>
+      <find>optimize_learner_dad</find>
+      <find>it_steps</find>
+      <find>use_dad_trains</find>
+      <find>rsample</find>
+      <find>init_model_errors</find>
+      <find>print</find>
+      <find>init_model_trainbuffer</find>
+      <find>dad_steps</find>
+      <find>iters</find>
+      <find>_post_process_model_outputs</find>
+      <find>denormalize_state_delta_vars</find>
+      <find>mean_model_explore_reward</find>
     </findStrings>
+    <replaceStrings>
+      <replace>np</replace>
+      <replace>copy</replace>
+      <replace>self</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -331,14 +200,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dadmain/Hopper-v2_A2C_PPO_2.py" />
-        <option value="$PROJECT_DIR$/dadmain/Reacher-v2_A2C_PPO.py" />
-        <option value="$PROJECT_DIR$/dadmain/New_Schedule.py" />
-        <option value="$PROJECT_DIR$/halfcheetah.py" />
-        <option value="$PROJECT_DIR$/DaDRL/static/inverted_double_pendulum.py" />
-        <option value="$PROJECT_DIR$/DaDRL/static/Reacher.py" />
         <option value="$PROJECT_DIR$/DaDRL/train/AgentBase.py" />
-        <option value="$PROJECT_DIR$/DaDRL/train/AgentPPO.py" />
         <option value="$PROJECT_DIR$/DaDRL/static/hopper.py" />
         <option value="$PROJECT_DIR$/DaDRL/env/hopper.py" />
         <option value="$PROJECT_DIR$/DaDRL/static/walker2d.py" />
@@ -349,8 +211,6 @@
         <option value="$PROJECT_DIR$/dadmain/Humanoid_A2C_PPO.py" />
         <option value="$PROJECT_DIR$/dadmain/Ant.py" />
         <option value="$PROJECT_DIR$/dadmain/Ant-v3_A2C_PPO.py" />
-        <option value="$PROJECT_DIR$/DaDRL/train/evaluator.py" />
-        <option value="$PROJECT_DIR$/DaDRL/DaD/replay_buffer.py" />
         <option value="$PROJECT_DIR$/DaDRL/utils/utils.py" />
         <option value="$PROJECT_DIR$/elegantrl/agents/net.py" />
         <option value="$PROJECT_DIR$/dadmain/CartPole-v0_A2C_PPO.py" />
@@ -368,20 +228,29 @@
         <option value="$PROJECT_DIR$/dadmain/Swimmer_PPO.py" />
         <option value="$PROJECT_DIR$/dadmain/Swimmer-v2_PPO.py" />
         <option value="$PROJECT_DIR$/dadmain/walker2d.py" />
-        <option value="$PROJECT_DIR$/DaDRL/train/config.py" />
         <option value="$PROJECT_DIR$/dadmain/Pendulum-v0_PPO.py" />
         <option value="$PROJECT_DIR$/dadmain/InvertedDoublePendulum.py" />
         <option value="$PROJECT_DIR$/dadmain/InvertedPendulum-v2_A2C_PPO.py" />
         <option value="$PROJECT_DIR$/DaDRL/static/pendulum.py" />
-        <option value="$PROJECT_DIR$/dadmain/pendulum.py" />
         <option value="$PROJECT_DIR$/DaDRL/static/cartpole.py" />
-        <option value="$PROJECT_DIR$/dadmain/cartpole.py" />
-        <option value="$PROJECT_DIR$/DaDRL/DaD/learn_model_f.py" />
         <option value="$PROJECT_DIR$/DaDRL/static/inverted_pendulum.py" />
-        <option value="$PROJECT_DIR$/dadmain/InvertedPendulum.py" />
-        <option value="$PROJECT_DIR$/dadmain/test.py" />
         <option value="$PROJECT_DIR$/DaDRL/readme/train" />
+        <option value="$PROJECT_DIR$/dadmain/InvertedPendulum.py" />
+        <option value="$PROJECT_DIR$/dadmain/cartpole.py" />
+        <option value="$PROJECT_DIR$/DaDRL/train/net.py" />
+        <option value="$PROJECT_DIR$/DaDRL/DaD/normalizer.py" />
+        <option value="$PROJECT_DIR$/DaDRL/DaD/DaggerTrajactory_f.py" />
+        <option value="$PROJECT_DIR$/DaDRL/train/AgentPPO.py" />
+        <option value="$PROJECT_DIR$/DaDRL/DaD/replay_buffer.py" />
+        <option value="$PROJECT_DIR$/DaDRL/DaD/dynamics.py" />
+        <option value="$PROJECT_DIR$/DaDRL/DaD/ModelNet.py" />
+        <option value="$PROJECT_DIR$/DaDRL/train/evaluator_model.py" />
+        <option value="$PROJECT_DIR$/DaDRL/DaD/learn_model_f.py" />
+        <option value="$PROJECT_DIR$/DaDRL/train/evaluator.py" />
+        <option value="$PROJECT_DIR$/dadmain/pendulum.py" />
         <option value="$PROJECT_DIR$/DaDRL/train/run.py" />
+        <option value="$PROJECT_DIR$/DaDRL/train/config.py" />
+        <option value="$PROJECT_DIR$/dadmain/test.py" />
       </list>
     </option>
   </component>
@@ -392,10 +261,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1058" />
+    <option name="x" value="-8" />
+    <option name="y" value="2" />
+    <option name="width" value="1934" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -421,6 +290,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DRLDAD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DRLDAD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DRLDAD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elegantrl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -559,28 +442,6 @@
               <option name="myItemId" value="result" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PPO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DRLDAD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DRLDAD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dadmain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -591,18 +452,19 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path" value="E:/enviroment/Nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mbpo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../me-trpo" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\utils" />
-      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\result\ppo" />
-      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\dadmain" />
+      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\train\v2" />
+      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL" />
+      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\DaD" />
+      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\DaD\v2" />
       <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\train" />
-      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\result\version_2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\pylab\IML\DRLDAD\DaDRL\DaD" />
       <recent name="E:\WorkSpace\pylab\IML\DRLDAD\dadmain\result\PPO" />
       <recent name="E:\WorkSpace\pylab\IML\DRLDAD\dadmain\result\DADPPO" />
       <recent name="E:\WorkSpace\pylab\IML\DRLDAD\dadmain" />
@@ -875,9 +737,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cartpole" />
-        <item index="2" class="java.lang.String" itemvalue="Python.utils" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pendulum" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pendulum" />
+        <item index="2" class="java.lang.String" itemvalue="Python.cartpole" />
+        <item index="3" class="java.lang.String" itemvalue="Python.utils" />
         <item index="4" class="java.lang.String" itemvalue="Python.New_Schedule" />
       </list>
     </recent_temporary>
@@ -896,17 +758,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1058" extended-state="6" />
+    <frame x="-8" y="2" width="1934" height="1046" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31774193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06736353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18492344" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1358885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -915,7 +778,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -927,173 +790,194 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dadmain/walker2d.py">
+    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/CartPole-v0_DiscretePPO_0/plot_learning_curve.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/Pendulum-v0_PPO_1_dadRL_40X10/plot_learning_curve.jpg" />
+    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_1/No_DaD_explore_rewards.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL_50X10/plot_learning_curve.jpg" />
+    <entry file="file://$PROJECT_DIR$/DaDRL/static/cartpole.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="-162">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/Pendulum-v0_PPO_1_dadRL/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://E:/enviroment/miniconda/envs/elegantRL/Lib/site-packages/gym/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL_40X10/dad error.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL_40X10/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL_20/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/reacher.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/static/inverted_double_pendulum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL_20X20/plot_learning_curve.jpg">
+    <entry file="file://$PROJECT_DIR$/DaDRL/static/inverted_pendulum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_20X50/plot_learning_curve.jpg" />
+    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/InvertedPendulum-v2_PPO_1/plot_learning_curve.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL/plot_learning_curve.jpg">
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_100X10/plot_learning_curve.jpg" />
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/v1/learn_model_f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_100X200/plot_learning_curve.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/InvertedDoublePendulum.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/env/invertedpendulum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elegantrl/agents/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5535">
+          <caret line="209" column="15" lean-forward="false" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/InvertedPendulum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/cartpole.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
           <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/readme/env_error_bound">
+    <entry file="file://$PROJECT_DIR$/elegantrl/train/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/InvertedPendulum-v2_A2C_PPO.py">
+    <entry file="file://$PROJECT_DIR$/elegantrl/train/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/Pendulum-v0_PPO.py">
+    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_1/plot_learning_curve.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/Pendulum-v0_PPO_1_dadRL_40X20/plot_learning_curve.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/Pendulum-v0_PPO_1_dadRL_40X20/dad error.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elegantrl/train/replay_buffer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/v1/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="97" column="11" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/v2/DaggerTrajactory_f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="44" column="68" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/v2/learn_model_f.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <caret line="96" column="116" lean-forward="true" selection-start-line="79" selection-start-column="8" selection-end-line="96" selection-end-column="116" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_20X50/dad error.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_100/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_100/dad error.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/Pendulum-v0_PPO_1_dadRL_20/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedDoublePendulum-v2_PPO_1_dadRL/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedDoublePendulum-v2_PPO_1_dadRL/dad error.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL_50X10/dad error.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/InvertedPendulum-v2_PPO_1/No_DaD_explore_rewards.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://E:/enviroment/miniconda/envs/elegantRL/Lib/site-packages/numpy/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="3636" column="0" lean-forward="false" selection-start-line="3636" selection-start-column="0" selection-end-line="3636" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="276">
+          <caret line="232" column="15" lean-forward="false" selection-start-line="232" selection-start-column="15" selection-end-line="232" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/Reacher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/walker2d.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/v2/net.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/humanoid_truncated_obs.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/AgentBase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="264">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/hopper.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/static/pendulum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="417">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/ant_truncated_obs.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/v2/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="297">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/replay_buffer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/readme/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1102,17 +986,100 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/halfcheetah.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/normalizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="351">
+          <caret line="120" column="36" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/train/config.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/radam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="459">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/dynamics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="189" column="21" lean-forward="false" selection-start-line="189" selection-start-column="15" selection-end-line="189" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/env/pendulum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/ModelNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/learn_model_f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/DaggerTrajactory_f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/evaluator_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5886">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/AgentPPO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2646">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPOV2/Pendulum-v0_PPO_1_dadRL_20X10_2/plot_learning_curve.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPOV2/Pendulum-v0_PPO_1_dadRL_20X10/plot_learning_curve.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPOV2/Pendulum-v0_PPO_1_dadRL_20X10/pendulum2.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29187">
+          <caret line="1081" column="0" lean-forward="false" selection-start-line="1081" selection-start-column="0" selection-end-line="1081" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10206">
+          <caret line="382" column="58" lean-forward="false" selection-start-line="382" selection-start-column="58" selection-end-line="382" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1120,146 +1087,37 @@
     <entry file="file://$PROJECT_DIR$/dadmain/pendulum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1161">
-          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <caret line="45" column="43" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/CartPole-v0_DiscretePPO_0/No_DaD_explore_rewards.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/CartPole-v0_DiscretePPO_0/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/Pendulum-v0_PPO_1_dadRL_40X10/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_1/No_DaD_explore_rewards.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/CartPole-v0_DiscretePPO_0_dadRL_50X10/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/cartpole.py">
+    <entry file="file://$PROJECT_DIR$/DaDRL/train/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="54" column="14" lean-forward="false" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/cartpole.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/pendulum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="25" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/inverted_double_pendulum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/static/inverted_pendulum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_20X50/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/InvertedPendulum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/InvertedPendulum-v2_PPO_1/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/PPO/Pendulum-v0_PPO_1/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/result/DADPPO/InvertedPendulum-v2_PPO_1_dadRL_100X10/plot_learning_curve.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dadmain/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="604" column="0" lean-forward="false" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/env/pendulum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/DaD/learn_model_f.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="150" column="32" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DaDRL/readme/train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        <state relative-caret-position="3024">
+          <caret line="116" column="55" lean-forward="false" selection-start-line="116" selection-start-column="55" selection-end-line="116" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DaDRL/train/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="79" column="42" lean-forward="false" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+        <state relative-caret-position="783">
+          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#6535#7711#0" expanded="false" />
+            <element signature="e#5781#6926#0" expanded="false" />
+            <element signature="e#7366#8179#0" expanded="false" />
+            <element signature="e#8272#9448#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dadmain/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="632" column="0" lean-forward="true" selection-start-line="632" selection-start-column="0" selection-end-line="632" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

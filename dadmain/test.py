@@ -200,21 +200,21 @@
 # print(isinstance(a, np.ndarray))
 
 ##################store###################################################
-# def train_and_evaluate(args):
+# def train_and_evaluate(self):
 #     torch.set_grad_enabled(False)
-#     args.init_before_training()
-#     gpu_id = args.learner_gpus
+#     self.init_before_training()
+#     gpu_id = self.learner_gpus
 #
 #     """init"""
-#     env = build_env(args.env, args.env_func, args.env_args)
+#     env = build_env(self.env, self.env_func, self.env_self)
 #
-#     agent = init_agent(args, gpu_id, env)
-#     buffer = init_buffer(args, gpu_id)
+#     agent = init_agent(self, gpu_id, env)
+#     buffer = init_buffer(self, gpu_id)
 #
-#     evaluator = init_evaluator(args, gpu_id)
+#     evaluator = init_evaluator(self, gpu_id)
 #
 #     """ DaD"""
-#     dad = Dagger((20, 10), args)
+#     dad = Dagger((20, 10), self)
 #     dad_buffer = init_dad_buffer()
 #     dad_train_buffer = init_dad_trainbuffer()
 #
@@ -222,16 +222,16 @@
 #
 #     agent.state = env.reset()
 #
-#     if args.if_off_policy:
-#         trajectory = agent.explore_env(env, args.target_step)
+#     if self.if_off_policy:
+#         trajectory = agent.explore_env(env, self.target_step)
 #         buffer.update_buffer((trajectory,))
 #
 #     """start training"""
-#     cwd = args.cwd
-#     break_step = args.break_step  # 为replaybuffer准备的
-#     target_step = args.target_step
-#     if_allow_break = args.if_allow_break
-#     del args
+#     cwd = self.cwd
+#     break_step = self.break_step  # 为replaybuffer准备的
+#     target_step = self.target_step
+#     if_allow_break = self.if_allow_break
+#     del self
 #
 #     explore_rewards = list()
 #
@@ -596,6 +596,39 @@ import gym
 # env = gym.make("Ant-v3m")
 # print(env.action_space)
 # print(env.observation_space)
+# import numpy as np
+# a = [1,2,3,4,5]
+# print(np.mean(a))
+
+# Model Network Parameters
+#     self.model_ensemble_size = 4                         # number of models in the bootstrap ensemble
+#     self.model_n_units = 512                             # number of hidden units in each hidden layer (hidden layer size)
+#     self.model_n_layers = 4                              # number of hidden layers in the model (at least 2)
+#     self.model_activation = 'swish'                      # activation function (see models.py for options)
+#     self.model_lr = 1e-4
+#     self.model_weight_decay = 1e-4
+#     self.model_grad_clip = 5
+#     # Model Training Parameters
+#     self.model_expand_steps = 10
+#     self.model_batch_size = 256
+#     self.model_training_freq = 25
+#     self.model_training_n_batches = 120
+
+
+# import numpy as np
+# import torch
+# a = torch.as_tensor([[[1,2,3],[2,3,4]],[[1,2,3],[2,3,4]],[[1,2,3],[2,3,4]],[[1,2,3],[2,3,4]]])
+# print(a.shape)
+# print(torch.flatten(a, start_dim=0, end_dim=1).unsqueeze(0))
+# state = th.flatten(state_t, start_dim=0, end_dim=1).unsqueeze(0)
+# action = th.flatten(action_t, start_dim=0, end_dim=1).unsqueeze(0)
+#
+import numpy as np
+indices = [np.random.permutation(range(5)) for _ in range(2)]
+print(indices)
+print(np.stack(indices))
+
+
 
 
 
